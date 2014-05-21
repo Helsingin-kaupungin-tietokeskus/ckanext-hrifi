@@ -1,0 +1,88 @@
+[
+  {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "http://www.hri.fi/lisenssit/hri-nimea/", 
+    "title": "HRI - tietoaineistojen lisenssi - nimeä", 
+    "is_okd_compliant": false, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-01-01T14:17:51.000000", 
+    "id": "hri-tietoaineistot-lisenssi-nimea"
+  }, 
+  {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "http://open.helsinkikanava.fi/tos.html", 
+    "title": "Helsinkikanava Open Data käyttöehdot", 
+    "is_okd_compliant": false, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-01-01T14:17:51.000000", 
+    "id": "helsinkikanava-opendata-tos"
+  }, 
+  
+    {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "http://www.hri.fi/lisenssit/kmo-aluejakorajat/", 
+    "title": "KMO aluejakorajojen vektoriaineistojen käyttöehdot", 
+    "is_okd_compliant": false, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-01-01T14:17:51.000000", 
+    "id": "kmo-aluejakorajat"
+  }, 
+  
+  {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "http://creativecommons.org/licenses/by/3.0/fi/", 
+    "title": "Creative Commons Nimeä 3.0 Suomi (CC BY 3.0)", 
+    "is_okd_compliant": true, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-03-09T11:41:18.107570", 
+    "id": "cc-by-3-fi"
+  }, 
+  {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "http://creativecommons.org/licenses/by-sa/1.0/fi/", 
+    "title": "Creative Commons Nimeä-Tarttuva 1.0 Suomi (CC BY-SA 1.0)", 
+    "is_okd_compliant": true, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-03-09T11:41:18.107674", 
+    "id": "cc-by-sa-1-fi"
+  }, 
+  {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "", 
+    "title": "Lisenssiä ei määritelty", 
+    "is_okd_compliant": false, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-03-10T14:17:51.000000", 
+    "id": "eimaaritelty"
+  },
+    {
+    "status": "active", 
+    "maintainer": "", 
+    "family": "", 
+    "tags": [], 
+    "url": "", 
+    "title": "Lisenssi ilmoitettu tietoaineiston ylläpitäjän palvelussa", 
+    "is_okd_compliant": false, 
+    "is_osi_compliant": false, 
+    "date_created": "2010-03-10T14:17:51.000000", 
+    "id": "ilmoitettumuualla"
+  }
+]

@@ -1,0 +1,1 @@
+A custom CKAN theme for the Helsinki region of Finland: http://www.hri.fi

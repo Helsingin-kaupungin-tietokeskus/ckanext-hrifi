@@ -1,0 +1,107 @@
+{#
+Adds a block of custom form fields.
+
+extras - The fields to add.
+errors - A dict of errors for the fields.
+limit  - The total number of fields that should be output.
+Example:
+
+  {% snippet 'snippets/custom_form_fields.html', extras=data.extras, errors=errors, limit=1 %}
+
+#}
+{% import "macros/form.html" as form %}
+{% import "macros/hri_form.html" as hri_form %}
+
+{% resource "scripts/jquery-ui.js" %}
+{% resource "scripts/datepicker_fi.js" %}
+{% resource "my_css/jquery-ui.css" %}
+
+{% if extras|length == 0 %}{% set extras = {'dummy': 'dummy'} %}{% endif %}
+
+{# @TODO Refactor this - it's stupid. #}
+{% set category_options = [
+        _('Alue'), 
+        _('Asuminen'), 
+        _('Demokratia ja osallistuminen'), 
+        _('Elinkeinot'), 
+        _('Elinolot'),
+        _('Energia- ja vesihuolto'),
+        _('Julkiset palvelut'),
+        _('Kartat'),
+        _('Kaupunkihistoria'),
+        _('Kiinteistöt'),
+        _('Koulutus'),
+        _('Kulttuuri'),
+        _('Kunnallistalous'),
+        _('Liikenne'),
+        _('Maankäyttö'),
+        _('Muut palvelut'),
+        _('Oikeuslaitos ja turvallisuus'),
+        _('Rakennukset'),
+        _('Rakentaminen'),
+        _('Sosiaalitoimi'),
+        _('Talous'),
+        _('Terveys'),
+        _('Tulot ja kulutus'),
+        _('Työmarkkinat'),
+        _('Vapaa-aika'),
+        _('Väestö ja väestönmuutokset'),
+        _('Ympäristö'),
+        _('Yritykset')] %}
+
+{% set state_options = [_('Helsingin seutu (kaikki)'), _('Helsinki'), _('Espoo'), _('Vantaa'), _('Kauniainen'), _('Hyvinkää'), _('Järvenpää'), _('Kerava'), _('Kirkkonummi'), _('Nurmijärvi'), _('Mäntsälä'), _('Sipoo'), _('Pornainen'), _('Tuusula'), _('Vihti')] %}
+
+{% set geographic_granularity_options = [_('Valtio'), _('Seutu'), _('Kunta'), _('Tilastoalue'), _('Ruutu'), _('Piste')] %}
+
+{% set temporal_granularity_options = [_('vuosi'), _('vuosineljännes'), _('kuukausi')] %}
+
+<script type="text/javascript">
+
+// Here we setup on-submit handler functionality; this allows us to run custom functions when the submit button is pressed.
+// Essentially we use it to disable hidden fields, which help us circumvent CKAN from complaining about missing values on select fields.
+
+var on_submit_handlers = [];
+var user_initiated_submit = false;
+
+var handler = function runSubmitHandlers() {
+	
+	user_initiated_submit = true;
+	$(on_submit_handlers).each(function(key, func) {
+	
+		func();
+	});
+};
+
+// Because jQuery isn't loaded up yet :B)
+window.onload = function() { $(".btn-primary").click(handler); }
+
+</script>
+
+<div data-module="custom-fields">
+    
+	{# Override default metadata-functionality (add all fields that already have input then up to three more empty ones) and just add these set fields. #}
+
+	{{ hri_form.text(extras, 'title_se', _('Title (se)'), errors, 0) }}
+	{{ hri_form.text(extras, 'title_en', _('Title (en)'), errors, 1) }}
+	{{ hri_form.textarea(extras, 'notes_se', _('Notes (se)'), errors, 2) }}
+	{{ hri_form.textarea(extras, 'notes_en', _('Notes (en)'), errors, 3) }}
+	{{ hri_form.text(extras, 'taxonomy_url', _('Taxonomy URL'), errors, 4) }}
+	{{ hri_form.text(extras, 'agency', _('Agency'), errors, 5) }}
+	{{ hri_form.text(extras, 'source', _('Source'), errors, 6) }}
+	{{ hri_form.textarea(extras, 'search_info', _('Search Info'), errors, 7) }}
+	{{ hri_form.text(extras, 'external_reference', _('External reference'), errors, 8) }}
+	{{ hri_form.text(extras, 'external_reference_se', _('External reference (se)'), errors, 9) }}
+	{{ hri_form.text(extras, 'external_reference_en', _('External reference (en)'), errors, 10) }}
+	{{ hri_form.date(extras, 'date_released', _('Date released'), errors, 11) }}
+	{{ hri_form.date(extras, 'date_updated', _('Date updated'), errors, 12) }}
+	{{ hri_form.text(extras, 'update_frequency', _('Update frequency'), errors, 13) }}
+
+	{{ hri_form.multiselect(extras, 'geographic_granularity', geographic_granularity_options, _('Geographic granularity'), errors, 14) }}
+	{{ hri_form.multiselect(extras, 'geographic_coverage', state_options, _('Geographic coverage'), errors, 15) }}
+	{{ hri_form.multiselect(extras, 'temporal_granularity', temporal_granularity_options, _('Temporal granularity'), errors, 16) }}
+	{{ hri_form.multiselect(extras, 'categories', category_options, _('Categories'), errors, 17) }}
+
+	{{ hri_form.date(extras, 'temporal_coverage-from', _('Temporal coverage from'), errors, 18) }}
+	{{ hri_form.date(extras, 'temporal_coverage-to', _('Temporal coverage to'), errors, 19) }}
+
+</div>

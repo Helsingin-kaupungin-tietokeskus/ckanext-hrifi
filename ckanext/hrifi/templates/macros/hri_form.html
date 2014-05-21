@@ -1,0 +1,151 @@
+{#
+
+ HRI specific form helper.
+
+Examples:
+
+  {% import 'macros/hri_form.html' as hri_form %}
+  {{ ... form.input('title', label=_('Title'), value=data.title, error=errors.title) }}
+
+#}
+
+{% if not form %}{% import "macros/form.html" as form %}{% endif %}
+
+{#
+Creates all the markup required for an custom key/value input. These are usually
+used to let the user provide custom meta data. Each "field" has three inputs
+one for the key, one for the value and a checkbox to remove it. So the arguments
+for this macro are nearly all tuples containing values for the
+(key, value, delete) fields respectively.
+
+name        - A tuple of names for the three fields.
+id          - An id string to be used for each input.
+label       - The human readable label for the main label.
+values      - A tuple of values for the (key, value, delete) fields. If delete
+              is truthy the checkbox will be checked.
+placeholder - A tuple of placeholder text for the (key, value) fields.
+error       - A list of error strings for the field or just true to highlight the field.
+classes     - An array of classes to apply to the control-group.
+
+Examples:
+
+  {% import 'macros/hri_form.html' as hri_form %}
+  {{ hri_form.custom(
+    names=('custom_key', 'custom_value', 'custom_deleted'),
+    id='field-custom',
+    label=_('Custom Field'),
+    values=(extra.key, extra.value, extra.deleted),
+    error=''
+  ) }}
+#}
+{% macro custom(names=(), id="", label="", values=(), placeholders=(), error="", classes=[], tagtype='input', inputtype='text', options=[], multiple=false) %}
+  {%- set classes = (classes|list) -%}
+  {%- set label_id = (id or names[0]) ~ "-key" -%}
+  {%- set extra_html = caller() if caller -%}
+  {%- do classes.append('control-custom') -%}
+
+  {% call form.input_block(label_id, label or name, error, classes, control_classes=["editor"], extra_html=extra_html) %}
+    <div class="input-prepend">
+      <input id="{{ id or names[0] }}-key" type="hidden" name="{{ names[0] }}" value="{{ values[0] | empty_and_escape }}" placeholder="{{ placeholders[0] }}" />
+	  
+	  {% if tagtype == 'select' %}
+        <!-- Add a dummy value "" for select fields so CKAN does not complain when there's nothing selected in it. -->
+	    <input id="dummy_value_{{ id or names[1] }}-key" type="hidden" name="{{ names[1] }}" value="" />
+		<script type="text/javascript">
+		  /** This little friend disables our hidden field above if there are selected options within the select field below. This is to prevent saving of empty values "".*/
+		  on_submit_handlers.push(function() { 
+
+			if(user_initiated_submit === true && $("#{{ id or names[1] }}-value :selected").size() > 0) {
+			
+			  $("#dummy_value_{{ id or names[1] }}-key").attr("disabled", "disabled");
+			}
+		  });
+		</script>
+	  {% endif %}
+      
+	  <{{ tagtype }}
+	    id="{{ id or names[1] }}-value"
+		{% if tagtype == 'input' %}
+		  type="{{ inputtype }}"
+		  {% if inputtype == 'date' %}class="datefield"{% endif %}
+	    {% elif tagtype == 'select' %}
+		  {% if multiple %}multiple="multiple"{% endif %}
+		{% endif %}
+		name="{{ names[1] }}"
+		{% if tagtype != 'textarea' %}value="{{ values[1] | empty_and_escape }}"{% endif %}
+		placeholder="{{ placeholders[1] }}">{% if tagtype == 'select' %}
+		
+		{% for option in options %}
+		  
+		  <option value="{{ option }}" {% if values[1] == option or option in values[1] %}selected="selected"{% endif %}>{{ option }}</option>
+		  
+		{% endfor %}
+		
+      {% endif %}{% if tagtype == 'textarea' %}{{ values[1] }}{% endif %}</{{ tagtype }}>
+    </div>
+  {% endcall %}
+{% endmacro %}
+
+
+{% macro hri_input(extras, name, label, errors, index, tagtype='input', inputtype='text', caller='', options=[], multiple=false) %}
+  
+  {% set index = index + (extras|count) %}
+  {% set prefix = 'extras__%d__' % index %}
+
+  {% set matched = 0 %}
+  {# Traverse extras list to find correct values (if any exist for this field name). #}
+  {% for extra in extras %}
+    {% if extra.key == name %}
+	  
+	  {% set matched = 1 %}
+	  {% call custom(
+		names = (prefix ~ 'key', prefix ~ 'value', prefix ~ 'deleted', name),
+		id = 'field-extras-%d' % index,
+		label = label,
+		values = (extra.key, extra.value, extra.deleted),
+		error = errors[prefix ~ 'key'] or errors[prefix ~ 'value'],
+		classes = [],
+		tagtype = tagtype,
+		inputtype = inputtype,
+		options = options, 
+		multiple = multiple
+	  ) %}{% endcall %}
+	  
+	{% elif matched == 0 %}
+	  
+	  {% if loop.index0 == (extras|length - 1) %}
+	    
+	    {% call custom(
+	      names = (prefix ~ 'key', prefix ~ 'value', prefix ~ 'deleted'),
+	      id = 'field-extras-%d' % index,
+	      label = label,
+	      values = (name, '', ''),
+	      error = errors[prefix ~ 'key'] or errors[prefix ~ 'value'],
+	      classes = [],
+	      tagtype = tagtype,
+	      inputtype = inputtype,
+	      options = options, 
+	      multiple = multiple
+	    ) %}{% endcall %}
+	  
+	  {% endif %}
+	  
+	{% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro text(extras, name, label, errors, index) %}
+  {% call hri_input(extras, name, label, errors, index, tagtype='input', inputtype='text') %}{% endcall %}
+{% endmacro %}
+
+{% macro textarea(extras, name, label, errors, index) %}
+  {% call hri_input(extras, name, label, errors, index, tagtype='textarea', inputtype='') %}{% endcall %}
+{% endmacro %}
+
+{% macro date(extras, name, label, errors, index) %}
+  {% call hri_input(extras, name, label, errors, index, tagtype='input', inputtype='date') %}{% endcall %}
+{% endmacro %}
+
+{% macro multiselect(extras, name, options, label, errors, index) %}
+  {% call hri_input(extras, name, label, errors, index, tagtype='select', inputtype='', options=options, multiple=true) %}{% endcall %}
+{% endmacro %}

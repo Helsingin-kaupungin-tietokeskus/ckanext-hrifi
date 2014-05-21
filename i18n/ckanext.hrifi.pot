@@ -1,0 +1,896 @@
+# Translations template for ckan-hrifi.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the ckan-hrifi project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ckan-hrifi 1.3\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-01-14 09:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/hrifi/hri_auth.py:70
+msgid "Harvesters are not authorized to see non active datasets"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:76
+msgid "Harvesters are not authorized to edit groups"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:82
+msgid "Harvesters are not authorized to delete groups"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:88
+msgid "Harvesters are not authorized to create groups"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:95 ckanext/hrifi/hri_auth.py:101
+msgid "Harvesters are not authorized to create packages"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:107 ckanext/hrifi/hri_auth.py:113
+msgid "Harvesters are not authorized to update packages"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:119
+msgid "Harvesters are not authorized to delete packages"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:125
+msgid ""
+"You cannot register for this\n"
+"        site."
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:135
+msgid "You must be logged in see the site"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:93
+msgid "title_se"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:94
+msgid "title_en"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:95
+msgid "external_reference"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:96
+msgid "external_reference_se"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:97
+msgid "external_reference_en"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:98
+msgid "notes_se"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:99
+msgid "notes_en"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:100
+msgid "date_released"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:101
+msgid "date_updated"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:102
+msgid "update_frequency"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:103
+msgid "geographic_granularity"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:104
+msgid "geographic_coverage"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:105
+msgid "temporal_granularity"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:106
+msgid "temporal_coverage-from"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:107
+msgid "temporal_coverage-to"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:108
+msgid "categories"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:109
+msgid "taxonomy_url"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:110
+msgid "agency"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:111
+msgid "search_info"
+msgstr ""
+
+#: ckanext/hrifi/schema.py:112
+msgid "source"
+msgstr ""
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:36
+#, python-format
+msgid "Unauthorized to read or create package %s"
+msgstr ""
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:38
+#: ckanext/hrifi/controllers/hri_package_controller.py:66
+msgid "Dataset not found"
+msgstr ""
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:64
+#, python-format
+msgid "Unauthorized to read package %s"
+msgstr ""
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:68
+msgid "Integrity Error"
+msgstr ""
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:70
+msgid "Unable to add package to search index."
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:12
+msgid "Sysadmin settings"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:18
+msgid "View profile"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:24
+#, python-format
+msgid "Dashboard (%(num)d new item)"
+msgid_plural "Dashboard (%(num)d new items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/hrifi/templates/header.html:32
+msgid "Edit settings"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:39
+msgid "Log out"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:51
+msgid "Log in"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:90
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:91
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:239
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:92
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:28
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:240
+msgid "Groups"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:93
+msgid "About"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:96
+msgid "Multiedit"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:104
+msgid "Search Datasets"
+msgstr ""
+
+#: ckanext/hrifi/templates/header.html:105 ckanext/hrifi/templates/header.html:106
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:7
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:10
+msgid "Search"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/copy.html:9
+#: ckanext/hrifi/templates/package/snippets/package_form.html:44
+msgid "Copy"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:2
+msgid "Additional Info"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:6
+msgid "Field"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:7
+msgid "Value"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:14
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:90
+msgid "Source"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:21
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:26
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:6
+msgid "Author"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:45
+msgid "Version"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:52
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:28
+msgid "State"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:4
+msgid "Title"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:13
+msgid "URL"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:32
+msgid "Draft"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:35
+msgid "Completed Draft"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:38
+msgid "Active"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:46
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:49
+msgid "Description"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:46
+msgid "eg. Some useful notes about the data"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:241
+msgid "Tags"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:51
+msgid "eg. economy, mental health, government"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:57
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:243
+msgid "License"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:67
+msgid ""
+" License definitions and additional information can be found at <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:96
+msgid "Organization"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:99
+msgid "No organization"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:113
+msgid "Visibility"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:116
+msgid "Private"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:116
+msgid "Public"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_copy_form.html:11
+#: ckanext/hrifi/templates/package/snippets/package_form.html:28
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:35
+msgid ""
+"Important: By submitting content, you agree to release your contributions "
+"under the Open Database License."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_copy_form.html:20
+msgid "Save"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_form.html:37
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:44
+msgid "Are you sure you want to delete this dataset?"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_form.html:38
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:72
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:45
+msgid "Delete"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_form.html:42
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:49
+msgid "Cancel"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_form.html:45
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:51
+msgid "Next: Add Data"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:6
+msgid "Joe Bloggs"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:8
+msgid "Author Email"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:8
+msgid "joe@example.com"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:41
+msgid "Add Group"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:32
+msgid "Link to a file"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:35
+msgid "Link to an API"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:41
+msgid "Resource"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:41
+msgid "eg. http://example.com/gold-prices-jan-2011.json"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:45
+msgid "Name"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:45
+msgid "eg. January 2011 Gold Prices"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:49
+msgid "Some useful notes about the data"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:54
+msgid "Format"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:54
+msgid "eg. CSV, XML or JSON"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:57
+msgid "This is generated automatically. You can edit if you wish"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:64
+msgid "File Size"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:64
+msgid "eg. 1024"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:71
+msgid "Are you sure you want to delete this resource?"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:78
+msgid "Previous"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:81
+msgid "Save & add another"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:83
+msgid "Next: Additional Info"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resource_form.html:85
+msgid "Add"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:23
+msgid "Alue"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:24
+msgid "Asuminen"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:25
+msgid "Demokratia ja osallistuminen"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:26
+msgid "Elinkeinot"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:27
+msgid "Elinolot"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:28
+msgid "Energia- ja vesihuolto"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:29
+msgid "Julkiset palvelut"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:30
+msgid "Kartat"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:31
+msgid "Kaupunkihistoria"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:32
+msgid "Kiinteistöt"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:33
+msgid "Koulutus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:34
+msgid "Kulttuuri"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:35
+msgid "Kunnallistalous"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:36
+msgid "Liikenne"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:37
+msgid "Maankäyttö"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:38
+msgid "Muut palvelut"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:39
+msgid "Oikeuslaitos ja turvallisuus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:40
+msgid "Rakennukset"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:41
+msgid "Rakentaminen"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:42
+msgid "Sosiaalitoimi"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:43
+msgid "Talous"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:44
+msgid "Terveys"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:45
+msgid "Tulot ja kulutus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:46
+msgid "Työmarkkinat"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:47
+msgid "Vapaa-aika"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:48
+msgid "Väestö ja väestönmuutokset"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:49
+msgid "Ympäristö"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:50
+msgid "Yritykset"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Helsingin seutu (kaikki)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Helsinki"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Espoo"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Vantaa"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Kauniainen"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Hyvinkää"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Järvenpää"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Kerava"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Kirkkonummi"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Nurmijärvi"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Mäntsälä"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Sipoo"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Pornainen"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Tuusula"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+msgid "Vihti"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Valtio"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Seutu"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Kunta"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Tilastoalue"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Ruutu"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+msgid "Piste"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+msgid "vuosi"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+msgid "vuosineljännes"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+msgid "kuukausi"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:84
+msgid "Title (se)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:85
+msgid "Title (en)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:86
+msgid "Notes (se)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:87
+msgid "Notes (en)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:88
+msgid "Taxonomy URL"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:89
+msgid "Agency"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:91
+msgid "Search Info"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:92
+msgid "External reference"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:93
+msgid "External reference (se)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:94
+msgid "External reference (en)"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:95
+msgid "Date released"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:96
+msgid "Date updated"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:97
+msgid "Update frequency"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:99
+msgid "Geographic granularity"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:100
+msgid "Geographic coverage"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:101
+msgid "Temporal granularity"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:102
+msgid "Categories"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:104
+msgid "Temporal coverage from"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:105
+msgid "Temporal coverage to"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/facet_list.html:53
+msgid "Clear All"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/facet_list.html:75
+msgid "Show More {facet_type}"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/facet_list.html:77
+msgid "Show Only Popular {facet_type}"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/facet_list.html:81
+msgid "There are no {facet_type} that match this search"
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:3
+#: ckanext/hrifi/templates/user/login.html:6
+#: ckanext/hrifi/templates/user/login.html:12
+msgid "Login"
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:22
+msgid "Need an Account?"
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:24
+msgid "Then sign right up, it only takes a minute."
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:26
+msgid "Create an Account"
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:32
+msgid "Forgotten your details?"
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:34
+msgid "No problem, use our password recovery form to reset it."
+msgstr ""
+
+#: ckanext/hrifi/templates/user/login.html:36
+msgid "Forgot your password?"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:38
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:115
+msgid "Not authorized to see this page"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:242
+msgid "Formats"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:308
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:326
+msgid "Access denied."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:310
+msgid "Package not found."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:312
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:330
+msgid "Validation error."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:328
+msgid "Group not found."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:10
+msgid "Multiedit search -"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:63
+msgid "Choose groups to edit."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:76
+msgid "Cannot add any groups."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:79
+msgid "Add selected datasets to groups"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:80
+msgid "Remove selected datasets from groups"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:81
+msgid "Select the data packages you wish to update by ticking the checkboxes below."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:89
+msgid ""
+"[1:There was an error while searching.] \n"
+"            Please try again."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:93
+#, python-format
+msgid "[1:%(item_count)s] datasets found"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:96
+msgid "Would you like to [1:create a new dataset?]"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
+msgid "Too many results found, try narrowing down the search (at max"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
+msgid "results shown)."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:104
+msgid "Ignore limit (search may take longer)."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:113
+msgid "First"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:114
+msgid "Prev"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:116
+msgid "Next"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:117
+msgid "Last"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:118
+msgid "Show:"
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:157
+msgid "Check here if you want to add to field instead of replacing its value."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:158
+msgid "Please select packages to update."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:159
+msgid "Updating selected datasets, please wait."
+msgstr ""
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:6
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:9
+msgid "Search..."
+msgstr ""
+
