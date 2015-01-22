@@ -1,0 +1,105 @@
+{% extends "package/read_base.html" %}
+
+{% set pkg = c.pkg_dict %}
+{%- if not hri_lang -%}
+  {%- set base_url = h.url('/', qualified=true) -%}
+  {%- set hri_lang = base_url.split('/')[3] -%}
+{%- endif -%}
+
+{% set localized_title = h.solve_localized_value('title', hri_lang, pkg.extras, pkg.title or pkg.name) -%}
+{% set localized_notes = h.solve_localized_value('notes', hri_lang, pkg.extras, c.pkg_notes_formatted) -%}
+{% if pkg.license_title == 'Lisenssi ilmoitettu tietoaineiston ylläpitäjän palvelussa' -%}
+  {% set localized_license_title = _('License details are available directly from the author’s source.') -%}
+{% else -%}
+  {% set localized_license_title = pkg.license_title -%}
+{% endif -%}
+
+
+{% block primary_content_inner %}
+
+  {{ super() }}
+
+  {% block package_description %}
+    {% if pkg.private %}
+      <span class="dataset-private label label-inverse pull-right">
+        <i class="icon-lock"></i>
+        {{ _('Private') }}
+      </span>
+    {% endif %}
+    <h1>
+      {% block page_heading %}
+
+      {# If we're browsing as English, search for relevant title and notes if available. #}
+      {{ localized_title }}
+      {% if pkg.state.startswith('draft') %}
+        [{{ _('Draft') }}]
+      {% endif %}
+      {% endblock %}
+    </h1>
+    {% block package_notes %}
+    {% if localized_notes %}
+      <div class="notes embedded-content">
+        {{ h.format_notes(localized_notes)|safe }}
+      </div>
+    {% endif %}
+    {% endblock %}
+    {# FIXME why is this here? seems wrong #}
+    <span class="insert-comment-thread"></span>
+  {% endblock %}
+
+  {% block package_resources %}
+    {% snippet "package/snippets/resources_list.html", pkg=pkg, resources=pkg.resources %}
+  {% endblock %}
+
+  {% block package_tags %}
+    
+    {% block source_reference_generator %}
+
+      {# Lähdeviitegeneraattori alias Source Reference Generator, HRI-85. @TODO Make this into a snippet. #}
+
+      {# Search extras for source. #}
+      {% for extra in pkg.extras %}
+        {% if extra.key == 'source' %}
+          {% set source = extra.value %}
+
+          {% set timestamp = h.now('%d.%m.%Y') %}
+
+          <hr>
+
+          <h3 class="subtitles">{{ _('Source reference to the dataset') }}</h3>
+          {{ _('Source') }}: <a href="{{ h.url(controller='package', action='read', id=c.pkg.name) }}">{{ localized_title }}</a>.
+          {% if source and pkg.license_url %}
+            
+            {% trans author=pkg.author, source=source, url='www.hri.fi', timestamp=timestamp, license_url=pkg.license_url, license_title=localized_license_title %}The administrator of this data is {{ author }} and the original creator is {{ source }}. The data has been downloaded from the <a href="http://{{ url }}">Helsinki Region Infoshare</a> service {{ timestamp }} using the license <a href="{{ license_url }}">{{ license_title }}</a>.{% endtrans %}
+
+          {% elif pkg.license_url %}
+            
+            {% trans author=pkg.author, url='www.hri.fi', timestamp=timestamp, license_url=pkg.license_url, license_title=localized_license_title %}The administrator of this data is {{ author }}. The data has been downloaded from the <a href="http://{{ url }}">Helsinki Region Infoshare</a> service {{ timestamp }} using the license <a href="{{ license_url }}">{{ license_title }}</a>.{% endtrans %}
+
+          {% elif source %}
+            
+            {% trans author=pkg.author, source=source, url='www.hri.fi', timestamp=timestamp, license_url=pkg.license_url, license_title=localized_license_title %}The administrator of this data is {{ author }} and the original creator is {{ source }}. The data has been downloaded from the <a href="http://{{ url }}">Helsinki Region Infoshare</a> service {{ timestamp }}. {{ license_title }}.{% endtrans %}
+
+          {% else %}
+
+            {% trans author=pkg.author, url='www.hri.fi', timestamp=timestamp, license_title=localized_license_title %}The administrator of this data is {{ author }}. The data has been downloaded from the <a href="http://{{ url }}">Helsinki Region Infoshare</a> service {{ timestamp }}. {{ license_title }}.{% endtrans %}
+          
+          {% endif %}
+
+          <hr>
+
+        {% endif %}
+      {% endfor %}
+    {% endblock %}
+
+    {% if pkg.tags %}<h3 class="subtitles">{{ _('Tags') }}</h3>{% endif %}
+
+    {% snippet "package/snippets/tags.html", tags=pkg.tags %}
+
+  {% endblock %}
+
+  {% block package_additional_info %}
+    {% snippet "package/snippets/additional_info.html", pkg_dict=pkg %}
+  {% endblock %}
+
+{% endblock %}

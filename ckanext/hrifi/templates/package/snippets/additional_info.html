@@ -1,5 +1,18 @@
+{%- set base_url = h.url('/', qualified=true) -%}
+{%- set hri_lang = base_url.split('/')[3] -%}
+
+{% set english_titles = {
+  'agency': 'Agency', 'categories': 'Categories', 'date_released': 'Released Date',
+  'date_updated': 'Updated date', 'external_reference': 'External Reference', 'external_reference_se': 'External Reference (se)',
+  'external_reference_en': 'External Reference (en)', 'geographic_coverage': 'Geographic Coverage', 'geographic_granularity': 'Geographic Granularity',
+  'notes_en': 'Notes (en)', 'notes_se': 'Notes (se)', 'source': 'Source',
+  'taxonomy_url': 'Taxonomy URL', 'temporal_coverage-from': 'Temporal Coverage From', 'temporal_coverage-to': 'Temporal Coverage To',
+  'temporal_granularity': 'Temporal Granularity', 'title_en': 'Title (en)', 'title_se': 'Title (se)',
+  'update_frequency': 'Update Frequency'
+} %}
+
 <section class="additional-info">
-  <h3>{{ _('Additional Info') }}</h3>
+  <h3 class="subtitles">{{ _('Additional Info') }}</h3>
   <table class="table table-striped table-bordered table-condensed">
     <thead>
       <tr>
@@ -11,7 +24,7 @@
       {% block package_additional_info %}
       {% if pkg_dict.url %}
         <tr>
-          <th scope="row" class="dataset-label">{{ _('Source') }}</th>
+          <th scope="row" class="dataset-label">{{ _('Home Page') }}</th>
           <td class="dataset-details" property="foaf:homepage">{{ h.link_to(pkg_dict.url, pkg_dict.url, rel='foaf:homepage', target='_blank') }}</td>
         </tr>
       {% endif %}
@@ -54,15 +67,31 @@
         </tr>
       {% endif %}
 
-      {% for extra in h.sorted_extras(pkg_dict.extras) %}
-        {% set key, value = extra %}
-		{% set value = value|replace('{', '')|replace('[', '')|replace('"', '')|replace(']', '')|replace('}', '')|replace(',', ', ') %}
-        <tr rel="dc:relation" resource="_:extra{{ i }}">
-          <th scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</th>
-          <td class="dataset-details" property="rdf:value">{{ value }}</td>
+      {% if hri_lang != 'fi' %}
+        <tr>
+          <th scope="row" class="dataset-label">{{ _("Title") }} (fi)</th>
+          <td class="dataset-details">{{ pkg_dict.title }}</td>
         </tr>
-        {% endfor %}
+        <tr>
+          <th scope="row" class="dataset-label">{{ _("Notes") }} (fi)</th>
+          <td class="dataset-details">{{ pkg_dict.notes }}</td>
+        </tr>
+      {% endif %}
+
+      {% for extra in h.sorted_extras(pkg_dict.extras) %}
+        {% set key, value = extra %}        
+        {% if 'harvest' not in key %}{# Hide harvester related fields. #}
+          {% set value = value|replace('{', '')|replace('[', '')|replace('"', '')|replace(']', '')|replace('}', '')|replace(',', ', ') %}
+          <tr rel="dc:relation" resource="_:extra{{ i }}">
+            <th scope="row" class="dataset-label" property="rdfs:label">{% if hri_lang == 'en' and key in english_titles %}{{ english_titles[key] }}{% else %}{{ _(key) }}{% endif %}</th>
+            <td class="dataset-details" property="rdf:value">{{ value }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
       {% endblock %}
     </tbody>
   </table>
+
+  {% snippet 'snippets/comments.html', package_name = pkg_dict.name %}
+
 </section>

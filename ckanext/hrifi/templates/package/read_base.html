@@ -1,0 +1,161 @@
+{% ckan_extends %}
+
+{% block content_primary_nav %}
+  {{ h.build_nav_icon('dataset_read', _('Dataset'), id=pkg.name) }}
+  {# h.build_nav_icon('dataset_activity', _('Activity Stream'), id=pkg.name) }}
+  {{ h.build_nav_icon('related_list', _('Related'), id=pkg.name) #}
+{% endblock %}
+
+{% block secondary_content %}
+  
+  {% block google_analytics_visualization %}
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", { packages: ["corechart", "imagesparkline"] });
+</script>
+
+<script type='text/javascript'>
+
+function renderGAData(data) {
+
+      $("#views-loader").hide();
+
+      var viewcount = 0;
+      $(data).each(function(i, dataset) {
+        
+        if(i == 0) {
+          $(dataset).each(function(i, days_data) {
+            viewcount += days_data[1];
+          });
+
+          if(viewcount) { $("#ga-30d-view-count").html($("#ga-30d-view-count").html().replace('-', viewcount)); }
+        }
+
+        // Add headers to the beginning.
+        dataset.unshift(["{{ _('Day') }}", "{{ _('Page Views') }}", "{{ _('Downloads') }}"]);
+        dataset = google.visualization.arrayToDataTable(dataset);
+
+        var options = {
+            title: '',
+            height: '90',
+            width: '220',
+            colors: ['#084169', '#74c16d'],
+            vAxis :{
+                gridlines: {
+                    count:5
+                }
+            },
+            hAxis: {
+                textPosition: 'none',
+                gridlines: {
+                    count : 4
+                }
+            },
+            vAxis: {
+              minValue: 4
+            },
+            legend: {
+                position: 'bottom'
+            }
+        };
+
+        var new_div = document.createElement("div");
+        new_div.setAttribute('id', 'chart_div_' + i);
+        document.getElementById('chart_div').appendChild(new_div);
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div_' + i));
+        chart.draw(dataset, options);
+      });
+}
+
+function onCommentSuccess() {
+
+  // HRI-112: Client requested comment form to be emptied on success.
+  $("#author").val("");
+  $("#email").val("");
+  $("#comment").val("");
+
+  // Clear comment reply
+  $("#comment_parent").val(0);
+  $("#cancel-comment-reply-link").hide();
+}
+
+// Because jQuery isn't loaded up yet :B)
+window.onload = function() {
+
+  // Render a dummy chart first, thus the page won't look so empty before the Ajax is done.
+  
+  var i;
+  var gadata = [];
+  for(i = 0; i < 30; i++) { gadata.push(["", 0, 0]); }
+  gadata = [gadata];
+  renderGAData(gadata);
+
+  // Get Google Analytics data from WordPress and use it to draw a chart.
+  var params = {
+    action: 'hri_dataset',
+    slug: '{{ pkg.name }}',
+    lang: '{{ hri_lang }}'
+  }
+  $.ajax({
+    url: 'http://{{ h.wordpress_url() }}/wp-admin/admin-ajax.php',
+    type: 'POST',
+    data: params,
+    success: function(response) {
+
+      responses = response.split('~');
+      gadata = $.parseJSON(responses[0]);
+      relatedapps = responses[1];
+      post_id = responses[2];
+      var comments_options = {
+        // packagename: '{{ pkg.name }}',
+        post_id:     post_id,
+        comments:    $.parseJSON(responses[3]),
+        xmlrpcurl:   'http://{{ h.wordpress_url() }}',
+        oncommentsuccess: onCommentSuccess,
+        phrases:     {
+          no_wp_id_found:    "{{ _('Commenting is unavailable for this dataset.') }}",
+          reply:             "{{ _('Reply') }}",
+          report:            "{{ _('Report inappropriate content') }}",
+          already_said:      "{{ _('Duplicate comment detected; it looks as though you\'ve already said that!') }}",
+          subscribe_success: "{{ _('Successfully subscribed to comments on this page.') }}",
+          subscribe_rem:     "{{ _('Your subscription to comments on this page was succesfully removed.') }}",
+          subscribe_remall:  "{{ _('Succesfully removed all your subscriptions to comments on this site.') }}",
+          subscribe_fail:    "{{ _('Already subscribed to post\'s comments.') }}",
+          subscribe_remfail: "{{ _('Cannot remove a non-existing subscription.') }}"
+        }
+      }
+
+      renderGAData(gadata);
+      $("#related_apps").html(relatedapps);
+      $.comments(comments_options);
+    }
+  });
+}
+</script>
+
+    <div class="terms-list" style="margin-left: 15px;">
+        <h6>{{ _('Page Views and Downloads') }}</h6>
+        <img src="/fi/wp-content/themes/hri2/img/ajax-loader2.gif" id="views-loader" width="180"></img>
+        <div style="width:245px; overflow: hidden; margin-left: -15px;" class="google_sparklines" id="chart_div"></div>
+        <div style="font-size:0.9em;" id="ga-30d-view-count">{{ _('This page has - views during the last 30 days.') }}</div>
+        <div style="font-size:0.8em;">{{ _('(Updated daily.)') }}</div>
+    </div>
+
+  {% endblock %}
+
+  {% block package_license %}{{ super() }}{% endblock %}
+
+  {% block secondary_help_content %}{% endblock %}
+
+  {% block package_info %}{# Removed as per client request, see HRI-108. #}{% endblock %}
+
+  {% block package_organization %}{{ super() }}{% endblock %}
+
+  {% block package_groups %}{{ super() }}{% endblock %}
+
+  {% block package_social %}{{ super() }}{% endblock %}
+
+  <section class="module module-narrow" id="related_apps"><img src="/fi/wp-content/themes/hri2/img/ajax-loader2.gif" id="related-loader" width="180"></img></section>
+
+{% endblock %}

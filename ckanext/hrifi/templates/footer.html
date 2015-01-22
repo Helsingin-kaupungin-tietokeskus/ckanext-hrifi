@@ -1,0 +1,67 @@
+{% ckan_extends %}
+
+{%- set wp_url = h.wordpress_url() -%}
+{%- set base_url = h.url('/', qualified=true) -%}
+{%- set hri_lang = base_url.split('/')[3] -%}
+
+{% block footer_content %}
+	<div class="top-scroll">
+		<div class="hri-wrapper rel">
+			<a href="#top"></a>
+		</div>
+	</div>
+
+	<div class="footer-col footer-col-1st">
+		<div id="copyright">
+			<img id="logo-footer" src="http://{{ wp_url }}/fi/wp-content/themes/hri2/img/logo-footer.png" alt="Helsinki Region Infoshare"/>
+			<div>
+				<em>© Helsinki Region Infoshare</em>{{ _('Some rights reserved.') }}
+			</div>
+		</div>
+		<div id="site-search">
+			<form action="{{ base_url }}" id="searchform" method="get" role="search" class="hri-search">
+				<input type="text" placeholder="{{ _('Search the site...') }}" id="s" name="s" value="" class="hri-input">
+				<input type="submit" value="Hae" id="searchsubmit" class="hri-submit">
+			</form>
+		</div>
+		{% if hri_lang != 'en' and hri_lang != 'sv' %}
+		<nav class="footer-nav">
+			<ul>
+				<li class=""><a href="http://{{ wp_url }}/fi/hri-projekti/yhteystiedot/">Yhteystiedot</a></li>
+				<li class=""><a href="http://{{ wp_url }}/fi/kayttoehdot/">Käyttöehdot</a></li>
+				<li class=""><a href="http://www.hel.fi/static/helsinki/rekisteriselosteet/tieke/Tieke-asiakashallintarekisteri.pdf">Rekisteriseloste</a></li>
+				<li class=""><a href="http://{{ wp_url }}/fi/hri-projekti/verkkopalvelu/">Palvelukuvaus</a></li>
+				<li class=""><a href="http://dev.hel.fi/calendar/month">Tapahtumakalenteri</a></li>
+			</ul>		
+		</nav>
+		{%- elif hri_lang == 'en' -%}
+		<nav class="footer-nav">
+			<ul>
+				<li class=""><a href="http://{{ wp_url }}/en/about/" >About HRI</a></li>
+				<li class=""><a href="http://{{ wp_url }}/en/about/contact-information/">Contact information</a></li>
+				<li class=""><a href="http://{{ wp_url }}/en/terms-and-conditions/">Terms and conditions</a></li>
+				<li class=""><a href="http://dev.hel.fi/calendar/month">Event calendar</a></li>
+			</ul>		
+		</nav>
+		{% endif %}
+	</div>
+	<div class="footer-col footer-col-2nd"></div>
+	<div class="footer-col footer-col-3rd">
+		<nav>
+			<ul>
+				<li><em>{{ _('Follow HRI') }}</em></li>
+				{%- if hri_lang == 'fi' -%}
+				<li><a href="http://{{ wp_url }}/fi/uutiskirje" class="a-email">Uutiskirje</a></li>
+				{%- endif -%}
+				<li><a href="http://{{ wp_url }}/fi/feed" class="a-rss">{{ _('RSS feeds') }}</a></li>
+				<li><a href="http://www.facebook.com/helsinkiregioninfoshare" class="a-facebook">Facebook</a></li>
+				<li><a href="https://twitter.com/HRInfoshare" class="a-twitter">Twitter</a></li>
+				<li><a href="http://www.slideshare.net/helsinkiregioninfoshare" class="a-slideshare">Slideshare</a></li>
+				<li><a href="https://www.youtube.com/user/HRInfoshare" class="a-youtube">Youtube</a></li>
+				<li><a href="https://github.com/Helsingin-kaupungin-tietokeskus" class="a-github">Github</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	{% snippet 'snippets/google_analytics.html', code=h.get_ga_code() %}
+{% endblock %}

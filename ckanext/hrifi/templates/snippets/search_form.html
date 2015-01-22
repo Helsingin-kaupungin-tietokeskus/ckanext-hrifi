@@ -1,0 +1,32 @@
+{% ckan_extends %}
+
+  {% block search_input %}{{ super() }}{% endblock %}
+
+  {% block search_search_fields %}{{ super() }}{% endblock %}
+
+  {% block search_sortby %}{{ super() }}{% endblock %}
+
+  {% block search_title %}{{ super() }}{% endblock %}
+
+  {% block search_facets %}
+    {% if facets %}
+      {#- Note: CKAN search will forget facets when the search for is submitted. The fix (HRI-111) is to include hidden inputs holding the values. -#}
+      {{ h.make_facet_inputs(facets.fields) }}
+      <p class="filter-list">
+        {% for field in facets.fields %}
+          {% set search_facets_items = facets.search.get(field)['items'] %}
+          <span class="facet">{{ facets.titles.get(field)|replace('categories', _('categories'))|replace('None', _('Tags')) }}:</span>
+          {% for value in facets.fields[field] %}
+            <span class="filtered pill">
+              {%- if facets.translated_fields and facets.translated_fields.has_key((field,value)) -%}
+                {{ facets.translated_fields[(field,value)] }}
+              {%- else -%}
+                {{ h.list_dict_filter(search_facets_items, 'name', 'display_name', value) }}
+              {%- endif %}
+              <a href="{{ facets.remove_field(field, value) }}" class="remove" title="{{ _('Remove') }}"><i class="icon-remove"></i></a>
+            </span>
+          {% endfor %}
+        {% endfor %}
+      </p>
+    {% endif %}
+  {% endblock %}

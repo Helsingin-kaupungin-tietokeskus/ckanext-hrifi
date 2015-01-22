@@ -8,52 +8,45 @@ Example:
 
   {% snippet 'snippets/custom_form_fields.html', extras=data.extras, errors=errors, limit=1 %}
 
-#}
-{% import "macros/form.html" as form %}
-{% import "macros/hri_form.html" as hri_form %}
+-#}
+{% import "macros/form.html" as form -%}
+{% import "macros/hri_form.html" as hri_form -%}
 
-{% resource "scripts/jquery-ui.js" %}
-{% resource "scripts/datepicker_fi.js" %}
-{% resource "my_css/jquery-ui.css" %}
+{%- resource "hri-scripts/jquery-ui.js" -%}
+{% resource "hri-scripts/datepicker_fi.js" -%}
+{% resource "hri-css/jquery-ui.css" -%}
 
 {% if extras|length == 0 %}{% set extras = {'dummy': 'dummy'} %}{% endif %}
 
-{# @TODO Refactor this - it's stupid. #}
+{#- @TODO Refactor this - it's stupid. -#}
 {% set category_options = [
-        _('Alue'), 
-        _('Asuminen'), 
-        _('Demokratia ja osallistuminen'), 
-        _('Elinkeinot'), 
-        _('Elinolot'),
-        _('Energia- ja vesihuolto'),
-        _('Julkiset palvelut'),
-        _('Kartat'),
-        _('Kaupunkihistoria'),
-        _('Kiinteistöt'),
-        _('Koulutus'),
+        _('Asuminen'),
+        _('Hallinto'),
+        _('Kaavat ja kiinteistöt'),
+        _('Kartat ja paikkatieto'),
         _('Kulttuuri'),
-        _('Kunnallistalous'),
+        _('Laki ja oikeusturva'),
         _('Liikenne'),
-        _('Maankäyttö'),
-        _('Muut palvelut'),
-        _('Oikeuslaitos ja turvallisuus'),
-        _('Rakennukset'),
+        _('Liikunta ja ulkoilu'),
+        _('Matkailu'),
+        _('Neuvonta'),
+        _('Opetus ja koulutus'),
         _('Rakentaminen'),
-        _('Sosiaalitoimi'),
-        _('Talous'),
+        _('Sosiaalipalvelut'),
+        _('Talous ja verotus'),
         _('Terveys'),
-        _('Tulot ja kulutus'),
-        _('Työmarkkinat'),
-        _('Vapaa-aika'),
-        _('Väestö ja väestönmuutokset'),
-        _('Ympäristö'),
-        _('Yritykset')] %}
+        _('Tietotekniikka'),
+        _('Turvallisuus'),
+        _('Työ ja elinkeinot'),
+        _('Väestö'),
+        _('Ympäristö ja luonto')
+] -%}
 
-{% set state_options = [_('Helsingin seutu (kaikki)'), _('Helsinki'), _('Espoo'), _('Vantaa'), _('Kauniainen'), _('Hyvinkää'), _('Järvenpää'), _('Kerava'), _('Kirkkonummi'), _('Nurmijärvi'), _('Mäntsälä'), _('Sipoo'), _('Pornainen'), _('Tuusula'), _('Vihti')] %}
+{%- set state_options = [_('Helsingin seutu (kaikki)'), _('Helsinki'), _('Espoo'), _('Vantaa'), _('Kauniainen'), _('Hyvinkää'), _('Järvenpää'), _('Kerava'), _('Kirkkonummi'), _('Nurmijärvi'), _('Mäntsälä'), _('Sipoo'), _('Pornainen'), _('Tuusula'), _('Vihti')] -%}
 
-{% set geographic_granularity_options = [_('Valtio'), _('Seutu'), _('Kunta'), _('Tilastoalue'), _('Ruutu'), _('Piste')] %}
+{%- set geographic_granularity_options = [_('Valtio'), _('Seutu'), _('Kunta'), _('Tilastoalue'), _('Ruutu'), _('Piste')] -%}
 
-{% set temporal_granularity_options = [_('vuosi'), _('vuosineljännes'), _('kuukausi')] %}
+{%- set temporal_granularity_options = [_('vuosi'), _('vuosineljännes'), _('kuukausi')] -%}
 
 <script type="text/javascript">
 

@@ -1,0 +1,36 @@
+{#- Override as per client request -#}
+{%- if pkg_dict.license_title == 'Lisenssi ilmoitettu tietoaineiston ylläpitäjän palvelussa' %}{% set license_title = _('License details are available directly from the author’s source.') %}{% else %}{% set license_title = pkg_dict.license_title %}{% endif -%}
+{% if pkg_dict.license_id %}
+  {#- HRI-149: CC 4.0 has its own presentation style. -#}
+  {% if pkg_dict.license_id == 'cc-by-4-fi' %}
+    <section class="module module-narrow module-shallow license">
+      <h2 class="module-heading"><i class="icon-medium icon-lock"></i> {{ _('License') }}</h2>
+      <p class="module-content">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fi"><img alt="Creative Commons -lisenssi" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br>
+        {{ _('This work is licensed under a') }} <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fi">{{ _('Creative Commons Attribution 4.0 International license') }}</a>.
+      </p>
+    </section>
+  {% else %}
+    {% if not text_only %}
+      <section class="module module-narrow module-shallow license">
+      <h2 class="module-heading"><i class="icon-medium icon-lock"></i> {{ _('License') }}</h2>
+        <p class="module-content">
+    {% endif %}  
+    {% if 'license_url' in pkg_dict %}
+      <a href="{{ pkg_dict.license_url }}" rel="dc:rights">{{ license_title }}</a>
+    {% else %}
+      <span property="dc:rights">{{ license_title }}</span>
+    {% endif %}
+    {% if not text_only %}
+        {% if pkg_dict.isopen %}
+        <a href="http://opendefinition.org/okd/" title="{{ _('This dataset satisfies the Open Definition.') }}">
+            <img class="open-data" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" />
+          </a>
+          {% endif %}
+        </p>
+      </section>
+    {% endif %}
+  {% endif %}
+{% elif text_only %}
+  {{ _('No License Provided') }}
+{% endif %}

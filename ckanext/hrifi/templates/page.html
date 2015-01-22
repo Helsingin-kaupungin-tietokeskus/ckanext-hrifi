@@ -1,0 +1,21 @@
+{% ckan_extends %}
+
+{%- block page %}
+	<div id="hri-top-wrapper">
+		{%- block header %}
+			{{ super() }}
+		{% endblock -%}
+
+		{%- block content %}
+			{{ super() }}
+		{% endblock -%}
+	</div>
+
+	{%- block footer %}
+		{{ super() }}
+	{% endblock %}
+
+	{%- block scripts %}
+		{{ super() }}
+	{% endblock %}	
+{% endblock -%}

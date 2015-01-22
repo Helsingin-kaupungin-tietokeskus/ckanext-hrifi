@@ -1,115 +1,124 @@
+{% ckan_extends %}
+
+{%- set wp_url = h.wordpress_url() -%}
+{%- set base_url = h.url('/', qualified=true) -%}
+{%- set hri_lang = base_url.split('/')[3] -%}
+
 {% block header_wrapper %}
-<!-- Overridden functionality at ckan-hrifi/ckanext/hrifi/templates/header.html-->
-{% block header_account %}
-  <header class="account-masthead">
-    <div class="container">
-      {% if c.userobj %}
-        <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
-          <ul class="unstyled">
-            {% block header_account_logged %}
-            {% if c.userobj.sysadmin %}
-              <li>
-                <a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
-                  <i class="icon-legal"></i>
-                </a>
-              </li>
-            {% endif %}
-            <li>
-              <a href="{{ h.url_for(controller='user', action='read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
-                {{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=22) }}
-                <span class="username">{{ c.userobj.display_name }}</span>
-              </a>
-            </li>
-            <li class="notifications {% if c.new_activities > 0 %}notifications-important{% endif %}">
-              {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard (%(num)d new items)', c.new_activities) %}
-              <a href="{{ h.url_for(controller='user', action='dashboard') }}" title="{{ notifications_tooltip }}">
-                <i class="icon-dashboard"></i>
-                <span>{{ c.new_activities }}</span>
-              </a>
-            </li>
-            {% block header_account_settings_link %}
-            <li>
-              <a href="{{ h.url_for(controller='user', action='edit', id=c.userobj.name) }}" title="{{ _('Edit settings') }}">
-                <i class="icon-cog"></i>
-              </a>
-            </li>
-            {% endblock %}
-            {% block header_account_log_out_link %}
-            <li>
-              <a href="{{ h.url_for('/user/_logout') }}" title="{{ _('Log out') }}">
-                <i class="icon-signout"></i>
-              </a>
-            </li>
-            {% endblock %}
-            {% endblock %}
-          </ul>
-        </div>
+  {% block header_account %}
+    
+    {#- Using this helper read WordPress URL from the config file (ckan.ini). -#}
+    {#- Let's also declare it as javascript variable, since our new header-functionality in hri.js requires it. -#}
+    <script type="text/javascript">var wordpress_url = "{{ wp_url }}";</script>
+    <script type="text/javascript">var HRI_LANG = "{{ hri_lang }}";</script>
+
+    <header id="hri-header" class="hri-wrapper">
+
+      {% if g.site_logo %}
+        <a href="{{ h.url('home') }}" rel="home" ><img id="hri-logo" src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" /></a>
       {% else %}
-        <nav class="account not-authed">
-          <ul class="unstyled">
-            {% block header_account_notlogged %}
-            <li>{% link_for _('Log in'), controller='user', action='login' %}</li>
-            {# <li>{% link_for _('Register'), controller='user', action='register', class_='sub' %}</li> #}
-            {% endblock %}
+        <a id="hri-logo" href="{{ h.url('home') }}">{{ g.site_title }}</a>
+      {% endif %}
+
+      <div class="hri-header-content right">
+        <nav id="hri-languages" class="right">
+          <a href="/fi/">Suomeksi</a><span> |</span>
+          <a href="/en/">Key points in English</a><span> |</span>
+          <a href="/se/">Kort på svenska</a>
+        </nav>
+
+        <div id="hri-info" class="">
+        </div>
+      </div>
+    </header>
+
+    <div id="main-nav-wrap" {% if '/en/' in base_url %}class="en"{% endif %}>
+      <div id="main-nav-c">
+        <nav id="main-nav" class="hri-wrapper">
+          <ul id="menu-main-navigation" class="menu">
+            {%- if hri_lang == "fi" -%}
+            <li id="menu-item-2201" class="data-parent menu-item menu-item-type-post_type menu-item-object-page menu-item-2201"><a href="http://{{ wp_url }}/fi/dataset?q=&sort=metadata_created+desc" >Datahaku</a></li>
+            <li id="menu-item-2207" class="application-parent menu-item menu-item-type-post_type menu-item-object-page menu-item-2207"><a href="http://{{ wp_url }}/fi/sovellukset/" >Sovellukset</a></li>
+            <li id="menu-item-2116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2116"><a href="http://{{ wp_url }}/fi/category/ajankohtaista/" >Ajankohtaista</a></li>
+            <li id="menu-item-2206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2206"><a href="http://{{ wp_url }}/fi/avaa-dataa/" >Avaa dataa</a></li>
+            <li id="menu-item-2209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2209"><a href="http://{{ wp_url }}/fi/kayta-dataa/" >Käytä dataa</a></li>
+            <li id="menu-item-2187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187"><a href="http://{{ wp_url }}/fi/mita-on-avoin-data/" >Mitä on avoin data</a></li>
+            <li id="menu-item-2186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2186"><a title="Tietoja Helsinki Region Infosharesta ja avoimesta datasta" href="http://{{ wp_url }}/fi/hri-projekti/" >HRI-palvelu</a></li>
+            {%- else -%}
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-674" id="menu-item-674"><a href="http://{{ wp_url }}/en/dataset?q=&amp;sort=metadata_created+desc">Data</a></li>
+            <li id="menu-item-695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-695"><a href="http://{{ wp_url }}/en/applications">Applications</a></li>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-391" id="menu-item-391"><a href="http://{{ wp_url }}/en/category/news/">News</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595" id="menu-item-595"><a href="http://{{ wp_url }}/en/open-data/">About Open Data</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390" id="menu-item-390"><a href="http://{{ wp_url }}/en/about/">About HRI</a></li>
+            {%- endif -%}
+            <li class="finish"></li>
           </ul>
         </nav>
-      {% endif %}
+      </div>
     </div>
-  </header>
-{% endblock %}
-<header class="masthead">
-  {% block header_debug %}
-  {% if g.debug and not g.debug_supress_header %}
-    <div class="debug">Controller : {{ c.controller }}<br/>Action : {{ c.action }}</div>
-  {% endif %}
-  {% endblock %}
-  <div class="container">
-    {# The .header-image class hides the main text and uses image replacement for the title #}
-    <hgroup class="{{ g.header_class }}">
 
-      {% block header_logo %}
-        {% if g.site_logo %}
-          <a class="logo" href="{{ h.url('home') }}"><img src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
-        {% else %}
-          <h1>
-            <a href="{{ h.url('home') }}">{{ g.site_title }}</a>
-          </h1>
-          {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
-        {% endif %}
-      {% endblock %}
+    {% if c.userobj %}
+      {{ super() }}
+    {% else %}
 
-    </hgroup>
-
-    <div class="content">
-
-      {% block header_site_navigation %}
-        <nav class="section navigation">
-          <ul class="nav nav-pills">
-            {% block header_site_navigation_tabs %}
+    <header class="account-masthead">
+      <div class="container">
+        <div data-me="" data-module="me" class="account avatar" style="float: left;">
+          <ul class="unstyled">
             {{ h.build_nav_main(
-              ('search', _('Datasets')),
               ('organizations_index', _('Organizations')),
               ('group_index', _('Groups')),
-              ('about', _('About'))
             ) }}
-            {% endblock %}
-            <li {% if c.apikey %}class="active"{% endif %}><a href="/multiedit">{{ _('Multiedit') }}</a></li>
           </ul>
-        </nav>
-      {% endblock %}
+        </div>
+      </div>
+    </header>
 
-      {% block header_site_search %}
-        <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
-          <div class="field">
-            <label for="field-sitewide-search">{{ _('Search Datasets') }}</label>
-            <input id="field-sitewide-search" type="text" name="q" placeholder="{{ _('Search') }}" />
-            <button class="btn-search" type="submit">{{ _('Search') }}</button>
-          </div>
-        </form>
-      {% endblock %}
-
-    </div>
-  </div>
-</header>
-<!-- Overridden functionality ends at ckan-hrifi/ckanext/hrifi/templates/header.html-->
+    {% endif %}
+    
+  {% endblock %}
 {% endblock %}
+
+{% block header_account_logged %}
+  {% if c.userobj %}
+    
+    {% if h.check_access('package_create') %}
+      <li>
+        {% link_for _('Add Dataset'), controller='package', action='new', icon='plus-sign-alt' %}
+      </li>
+    {% endif %}
+
+    {{ h.build_nav_main(
+      ('organizations_index', _('Organizations')),
+      ('group_index', _('Groups')),
+    )
+    }}
+
+    {% if c.userobj.sysadmin %}
+      <li {% if c.apikey %}class="active"{% endif %}><a href="/{{ hri_lang }}/multiedit">{{ _('Multiedit') }}</a></li>
+
+      <li>
+        <a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
+          <i class="icon-legal"></i>
+        </a>
+      </li>
+    {% endif %}
+    
+    <li>
+      <a href="{% if c.userobj.sysadmin %}{{ h.url_for(controller='user', action='read', id=c.userobj.name) }}{% else %}javascript:void(0);{% endif %}" class="image" {% if c.userobj.sysadmin %}title="{{ _('View profile') }}"{% endif %}>
+        {{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=22) }}
+        <span class="username">{{ c.userobj.display_name }}</span>
+      </a>
+    </li>
+
+    {% block header_account_log_out_link %}{{ super() }}{% endblock %}
+
+  {% endif %}
+{% endblock %}
+
+{# Clearing all from these blocks #}
+{% block header_site_navigation %}{% endblock %}
+{% block header_account_notlogged %}{% endblock %}
+{% block header_site_navigation_tabs %}{% endblock %}
+{% block header_site_search  %}{% endblock %}
+{% block header_logo %}{% endblock %}

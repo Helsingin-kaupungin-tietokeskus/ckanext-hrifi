@@ -15,7 +15,7 @@
 
 {% block package_basic_fields_custom %}
   <div class="control-group homepage-field">
-    <label class="control-label" for="url">Home Page</label>
+    <label class="control-label" for="url">{{ _('Home Page') }}</label>
     <div class="controls">
       <input class="input-xlarge" id="url" name="url" type="text" value="{{ data.get('url', '') }}"/>
       <p>The URL for the web page describing the data (not the data itself).</p>
@@ -25,7 +25,7 @@
   </div>
   
   <div class="control-group homepage-field">
-	  <label for="field-state-select">{{ _('State') }}</label>
+	  <label for="field-state-select" class="control-label">{{ _('State') }}</label>
 	  <div class="controls">
 		  <select id="field-state-select" name="state">
 		      <option value="draft" {% if data.get('state', '') == 'draft' %}selected="selected"{% endif %}>

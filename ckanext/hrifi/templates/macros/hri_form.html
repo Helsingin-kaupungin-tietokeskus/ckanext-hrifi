@@ -66,8 +66,7 @@ Examples:
 	  <{{ tagtype }}
 	    id="{{ id or names[1] }}-value"
 		{% if tagtype == 'input' %}
-		  type="{{ inputtype }}"
-		  {% if inputtype == 'date' %}class="datefield"{% endif %}
+		  {% if inputtype == 'date' %}class="datefield" type="text"{% else %}type="{{ inputtype }}"{% endif %}
 	    {% elif tagtype == 'select' %}
 		  {% if multiple %}multiple="multiple"{% endif %}
 		{% endif %}
@@ -77,7 +76,7 @@ Examples:
 		
 		{% for option in options %}
 		  
-		  <option value="{{ option }}" {% if values[1] == option or option in values[1] %}selected="selected"{% endif %}>{{ option }}</option>
+		  <option value="{{ option }}" {% if values[1] == option or ((option ~ ",") in values[1]|replace('"', "") or ("," ~ option) in values[1]|replace('"', "")) %}selected="selected"{% endif %}>{{ option }}</option>
 		  
 		{% endfor %}
 		

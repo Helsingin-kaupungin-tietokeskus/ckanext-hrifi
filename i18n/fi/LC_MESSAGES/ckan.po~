@@ -1,0 +1,4621 @@
+# Translations template for ckan.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the ckan project.
+# 
+# Translators:
+#   <amercadero@gmail.com>, 2012.
+# henkka <henri.ahti@gmail.com>, 2011.
+# <henri.ahti@gmail.com>, 2012.
+#   <henri.ahti@gmail.com>, 2012.
+# <internet@davidread.org>, 2011.
+# <jaakko.louhio@floapps.com>, 2012.
+# okfn <sysadmin@okfn.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: CKAN\n"
+"Report-Msgid-Bugs-To: http://trac.ckan.org/\n"
+"POT-Creation-Date: 2012-04-26 14:49+0200\n"
+"PO-Revision-Date: 2012-05-04 11:53+0000\n"
+"Last-Translator: amercader <amercadero@gmail.com>\n"
+"Language-Team: Finnish (http://www.transifex.net/projects/p/ckan/language/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:6
+#: ckanext/stats/templates/ckanext/stats/index.html:8
+#: ckan/templates/layout_base.html:170
+msgid "Statistics"
+msgstr "Tilastot"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:37
+#: ckan/templates/admin/layout.html:10
+msgid "Home"
+msgstr "Aloitussivu"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:43
+msgid "Total number of Datasets"
+msgstr "Tietoaineistoja yhteensä"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:46
+msgid "Revisions to Datasets per week"
+msgstr "Revisioita tietoaineistoille viikossa"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:49
+msgid "Top Rated Datasets"
+msgstr "Korkeimman arvostelun saaneet tietoaineistot"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:51
+#: ckanext/stats/templates/ckanext/stats/index.html:60
+#: ckan/logic/validators.py:61 ckan/logic/validators.py:87
+#: ckan/templates/group/new_group_form.html:118
+msgid "Dataset"
+msgstr "Tietoaineisto"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:51
+msgid "Average rating"
+msgstr "Arvostelujen keskiarvo"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:51
+msgid "Number of ratings"
+msgstr "Arvostelujen määrä"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:56
+msgid "No ratings"
+msgstr "Ei arvostelua"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:58
+msgid "Most Edited Datasets"
+msgstr "Eniten muokatut tietoaineistot"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:60
+msgid "Number of edits"
+msgstr "Muokkausten määrä"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:66
+msgid "Largest Groups"
+msgstr "Suurimmat ryhmät"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:68
+#: ckan/forms/common.py:796 ckan/logic/validators.py:114
+msgid "Group"
+msgstr "Ryhmä"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:68
+#: ckan/templates/_util.html:69 ckan/templates/_util.html:82
+msgid "Number of datasets"
+msgstr "Tietoaineistojen lukumäärä"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:74
+msgid "Top Tags"
+msgstr "Eniten käytetyt avainsanat"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:81
+msgid "Users owning most datasets"
+msgstr "Käyttäjät jotka omistavat eniten tietoaineistoja"
+
+#: ckanext/stats/templates/ckanext/stats/index.html:88
+msgid "Page last updated:"
+msgstr "Sivu viimeksi päivitetty:"
+
+#: ckanext/stats/templates/ckanext/stats/leaderboard.html:6
+msgid "Leaderboard - Stats"
+msgstr "Johtotaulukko - Tilastot"
+
+#: ckanext/stats/templates/ckanext/stats/leaderboard.html:17
+msgid "Dataset Leaderboard"
+msgstr "Tietoaineiston johtotaulukko"
+
+#: ckanext/stats/templates/ckanext/stats/leaderboard.html:18
+msgid ""
+"Choose a dataset attribute and find out which categories in that area have "
+"the most datasets. E.g. tags, groups, license, res_format, country."
+msgstr "Valitse tietoaineiston attribuutti ja selvitä missä kategorioissa on valitulla alueella eniten tietoaineistoja. Esimerkiksi avainsanat, ryhmät, lisenssi, res_format tai maa"
+
+#: ckanext/stats/templates/ckanext/stats/leaderboard.html:20
+msgid "Choose area"
+msgstr "Valitse alue"
+
+#: ckan/new_authz.py:19
+#, python-format
+msgid "Authorization function not found: %s"
+msgstr "Auktorisointi funktiota ei löydy: %s"
+
+#: ckan/controllers/admin.py:19
+msgid "Need to be system administrator to administer"
+msgstr "Hallinnointia varten pitää olla järjestelmän ylläpitäjä "
+
+#: ckan/controllers/admin.py:105
+msgid "Changes Saved"
+msgstr "Muutokset tallennettu"
+
+#: ckan/controllers/admin.py:142 ckan/logic/action/get.py:1113
+msgid "unknown user:"
+msgstr "tuntematon käyttäjä:"
+
+#: ckan/controllers/admin.py:152
+msgid "User Added"
+msgstr "Käyttäjä lisätty"
+
+#: ckan/controllers/admin.py:159
+msgid "unknown authorization group:"
+msgstr "tuntemation käyttöoikeusryhmä:"
+
+#: ckan/controllers/admin.py:169
+msgid "Authorization Group Added"
+msgstr "Käyttöoikeusryhmä lisätty"
+
+#: ckan/controllers/admin.py:268
+#, python-format
+msgid ""
+"Cannot purge package %s as associated revision %s includes non-deleted "
+"packages %s"
+msgstr "Ei voida poistaa tietoaineistoa %s koska tähän liitetty revisio %s sisältää poistamattomia tietoaineistoja %s"
+
+#: ckan/controllers/admin.py:287
+#, python-format
+msgid "Problem purging revision %s: %s"
+msgstr "Ongelma näiden revisioiden poistamisessa %s: %s"
+
+#: ckan/controllers/admin.py:289
+msgid "Purge complete"
+msgstr "Poistaminen suoritettu"
+
+#: ckan/controllers/admin.py:291
+msgid "Action not implemented."
+msgstr "Toimintoa ei ole toteutettu"
+
+#: ckan/controllers/api.py:56 ckan/controllers/authorization_group.py:22
+#: ckan/controllers/group.py:82 ckan/controllers/home.py:22
+#: ckan/controllers/package.py:116 ckan/controllers/related.py:22
+#: ckan/controllers/revision.py:29 ckan/controllers/tag.py:22
+#: ckan/controllers/user.py:30 ckan/controllers/user.py:71
+#: ckan/controllers/user.py:92 ckan/logic/auth/get.py:18
+msgid "Not authorized to see this page"
+msgstr "Tämän sivun näyttäminen ei sallittu"
+
+#: ckan/controllers/api.py:114 ckan/controllers/api.py:180
+msgid "Access denied"
+msgstr "Pääsy evätty"
+
+#: ckan/controllers/api.py:118 ckan/controllers/api.py:185
+#: ckan/lib/base.py:484 ckan/logic/validators.py:61
+#: ckan/logic/validators.py:72 ckan/logic/validators.py:87
+#: ckan/logic/validators.py:101 ckan/logic/validators.py:114
+#: ckan/logic/validators.py:136 ckan/logic/action/create.py:337
+msgid "Not found"
+msgstr "Ei löydetty"
+
+#: ckan/controllers/api.py:124
+msgid "Bad request"
+msgstr "Virheellinen pyyntö"
+
+#: ckan/controllers/api.py:150
+#, python-format
+msgid "Action name not known: %s"
+msgstr "Toiminnon nimi tuntematon: %s"
+
+#: ckan/controllers/api.py:161 ckan/controllers/api.py:314
+#: ckan/controllers/api.py:368
+#, python-format
+msgid "JSON Error: %s"
+msgstr "JSON virhe: %s"
+
+#: ckan/controllers/api.py:166
+#, python-format
+msgid "Bad request data: %s"
+msgstr "Huono data pyyntö: %s"
+
+#: ckan/controllers/api.py:176 ckan/controllers/api.py:341
+#: ckan/controllers/api.py:389 ckan/controllers/group.py:304
+#: ckan/controllers/group.py:323 ckan/controllers/package.py:583
+#: ckan/controllers/package.py:612 ckan/controllers/user.py:157
+#: ckan/controllers/user.py:239 ckan/controllers/user.py:381
+msgid "Integrity Error"
+msgstr "Integriteettivirhe"
+
+#: ckan/controllers/api.py:200
+msgid "Parameter Error"
+msgstr "Parametri virhe"
+
+#: ckan/controllers/api.py:251 ckan/logic/action/get.py:1105
+#, python-format
+msgid "Cannot list entity of this type: %s"
+msgstr "Ei pystytä listaamaan entiteettiä joka on tyyppiä %s"
+
+#: ckan/controllers/api.py:281
+#, python-format
+msgid "Cannot read entity of this type: %s"
+msgstr "Ei pystytä lukemaan entiteettiä joka on tyyppiä %s"
+
+#: ckan/controllers/api.py:319
+#, python-format
+msgid "Cannot create new entity of this type: %s %s"
+msgstr "Ei pystytä luomaan entiteettiä joka on tyyppiä %s %s"
+
+#: ckan/controllers/api.py:345
+msgid "Unable to add package to search index"
+msgstr "Ei voitu lisätä tietoaineistoa hakuindeksiin"
+
+#: ckan/controllers/api.py:373
+#, python-format
+msgid "Cannot update entity of this type: %s"
+msgstr "Ei pystytä muokkaamaan entiteettiä joka on tyyppiä %s"
+
+#: ckan/controllers/api.py:393
+msgid "Unable to update search index"
+msgstr "Ei voitu päivittää hakuindeksiä"
+
+#: ckan/controllers/api.py:415
+#, python-format
+msgid "Cannot delete entity of this type: %s %s"
+msgstr "Ei pystytä poistamaan entiteettiä joka on tyyppiä %s %s"
+
+#: ckan/controllers/api.py:438
+msgid "No revision specified"
+msgstr "Revisiota ei määritelty"
+
+#: ckan/controllers/api.py:442
+#, python-format
+msgid "There is no revision with id: %s"
+msgstr "Revisiota tällä tunnisteella ei löydy: %s"
+
+#: ckan/controllers/api.py:452
+msgid "Missing search term ('since_id=UUID' or 'since_time=TIMESTAMP')"
+msgstr "Hakutermi puuttuu ('since=id=UUID' or 'since_time=TIMESTAMP')"
+
+#: ckan/controllers/api.py:460
+#, python-format
+msgid "Could not read parameters: %r"
+msgstr "Parametreja ei voitu lukea: %r"
+
+#: ckan/controllers/api.py:507
+#, python-format
+msgid "Bad search option: %s"
+msgstr "Huono hakuvaihtoehto: %s"
+
+#: ckan/controllers/api.py:510
+#, python-format
+msgid "Unknown register: %s"
+msgstr "Tuntematon rekisteri: %s"
+
+#: ckan/controllers/api.py:518
+msgid "Malformed qjson value"
+msgstr "Vääränmuotoinen JSON arvo"
+
+#: ckan/controllers/api.py:527
+msgid "Request params must be in form of a json encoded dictionary."
+msgstr "Kyselyparametrit täytyy olla json enkoodatussa muodossa"
+
+#: ckan/controllers/authorization_group.py:44
+#, python-format
+msgid "Not authorized to read %s"
+msgstr "%s lukeminen ei sallittu"
+
+#: ckan/controllers/authorization_group.py:62 ckan/controllers/group.py:225
+#: ckan/controllers/group_formalchemy.py:36
+msgid "Unauthorized to create a group"
+msgstr "Ei oikeuksia luoda ryhmää"
+
+#: ckan/controllers/authorization_group.py:107 ckan/controllers/group.py:379
+#, python-format
+msgid "User %r not authorized to edit %r"
+msgstr "Käyttäjä %r ei voi muokata %r"
+
+#: ckan/controllers/authorization_group.py:151 ckan/controllers/group.py:109
+#: ckan/controllers/group.py:258 ckan/controllers/group.py:302
+#: ckan/controllers/group.py:321 ckan/controllers/group.py:332
+#: ckan/controllers/group.py:377
+msgid "Group not found"
+msgstr "Ryhmää ei löydy"
+
+#: ckan/controllers/authorization_group.py:159 ckan/controllers/group.py:344
+#: ckan/controllers/package.py:661
+#, python-format
+msgid "User %r not authorized to edit %s authorizations"
+msgstr "Käyttäjällä %r ei oikeutta muokata %s oikeuksia"
+
+#: ckan/controllers/datastore.py:30 ckan/controllers/datastore.py:41
+#: ckan/controllers/datastore.py:51 ckan/controllers/package.py:741
+#: ckan/controllers/package.py:771
+msgid "Resource not found"
+msgstr "Resurssia ei löydy"
+
+#: ckan/controllers/datastore.py:32 ckan/controllers/datastore.py:53
+#: ckan/controllers/package.py:743 ckan/controllers/package.py:773
+#, python-format
+msgid "Unauthorized to read resource %s"
+msgstr "Resurssin lukeminen ei sallittu %s"
+
+#: ckan/controllers/group.py:111 ckan/controllers/group.py:260
+#: ckan/controllers/group.py:300 ckan/controllers/group.py:319
+#, python-format
+msgid "Unauthorized to read group %s"
+msgstr "Ryhmän lukeminen ei sallittu %s"
+
+#: ckan/controllers/group.py:120
+msgid "Cannot render description"
+msgstr "Ei voida näyttää kuvausta"
+
+#: ckan/controllers/group.py:268 ckan/controllers/group_formalchemy.py:93
+#: ckan/controllers/package.py:476 ckan/controllers/package_formalchemy.py:93
+#, python-format
+msgid "User %r not authorized to edit %s"
+msgstr "Käyttäjällä %r ei oikeutta muokata %s"
+
+#: ckan/controllers/group.py:361 ckan/controllers/package.py:350
+msgid "Select two revisions before doing the comparison."
+msgstr "Valitse kaksi revisiota ennen vertailun tekemistä"
+
+#: ckan/controllers/group.py:386
+msgid "CKAN Group Revision History"
+msgstr "CKAN Ryhmä revisioiden muutoshistoria"
+
+#: ckan/controllers/group.py:388
+msgid "Recent changes to CKAN Group: "
+msgstr "Viimeaikaiset muutokset CKAN Ryhmään:"
+
+#: ckan/controllers/group.py:406 ckan/controllers/package.py:395
+msgid "Log message: "
+msgstr "Logiviesti:"
+
+#: ckan/controllers/home.py:30
+msgid "This site is currently off-line. Database is not initialised."
+msgstr "Sivusto on tällä hetkellä pois päältä. Tietokantaa ei ole alustettu."
+
+#: ckan/controllers/home.py:64
+#, python-format
+msgid ""
+"Please <a href=\"%s\">update your profile</a> and add your email address and"
+" your full name. "
+msgstr "Ole hyvä ja <a href=\"%s\">päivitä profiilisi</a> ja lisää sähköpostiosoitteesi sekä koko nimesi. "
+
+#: ckan/controllers/home.py:66 ckan/controllers/home.py:72
+#, python-format
+msgid "%s uses your email address if you need to reset your password."
+msgstr "%s käyttää sähköpostiosoitettasi jos sinun täytyy resetoida salasanasi."
+
+#: ckan/controllers/home.py:70
+#, python-format
+msgid "Please <a href=\"%s\">update your profile</a> and add your email address. "
+msgstr "Ole hyvä ja <a href=\"%s\">päivitä profiilisi</a> ja lisää sähköpostiosoitteesi."
+
+#: ckan/controllers/home.py:76
+#, python-format
+msgid "Please <a href=\"%s\">update your profile</a> and add your full name."
+msgstr "Ole hyvä ja <a href=\"%s\">päivitä profiilisi</a> ja lisää koko nimesi."
+
+#: ckan/controllers/package.py:281 ckan/controllers/package.py:283
+#: ckan/controllers/package.py:285
+#, python-format
+msgid "Invalid revision format: %r"
+msgstr "Väärä revision muoto: %r"
+
+#: ckan/controllers/package.py:293 ckan/controllers/package.py:326
+#: ckan/controllers/package.py:369 ckan/controllers/package.py:468
+#: ckan/controllers/package.py:515 ckan/controllers/package.py:535
+#: ckan/controllers/package.py:581 ckan/controllers/package.py:610
+#: ckan/controllers/package.py:649 ckan/controllers/related.py:29
+msgid "Dataset not found"
+msgstr "Tietoaineistoa ei löydy"
+
+#: ckan/controllers/package.py:295 ckan/controllers/package.py:328
+#: ckan/controllers/package.py:367 ckan/controllers/package.py:466
+#: ckan/controllers/package.py:513 ckan/controllers/package.py:533
+#: ckan/controllers/package.py:579 ckan/controllers/package.py:608
+#: ckan/controllers/related.py:31
+#, python-format
+msgid "Unauthorized to read package %s"
+msgstr "Ei oikeuksia lukea tietoaineistoa %s"
+
+#: ckan/controllers/package.py:376
+msgid "CKAN Dataset Revision History"
+msgstr "CKAN tietoaineisto revisiohistoria"
+
+#: ckan/controllers/package.py:378
+msgid "Recent changes to CKAN Dataset: "
+msgstr "Viimeisimmät muutokset CKAN tietoaineistoon:"
+
+#: ckan/controllers/package.py:424 ckan/controllers/package_formalchemy.py:29
+msgid "Unauthorized to create a package"
+msgstr "Ei oikeuksia luoda tietoaineistoa %s"
+
+#: ckan/controllers/package.py:585
+msgid "Unable to add package to search index."
+msgstr "Ei voitu lisätä pakettia hakuindeksiin"
+
+#: ckan/controllers/package.py:614
+msgid "Unable to update search index."
+msgstr "Ei voitu päivittää hakuindeksiä"
+
+#: ckan/controllers/revision.py:40
+msgid "CKAN Repository Revision History"
+msgstr "CKAN tietovaraston historia"
+
+#: ckan/controllers/revision.py:42
+msgid "Recent changes to the CKAN repository."
+msgstr "Viimeisimmät muutokset CKAN tietokantaan."
+
+#: ckan/controllers/revision.py:101
+#, python-format
+msgid "Datasets affected: %s.\n"
+msgstr "Muutetut tietoaineistot: %s.\n"
+
+#: ckan/controllers/revision.py:177
+msgid "Revision updated"
+msgstr "Revisio päivitetty"
+
+#: ckan/controllers/tag.py:54 ckan/forms/common.py:923
+msgid "Other"
+msgstr "Muu"
+
+#: ckan/controllers/tag.py:67
+msgid "Tag not found"
+msgstr "Avainsanaa ei löydy"
+
+#: ckan/controllers/user.py:127
+msgid "Unauthorized to create a user"
+msgstr "Käyttäjän luominen ei sallittu"
+
+#: ckan/controllers/user.py:153
+#, python-format
+msgid "Unauthorized to create user %s"
+msgstr "Käyttäjän luominen ei sallittu %s"
+
+#: ckan/controllers/user.py:155 ckan/controllers/user.py:208
+#: ckan/controllers/user.py:237 ckan/controllers/user.py:359
+#: ckan/controllers/user.py:379
+msgid "User not found"
+msgstr "Käyttäjää ei löydy"
+
+#: ckan/controllers/user.py:159
+msgid "Bad Captcha. Please try again."
+msgstr "Väärä Captcha sana. Yritä uudelleen."
+
+#: ckan/controllers/user.py:174
+#, python-format
+msgid ""
+"User \"%s\" is now registered but you are still logged in as \"%s\" from "
+"before"
+msgstr "Käyttäjä %s on nyt rekisteröity, mutta olet edelleen kirjautunut sisään käyttäjänä %s"
+
+#: ckan/controllers/user.py:187
+msgid "No user specified"
+msgstr "Käyttäjää ei määritelty"
+
+#: ckan/controllers/user.py:206 ckan/controllers/user.py:235
+#: ckan/controllers/user.py:377
+#, python-format
+msgid "Unauthorized to edit user %s"
+msgstr "Käyttäjän muokkaus ei sallittu %s"
+
+#: ckan/controllers/user.py:213
+#, python-format
+msgid "User %s not authorized to edit %s"
+msgstr "Käyttäjä %s ei sallittu muokkaamaan %s"
+
+#: ckan/controllers/user.py:232
+msgid "Profile updated"
+msgstr "Profiili päivitetty"
+
+#: ckan/controllers/user.py:276
+#, python-format
+msgid "%s is now logged in"
+msgstr "%s kirjautuneena sisään"
+
+#: ckan/controllers/user.py:279
+msgid "Login failed. Bad username or password."
+msgstr "Kirjautuminen epäonnistui. Väärä käyttäjätunnus tai salasana."
+
+#: ckan/controllers/user.py:281
+msgid " (Or if using OpenID, it hasn't been associated with a user account.)"
+msgstr " (Tai jos käytät OpenID:tä, sitä ei ole liitetty käyttäjätiliisi.)"
+
+#: ckan/controllers/user.py:334
+#, python-format
+msgid "\"%s\" matched several users"
+msgstr "\"%s\" kohdistui moneen käyttäjään"
+
+#: ckan/controllers/user.py:336 ckan/controllers/user.py:338
+#, python-format
+msgid "No such user: %s"
+msgstr "Ei käyttäjää: %s"
+
+#: ckan/controllers/user.py:343
+msgid "Please check your inbox for a reset code."
+msgstr "Ole hyvä ja tarkista sähköpostisi resetointi koodia varten"
+
+#: ckan/controllers/user.py:346
+#, python-format
+msgid "Could not send reset link: %s"
+msgstr "Resetointilinkkiä ei voitu lähettää: %s"
+
+#: ckan/controllers/user.py:363
+msgid "Invalid reset key. Please try again."
+msgstr "Epäkelpo resetointiavain. Yritä uudelleen."
+
+#: ckan/controllers/user.py:374
+msgid "Your password has been reset."
+msgstr "Salasanasi on resetoitu"
+
+#: ckan/controllers/user.py:396
+msgid "Error: Could not parse About text"
+msgstr "Virhe: Ei voitu lukea Tietoa-tekstiä"
+
+#: ckan/controllers/user.py:404
+msgid "Your password must be 4 characters or longer."
+msgstr "Salasanasi pitää olla 4 merkkiä tai pidempi"
+
+#: ckan/controllers/user.py:406
+msgid "The passwords you entered do not match."
+msgstr "Syötetyt salasanat eivät ole samoja"
+
+#: ckan/forms/authorization_group.py:45 ckan/forms/group.py:52
+#: ckan/forms/package.py:38 ckan/forms/package.py:110
+#: ckan/templates/js_strings.html:46 ckan/templates/user/read.html:23
+msgid "Name"
+msgstr "Nimi"
+
+#: ckan/forms/authorization_group.py:46
+msgid "<strong>Unique identifier</strong> for group."
+msgstr "<strong>Uniikki tunniste</strong> ryhmälle."
+
+#: ckan/forms/authorization_group.py:47 ckan/forms/package.py:41
+#: ckan/templates/group/new_group_form.html:36
+#: ckan/templates/package/new_package_form.html:57
+msgid "2+ characters, lowercase, using only 'a-z0-9' and '-_'"
+msgstr "enemmän kuin 2 merkkiä, pieni kirjaimia, käyttäen vain 'a-z0-9' ja '-_' merkkejä"
+
+#: ckan/forms/authorization_group.py:55 ckan/forms/group.py:63
+msgid "Details"
+msgstr "Yksityiskohdat"
+
+#: ckan/forms/authorization_group.py:80
+msgid "Add users"
+msgstr "Lisää käyttäjiä"
+
+#: ckan/forms/common.py:26 ckan/logic/validators.py:185
+#: ckan/logic/validators.py:420
+#, python-format
+msgid "Name must be at least %s characters long"
+msgstr "Nimi pitää olla vähintään %s merkkiä pitkä"
+
+#: ckan/forms/common.py:28
+msgid ""
+"Name must be purely lowercase alphanumeric (ascii) characters and these "
+"symbols: -_"
+msgstr "Nimi pitää koostua alfanumeerisista (ascii) ja näitä erikoismerkeistä: -_"
+
+#: ckan/forms/common.py:41
+msgid "Dataset name already exists in database"
+msgstr "Tietoaineiston nimi löytyy jo tietokannasta"
+
+#: ckan/forms/common.py:54 ckan/logic/validators.py:255
+msgid "Group name already exists in database"
+msgstr "Ryhmän nimi löytyy jo tietokannasta"
+
+#: ckan/forms/common.py:143
+#, python-format
+msgid "Value does not match required format: %s"
+msgstr "Arvo ei vastaa vaadittua muotoa: %s"
+
+#: ckan/forms/common.py:160 ckan/forms/common.py:771
+#: ckan/templates/admin/trash.html:29
+#: ckan/templates/package/new_package_form.html:111
+msgid "(None)"
+msgstr "(Ei mitään)"
+
+#: ckan/forms/common.py:351
+msgid "Dataset resource(s) incomplete."
+msgstr "Tiedoston latauslinkki ei täydellinen"
+
+#: ckan/forms/common.py:524 ckan/logic/validators.py:261
+#, python-format
+msgid "Tag \"%s\" length is less than minimum %s"
+msgstr "Avainsanan \"%s\" pituus on oltava vähintään %s merkkiä"
+
+#: ckan/forms/common.py:526
+#, python-format
+msgid "Tag \"%s\" must not contain any quotation marks: \""
+msgstr "Avainsana \"%s\" ei saa sisältää heittomerkkejä: \""
+
+#: ckan/forms/common.py:543 ckan/logic/validators.py:239
+#, python-format
+msgid "Duplicate key \"%s\""
+msgstr "Duplikaatti avain \"%s\""
+
+#: ckan/forms/common.py:546
+#, python-format
+msgid "Extra key-value pair: key is not set for value \"%s\"."
+msgstr "Lisä avain-arvo pari: avainta ei ole asetettu arvolle \"%s\"."
+
+#: ckan/forms/common.py:781 ckan/templates/package/new_package_form.html:116
+msgid "Cannot add any groups."
+msgstr "Ei voi lisätä ryhmiä"
+
+#: ckan/forms/common.py:826
+#, python-format
+msgid ""
+"Can't derived new group selection from serialized value structured like "
+"this: %s"
+msgstr "Ei voida johtaa uutta ryhmävalintaa tämän muotoisesta serialisoidusta arvosta: %s"
+
+#: ckan/forms/common.py:906
+msgid "other - please specify"
+msgstr "muu - ole hyvä ja määritä"
+
+#: ckan/forms/group.py:64 ckan/forms/package.py:102 ckan/forms/package.py:112
+#: ckan/logic/action/__init__.py:58 ckan/logic/action/__init__.py:60
+#: ckan/templates/group/new_group_form.html:65
+#: ckan/templates/package/edit.html:23
+msgid "Extras"
+msgstr "Lisätiedot"
+
+#: ckan/forms/group.py:87
+msgid "Package"
+msgstr "Tietoaineisto"
+
+#: ckan/forms/group.py:88
+msgid "Add packages"
+msgstr "Lisää tietoaineistoja"
+
+#: ckan/forms/package.py:34
+msgid "A short descriptive title for the data set."
+msgstr "Lyhyt tietoaineistoa kuvaava otsikko"
+
+#: ckan/forms/package.py:35
+msgid ""
+"It should not be a description though - save that for the Notes field. Do "
+"not give a trailing full stop."
+msgstr "Tämän ei kuitenkaan pidä olla kuvaus - kirjoita se kuvaus kenttään. Otsikon loppuun ei pistettä."
+
+#: ckan/forms/package.py:39
+msgid "A unique identifier for the package."
+msgstr "Uniikki tunniste tietoaineistolle"
+
+#: ckan/forms/package.py:40
+msgid ""
+"It should be broadly humanly readable, in the spirit of Semantic Web URIs. "
+"Only use an acronym if it is widely recognised. Renaming is possible but "
+"discouraged."
+msgstr "Sen tulee olla ihmisen luettavissa, semanttisen webin URI hengessä. Käytä vain lyhennettä joka on laajasti tunnettu. Uudelleennimeäminen on mahdollista muttei suositeltavaa."
+
+#: ckan/forms/package.py:45 ckan/templates/package/new_package_form.html:227
+msgid "A number representing the version (if applicable)"
+msgstr "Numero joka kuvaa versiota (jos tarpeen)"
+
+#: ckan/forms/package.py:50 ckan/templates/package/new_package_form.html:66
+msgid "The URL for the web page describing the data (not the data itself)."
+msgstr "URL web sivulle joka kuvaa tietoaineistoa (ei URL itse tietoaineistoon)"
+
+#: ckan/forms/package.py:51 ckan/templates/package/new_package_form.html:67
+msgid "e.g. http://www.example.com/growth-figures.html"
+msgstr "esim. http://www.example.com/growth-figures.html"
+
+#: ckan/forms/package.py:55 ckan/templates/package/new_package_form.html:197
+msgid ""
+"The name of the main contact, for enquiries about this particular dataset, "
+"using the e-mail address in the following field."
+msgstr "Viraston nimi ja sähköpostiosoite, jossa vastataan kyselyihin tähän aineistoon liittyen."
+
+#: ckan/forms/package.py:59 ckan/templates/package/new_package_form.html:212
+msgid ""
+"If there is another important contact person (in addition to the person in "
+"the Author field) then provide details here."
+msgstr "Mikäli on olemassa toinen yhteyshenkilö (yllläpitäjän lisäksi) niin tiedot syötetään tähän"
+
+#: ckan/forms/package.py:63 ckan/templates/package/resource_read.html:133
+msgid "Licence"
+msgstr "Lisenssi"
+
+#: ckan/forms/package.py:64
+msgid "The licence under which the dataset is released."
+msgstr "Lisenssi jolla tietoaineisto on julkaistu."
+
+#: ckan/forms/package.py:68 ckan/forms/package.py:112
+#: ckan/templates/layout_base.html:165
+#: ckan/templates/package/new_package_form.html:122
+#: ckan/templates/package/read.html:44 ckan/templates/tag/index.html:6
+#: ckan/templates/tag/index.html:9
+msgid "Tags"
+msgstr "Avainsanat"
+
+#: ckan/forms/package.py:69
+#, python-format
+msgid ""
+"Comma-separated terms that may link this dataset to similar ones. For more "
+"information on conventions, see <a href=\"%s\">this wiki page</a>."
+msgstr "Pilkulla erotetut sanat jotka liittävät tämän tietoaineiston samanlaisiin. Lisätietoja käytännöistä, katso <a href=\"%s\">tämä wiki sivu</a>."
+
+#: ckan/forms/package.py:70 ckan/templates/package/new_package_form.html:127
+msgid "e.g. pollution, rivers, water quality"
+msgstr "esimerkiksi saaste, joet, veden laatu"
+
+#: ckan/forms/package.py:74
+msgid "The files containing the data or address of the APIs for accessing it."
+msgstr "Tiedostot jotka sisältävän datan tai osoite ohjelmointirajapintaan jolla dataan saadaan pääsy."
+
+#: ckan/forms/package.py:75
+msgid ""
+"<br />These can be repeated as required. For example if the data is being "
+"supplied in multiple formats, or split into different areas or time periods,"
+" each file is a different 'resource' which should be described differently. "
+"They will all appear on the dataset page on CKAN together.<br /><br /> "
+"<b>URL:</b> This is the Internet link directly to the data - by selecting "
+"this link in a web browser, the user will immediately download the full data"
+" set. Note that datasets are not hosted on this site, but by the publisher "
+"of the data. Alternatively the URL can point to an API server such as a "
+"SPARQL endpoint or JSON-P service.<br /> <b>Format:</b> This should give the"
+" file format in which the data is supplied. <br /><b>Description</b> Any "
+"information you want to add to describe the resource.<br />"
+msgstr "<br>Tietoaineistolinkkejä voi olla useita. Esimerkiksi jos data on saatavilla monissa eri muodoissa tai jaettu eri alueisiin tai aikajaksoihin. Jokainen tiedostolinkki on eri \"resurssi\" joka tulisi kuvata eri tavalla. Kaikki tietotaineistolinkit näkyvät tietoaineiston tietosivulla yhdessä.<br /><br /> <b>URL:</b> Tämä on web-linkki suoraan dataan. Valitsemalla linkin web-selaimella käyttäjä voi ladata koko tietoaineiston suoraan. Huomaa että tietoaineistoja ei tallennetta tälle sivustolle vaan ne löytyvät tietoaineiston julkaisevan tahon palvelimelta. Vaihtoehtoisesti URL voi osoittaa paikkaan jossa on palvelin joka tarjoaa ohjelmointirajapinnan esim. SPARQL tai JSON-P palveluun.<br /> <b>Muoto:</b> Tämä kertoo mikä on tiedostomuoto jolla data tarjotaan.<br /><b>Kuvaus:</b> Mitä tahansa tietoa jolla haluat kuvata tietoaineistolinkin kohdetta.<br />"
+
+#: ckan/forms/package.py:76
+msgid ""
+"Format choices: CSV | RDF | XML | XBRL | SDMX | HTML+RDFa | Other as "
+"appropriate"
+msgstr "Muoto vaihtoehdot: CSV | RDF | XML | XBRL | SDMX | HTML+RDFa | Joku muu"
+
+#: ckan/forms/package.py:80 ckan/forms/package.py:111
+msgid "Notes"
+msgstr "Kuvaus"
+
+#: ckan/forms/package.py:81
+msgid "The main description of the dataset"
+msgstr "Tietoaineiston kuvaus"
+
+#: ckan/forms/package.py:82
+msgid ""
+"It is often displayed with the package title. In particular, it should start"
+" with a short sentence that describes the data set succinctly, because the "
+"first few words alone may be used in some views of the data sets."
+msgstr "Tämä näytetään usein tietoaineiston otsikkona. Tästä syystä kuvauksen olisi hyvä alkaa lyhyellä lauseella joka kuvaa tietoaineistoa riittävästi, koska muutamaa sanaa lauseen alusta voidaan käyttää joissain näkymissä kertomaan tietoaineistoista."
+
+#: ckan/forms/package.py:83
+#, python-format
+msgid "You can use %sMarkdown formatting%s here."
+msgstr "Voit käyttää %sMarkdown formatting%s tässä."
+
+#: ckan/forms/package.py:94
+msgid "Basic information"
+msgstr "Perustiedot"
+
+#: ckan/forms/package.py:96 ckan/forms/package.py:111
+#: ckan/logic/action/__init__.py:56 ckan/templates/package/layout.html:19
+#: ckan/templates/package/read_core.html:26
+msgid "Resources"
+msgstr "Aineistolinkit"
+
+#: ckan/forms/package.py:97 ckan/templates/layout_base.html:78
+#: ckan/templates/package/new_package_form.html:93
+#: ckan/templates/package/read.html:49 ckan/templates/revision/read.html:64
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: ckan/forms/package.py:98 ckan/forms/package.py:105
+msgid "Detail"
+msgstr "Yksityiskohdat"
+
+#: ckan/forms/package.py:110 ckan/templates/_util.html:69
+#: ckan/templates/_util.html:82 ckan/templates/_util.html:95
+#: ckan/templates/group/new_group_form.html:22
+#: ckan/templates/package/new_package_form.html:36
+msgid "Title"
+msgstr "Otsikko"
+
+#: ckan/forms/package.py:110 ckan/templates/package/new_package_form.html:224
+#: ckan/templates/package/read_core.html:78
+msgid "Version"
+msgstr "Versio"
+
+#: ckan/forms/package.py:110
+msgid "URL"
+msgstr "URL"
+
+#: ckan/forms/package.py:111 ckan/templates/group/history.html:32
+#: ckan/templates/package/history.html:25
+#: ckan/templates/package/new_package_form.html:194
+#: ckan/templates/package/read_core.html:68
+#: ckan/templates/snippets/revision_list.html:11
+msgid "Author"
+msgstr "Ylläpitäjä"
+
+#: ckan/forms/package.py:111 ckan/templates/package/new_package_form.html:202
+msgid "Author email"
+msgstr "Ylläpitäjän sähköpostiosoite"
+
+#: ckan/forms/package.py:111 ckan/templates/package/new_package_form.html:209
+#: ckan/templates/package/read_core.html:73
+msgid "Maintainer"
+msgstr "Ylläpitäjä"
+
+#: ckan/forms/package.py:112 ckan/templates/package/new_package_form.html:217
+msgid "Maintainer email"
+msgstr "Ylläpitäjän sähköpostiosoite"
+
+#: ckan/forms/package.py:112 ckan/templates/package/new_package_form.html:73
+msgid "License"
+msgstr "Lisenssi"
+
+#: ckan/forms/package.py:112 ckan/templates/group/new_group_form.html:54
+#: ckan/templates/package/read_core.html:88
+msgid "State"
+msgstr "Tila"
+
+#: ckan/forms/package_dict.py:95
+#, python-format
+msgid "Resource should be a dictionary: %r"
+msgstr "Resurssin pitäisi olla Python dicitionary: %r"
+
+#: ckan/forms/package_dict.py:112
+#, python-format
+msgid "Key unknown: %s"
+msgstr "Avain tuntematon: %s"
+
+#: ckan/forms/package_dict.py:114
+msgid "Key blank"
+msgstr "Avain tyhjä"
+
+#: ckan/lib/base.py:464
+msgid "Updated"
+msgstr "Päivitetty"
+
+#: ckan/lib/base.py:476
+msgid "User role(s) added"
+msgstr "Käyttäjä rooli(t) lisätty"
+
+#: ckan/lib/base.py:478
+msgid "Please supply a user name"
+msgstr "Anna käyttäjänimi"
+
+#: ckan/lib/helpers.py:504
+msgid "Update your avatar at gravatar.com"
+msgstr "Päivitä avatarisi osoitteessa gravatar.com"
+
+#: ckan/lib/helpers.py:624 ckan/templates/js_strings.html:64
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: ckan/lib/helpers.py:660
+msgid "no name"
+msgstr "ei nimeä"
+
+#: ckan/lib/helpers.py:693
+msgid "Created new dataset."
+msgstr "Uusi tietoaineisto luotu."
+
+#: ckan/lib/helpers.py:695
+msgid "Edited resources."
+msgstr "Tietoaineistolinkkejä muokattu."
+
+#: ckan/lib/helpers.py:697
+msgid "Edited settings."
+msgstr "Asetuksia muokattu."
+
+#: ckan/lib/mailer.py:21
+#, python-format
+msgid "Dear %s,"
+msgstr "Hyvä %s,"
+
+#: ckan/lib/mailer.py:34
+#, python-format
+msgid "%s <%s>"
+msgstr "%s <%s>"
+
+#: ckan/lib/mailer.py:58
+msgid "No recipient email address available!"
+msgstr "Vastaanottajan sähköpostiosoite ei saatavilla!"
+
+#: ckan/lib/mailer.py:63
+#, python-format
+msgid ""
+"You have requested your password on %(site_title)s to be reset.\n"
+"\n"
+"Please click the following link to confirm this request:\n"
+"\n"
+"   %(reset_link)s\n"
+msgstr "Olet pyytänyt salansanasi resetointia sivulle %(site_title)s\n\nOle hyvä ja seuraa linkkitä vahvistaaksesi pyyntö:\n\n\n%(reset_link)s⏎\n"
+
+#: ckan/lib/mailer.py:95 ckan/templates/user/perform_reset.html:6
+#: ckan/templates/user/perform_reset.html:14
+msgid "Reset your password"
+msgstr "Resetoi salasanasi"
+
+#: ckan/lib/package_saver.py:29
+msgid "Cannot render package description"
+msgstr "Ei pystytä näyttämään tietoaineiston kuvausta"
+
+#: ckan/lib/package_saver.py:34
+msgid "No web page given"
+msgstr "Web sivua ei annettu"
+
+#: ckan/lib/package_saver.py:38
+msgid "Author not given"
+msgstr "Ylläpitäjää ei ole annettu"
+
+#: ckan/lib/package_saver.py:44
+msgid "Maintainer not given"
+msgstr "Ylläpitäjää ei ole annettu"
+
+#: ckan/lib/package_saver.py:101 ckan/logic/validators.py:51
+msgid "No links are allowed in the log_message."
+msgstr "Linkkejä ei saa olla logiviestissä"
+
+#: ckan/lib/navl/dictization_functions.py:8
+#: ckan/lib/navl/dictization_functions.py:10
+#: ckan/lib/navl/dictization_functions.py:12
+#: ckan/lib/navl/dictization_functions.py:14
+#: ckan/lib/navl/dictization_functions.py:16
+#: ckan/lib/navl/dictization_functions.py:18
+#: ckan/lib/navl/dictization_functions.py:20
+#: ckan/lib/navl/dictization_functions.py:22 ckan/lib/navl/validators.py:17
+#: ckan/lib/navl/validators.py:24 ckan/lib/navl/validators.py:44
+#: ckan/logic/__init__.py:247 ckan/logic/validators.py:407
+msgid "Missing value"
+msgstr "Puuttuva arvo"
+
+#: ckan/lib/navl/validators.py:54
+#, python-format
+msgid "The input field %(name)s was not expected."
+msgstr "Syöttökenttää %(name)s ei odotettu."
+
+#: ckan/lib/navl/validators.py:93
+msgid "Please enter an integer value"
+msgstr "Ole hyvä ja syötä kokonaislukuarvo"
+
+#: ckan/logic/__init__.py:159
+msgid "No valid API key provided."
+msgstr "Väärä API avain"
+
+#: ckan/logic/converters.py:59 ckan/logic/converters.py:74
+#, python-format
+msgid "Tag vocabulary \"%s\" does not exist"
+msgstr "Avainsana sanastoa %s ei ole olemassa"
+
+#: ckan/logic/validators.py:32
+msgid "Invalid integer"
+msgstr "Vääränlainen kokonaisluku"
+
+#: ckan/logic/validators.py:42
+msgid "Date format incorrect"
+msgstr "Päivämäärän muoto väärä"
+
+#: ckan/logic/validators.py:101 ckan/templates/_util.html:180
+#: ckan/templates/_util.html:250
+msgid "User"
+msgstr "Käyttäjä"
+
+#: ckan/logic/validators.py:124
+msgid "That group name or ID does not exist."
+msgstr "Ryhmän nimeä tai tunnistetta ei ole olemassa."
+
+#: ckan/logic/validators.py:136
+msgid "Activity type"
+msgstr "Aktiviteetin tyyppi"
+
+#: ckan/logic/validators.py:182
+msgid "That name cannot be used"
+msgstr "Nimeä ei voida käyttää"
+
+#: ckan/logic/validators.py:187 ckan/logic/validators.py:423
+#, python-format
+msgid "Name must be a maximum of %i characters long"
+msgstr "Nimi saa olla maksimissaan of %i merkkiä pitkä"
+
+#: ckan/logic/validators.py:190
+msgid ""
+"Url must be purely lowercase alphanumeric (ascii) characters and these "
+"symbols: -_"
+msgstr "Url täytyy koostua alphanumeerisista merkeistä (ascii) ja näistä symboleista:-_"
+
+#: ckan/logic/validators.py:208
+msgid "That URL is already in use."
+msgstr "Tämä URL on jo käytössä."
+
+#: ckan/logic/validators.py:213
+#, python-format
+msgid "Name \"%s\" length is less than minimum %s"
+msgstr "Nimen \"%s\" pituus on vähemmän kuin minimi %s"
+
+#: ckan/logic/validators.py:217
+#, python-format
+msgid "Name \"%s\" length is more than maximum %s"
+msgstr "Nimen \"%s\" pituus on enemmän kuin maksimi %s"
+
+#: ckan/logic/validators.py:223
+#, python-format
+msgid "Version must be a maximum of %i characters long"
+msgstr "Versio saa olla maksimissaan %i merkkiä pitkä"
+
+#: ckan/logic/validators.py:265
+#, python-format
+msgid "Tag \"%s\" length is more than maximum %i"
+msgstr "Avainsana \"%s\" on pidempi kuin maksimi %i"
+
+#: ckan/logic/validators.py:273
+#, python-format
+msgid "Tag \"%s\" must be alphanumeric characters or symbols: -_."
+msgstr "Avainsanan \"%s\" pitää koostua alfanumeerisita merkeistä (ascii) ja näistä erikoismerkeistä: -_."
+
+#: ckan/logic/validators.py:281
+#, python-format
+msgid "Tag \"%s\" must not be uppercase"
+msgstr "Avainsana \"%s\" ei saa sisältää isoja kirjaimia"
+
+#: ckan/logic/validators.py:372
+msgid "That login name is not available."
+msgstr "Tämä kirjautumisnimi ei käytettävissä"
+
+#: ckan/logic/validators.py:381
+msgid "Please enter both passwords"
+msgstr "Ole hyvä ja syötä molemmat salasanat"
+
+#: ckan/logic/validators.py:387
+msgid "Your password must be 4 characters or longer"
+msgstr "Salasanasi pitää olla 4 merkkiä tai pidempi"
+
+#: ckan/logic/validators.py:395
+msgid "The passwords you entered do not match"
+msgstr "Syötetyt salasanat eivät samat"
+
+#: ckan/logic/validators.py:411
+msgid ""
+"Edit not allowed as it looks like spam. Please avoid links in your "
+"description."
+msgstr "Muokkaus ei sallittu koska sisältö näyttää spämmiltä. Ole hyvä ja vältä linkkejä kuvauksessa."
+
+#: ckan/logic/validators.py:428
+msgid "That vocabulary name is already in use."
+msgstr "Sanaston nimi on jo käytössä"
+
+#: ckan/logic/validators.py:434
+#, python-format
+msgid "Cannot change value of key from %s to %s. This key is read-only"
+msgstr "Ei voi vaihtaa avaimen %s arvoa arvoon %s. Tähän avaimeen on vain lukuoikeudet"
+
+#: ckan/logic/validators.py:443
+msgid "Tag vocabulary was not found."
+msgstr "Avainsana sanastoa ei löytynyt."
+
+#: ckan/logic/validators.py:456
+#, python-format
+msgid "Tag %s does not belong to vocabulary %s"
+msgstr "Avainsana %s ei sisälly sanastoon %s"
+
+#: ckan/logic/validators.py:462
+msgid "No tag name"
+msgstr "Ei avainsanan nimeä"
+
+#: ckan/logic/validators.py:475
+#, python-format
+msgid "Tag %s already belongs to vocabulary %s"
+msgstr "Avainsana %s sisältyy jo sanastoon %s"
+
+#: ckan/logic/action/__init__.py:56
+msgid "Package resource(s) invalid"
+msgstr "Tietoaineiston tiedostolinkki(t) virheellisiä"
+
+#: ckan/logic/action/__init__.py:58
+msgid "Missing Value"
+msgstr "Puuttuva arvo"
+
+#: ckan/logic/action/create.py:65 ckan/logic/action/create.py:271
+#, python-format
+msgid "REST API: Create object %s"
+msgstr "REST API: Luo objekti %s"
+
+#: ckan/logic/action/create.py:179
+#, python-format
+msgid "REST API: Create package relationship: %s %s %s"
+msgstr "REST API: Luo tietoaineistojen suhteet: %s %s %s "
+
+#: ckan/logic/action/create.py:214
+#, python-format
+msgid "REST API: Create member object %s"
+msgstr "REST API: Luo jäsen objekti %s"
+
+#: ckan/logic/action/create.py:324
+msgid "You must supply a package id or name (parameter \"package\")."
+msgstr "Sinun täytyy antaa tietoaineiston id tai nimi (parametri \"package\")."
+
+#: ckan/logic/action/create.py:326
+msgid "You must supply a rating (parameter \"rating\")."
+msgstr "Luokitus täytyy antaa (parametri \"rating\")."
+
+#: ckan/logic/action/create.py:331
+msgid "Rating must be an integer value."
+msgstr "Luokitus pitää olla kokonaislukuarvo."
+
+#: ckan/logic/action/create.py:335
+#, python-format
+msgid "Rating must be between %i and %i."
+msgstr "Luokitus pitää olla väliltä %i ja %i."
+
+#: ckan/logic/action/delete.py:27
+#, python-format
+msgid "REST API: Delete Package: %s"
+msgstr "REST API: Poistetaan tietoaineisto: %s"
+
+#: ckan/logic/action/delete.py:62 ckan/logic/action/delete.py:135
+#, python-format
+msgid "REST API: Delete %s"
+msgstr "REST API: Poista %s"
+
+#: ckan/logic/action/delete.py:165 ckan/logic/action/delete.py:180
+#: ckan/logic/action/get.py:1159 ckan/logic/action/update.py:594
+msgid "id not in data"
+msgstr "id ei ole datassa"
+
+#: ckan/logic/action/delete.py:169 ckan/logic/action/get.py:1162
+#: ckan/logic/action/update.py:598
+#, python-format
+msgid "Could not find vocabulary \"%s\""
+msgstr "Ei löytynyt sanastoa %s"
+
+#: ckan/logic/action/delete.py:188
+#, python-format
+msgid "Could not find tag \"%s\""
+msgstr "Ei löytynyt avainsanaa %s"
+
+#: ckan/logic/action/update.py:114
+msgid "Related was not found."
+msgstr "Liittyvää ei löydetty."
+
+#: ckan/logic/action/update.py:142
+msgid "Resource was not found."
+msgstr "Tietoaineistolinkkiä ei löytynyt"
+
+#: ckan/logic/action/update.py:157 ckan/logic/action/update.py:210
+#: ckan/logic/action/update.py:339
+#, python-format
+msgid "REST API: Update object %s"
+msgstr "REST API: Päivitä objektit %s"
+
+#: ckan/logic/action/update.py:176 ckan/logic/action/update.py:232
+msgid "Package was not found."
+msgstr "Tietoaineistoa ei löytynyt"
+
+#: ckan/logic/action/update.py:263
+#, python-format
+msgid "REST API: Update package relationship: %s %s %s"
+msgstr "REST API: Päivitä tietoaineistojen suhteet: %s %s %s"
+
+#: ckan/logic/action/update.py:454
+msgid "TaskStatus was not found."
+msgstr "TaskStatus ei löydetty"
+
+#: ckan/logic/auth/create.py:11
+#, python-format
+msgid "User %s not authorized to create packages"
+msgstr "Käyttäjällä %s ei ole käyttöoikeuksia luoda tietoaineistoja"
+
+#: ckan/logic/auth/create.py:16 ckan/logic/auth/update.py:23
+#, python-format
+msgid "User %s not authorized to edit these groups"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata näitä ryhmiä"
+
+#: ckan/logic/auth/create.py:28 ckan/logic/auth/publisher/create.py:31
+msgid "You must be logged in to add a related item"
+msgstr "Sinun täytyy olla kirjautunut lisätäksesi liittyvä asia"
+
+#: ckan/logic/auth/create.py:48 ckan/logic/auth/publisher/create.py:60
+#, python-format
+msgid "User %s not authorized to edit these packages"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata näitä paketteja"
+
+#: ckan/logic/auth/create.py:58 ckan/logic/auth/publisher/create.py:88
+#: ckan/logic/auth/publisher/create.py:92
+#, python-format
+msgid "User %s not authorized to create groups"
+msgstr "Käyttäjällä %s ei ole oikeuksia luoda ryhmiä"
+
+#: ckan/logic/auth/create.py:68
+#, python-format
+msgid "User %s not authorized to create authorization groups"
+msgstr "Käyttäjällä %s ei ole oikeuksia luoda käyttöoikeusryhmiä"
+
+#: ckan/logic/auth/create.py:82
+#, python-format
+msgid "User %s not authorized to create users"
+msgstr "Käyttäjällä %s ei ole oikeuksia luoda käyttäjiä"
+
+#: ckan/logic/auth/create.py:111
+msgid "Group was not found."
+msgstr "Ryhmiä ei löytynyt."
+
+#: ckan/logic/auth/create.py:131 ckan/logic/auth/publisher/create.py:114
+msgid "Valid API key needed to create a package"
+msgstr "Tietoaineiston luomiseen tarvitaan kelpaava API avain"
+
+#: ckan/logic/auth/create.py:139 ckan/logic/auth/publisher/create.py:122
+msgid "Valid API key needed to create a group"
+msgstr "Ryhmän luomiseen tarvitaan kelpaava API avain"
+
+#: ckan/logic/auth/delete.py:14
+#, python-format
+msgid "User %s not authorized to delete package %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia poistaa tietoaineistoa %s"
+
+#: ckan/logic/auth/delete.py:23 ckan/logic/auth/delete.py:31
+#: ckan/logic/auth/publisher/delete.py:36
+#: ckan/logic/auth/publisher/delete.py:44
+msgid "Only the owner can delete a related item"
+msgstr "Vain omistaja voi poistaa liittyvän asian"
+
+#: ckan/logic/auth/delete.py:47
+#, python-format
+msgid "User %s not authorized to delete relationship %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia poistaa relaatiota %s"
+
+#: ckan/logic/auth/delete.py:58 ckan/logic/auth/publisher/delete.py:67
+#, python-format
+msgid "User %s not authorized to delete group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia poistaa ryhmää %s"
+
+#: ckan/logic/auth/delete.py:74 ckan/logic/auth/publisher/delete.py:83
+#, python-format
+msgid "User %s not authorized to delete task_status"
+msgstr "Käyttäjällä %s ei ole oikeutta poistaa task_status"
+
+#: ckan/logic/auth/get.py:79
+#, python-format
+msgid "User %s not authorized to read these packages"
+msgstr "Käyttäjällä %s ei ole oikeuksia lukea näitä tietoaineistoja "
+
+#: ckan/logic/auth/get.py:90 ckan/logic/auth/publisher/get.py:85
+#: ckan/logic/auth/publisher/get.py:117
+#, python-format
+msgid "User %s not authorized to read package %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia lukea tietoaineistoa %s"
+
+#: ckan/logic/auth/get.py:110 ckan/logic/auth/update.py:39
+msgid "No package found for this resource, cannot check auth."
+msgstr "Tietoaineistoa ei löytynyt tälle aineistolinkille, ei voida tarkistaa valtuutusta"
+
+#: ckan/logic/auth/get.py:116 ckan/logic/auth/publisher/get.py:115
+#, python-format
+msgid "User %s not authorized to read resource %s"
+msgstr "Käyttäjällä %s ei ole oikeutta lukea resurssia %s"
+
+#: ckan/logic/auth/get.py:131
+#, python-format
+msgid "User %s not authorized to read group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia lukea ryhmää %s"
+
+#: ckan/logic/auth/update.py:19
+#, python-format
+msgid "User %s not authorized to edit package %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata tietoaineistoa %s"
+
+#: ckan/logic/auth/update.py:45
+#, python-format
+msgid "User %s not authorized to read edit %s"
+msgstr "Käyttäjällä %s ei ole muokata %s"
+
+#: ckan/logic/auth/update.py:59
+#, python-format
+msgid "User %s not authorized to change state of package %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muuttaa tietoaineiston tilaa %s"
+
+#: ckan/logic/auth/update.py:70
+#, python-format
+msgid "User %s not authorized to edit permissions of package %s"
+msgstr "Käyttäjällä %s ei ole muokkausoikeuksia tietoaineistoon %s"
+
+#: ckan/logic/auth/update.py:81
+#, python-format
+msgid "User %s not authorized to edit group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata ryhmää %s"
+
+#: ckan/logic/auth/update.py:89 ckan/logic/auth/update.py:94
+#: ckan/logic/auth/publisher/update.py:95
+#: ckan/logic/auth/publisher/update.py:100
+msgid "Only the owner can update a related item"
+msgstr "Vain omistaja voi päivittää liittyvän asian"
+
+#: ckan/logic/auth/update.py:106
+#, python-format
+msgid "User %s not authorized to change state of group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata ryhmän tilaa %s"
+
+#: ckan/logic/auth/update.py:117
+#, python-format
+msgid "User %s not authorized to edit permissions of group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata ryhmän oikeuksia %s"
+
+#: ckan/logic/auth/update.py:128 ckan/logic/auth/update.py:139
+#, python-format
+msgid "User %s not authorized to edit permissions of authorization group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata käyttöoikeusryhmän oikeuksia %s"
+
+#: ckan/logic/auth/update.py:150 ckan/logic/auth/publisher/update.py:124
+#, python-format
+msgid "User %s not authorized to edit user %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata käyttäjää %s"
+
+#: ckan/logic/auth/update.py:160 ckan/logic/auth/publisher/update.py:134
+#, python-format
+msgid "User %s not authorized to change state of revision"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata revision tilaa"
+
+#: ckan/logic/auth/update.py:173 ckan/logic/auth/publisher/update.py:147
+#, python-format
+msgid "User %s not authorized to update task_status table"
+msgstr "Käyttäjällä %s ei ole oikeutta päivittää task_status taulua"
+
+#: ckan/logic/auth/update.py:191 ckan/logic/auth/publisher/update.py:161
+#, python-format
+msgid "User %s not authorized to update term_translation table"
+msgstr "Käyttäjällä %s ei ole oikeuksia päivittää term_translation taulua"
+
+#: ckan/logic/auth/update.py:201 ckan/logic/auth/publisher/update.py:174
+msgid "Valid API key needed to edit a package"
+msgstr "Tietoaineiston muokkaukseen tarvitaan voimassaoleva API avain"
+
+#: ckan/logic/auth/update.py:209 ckan/logic/auth/publisher/update.py:182
+msgid "Valid API key needed to edit a group"
+msgstr "Ryhmän muokkaukseen tarvitaan voimassoleva API avain"
+
+#: ckan/logic/auth/publisher/create.py:52
+msgid "Two package IDs are required"
+msgstr "Kaksi tietoaineiston tunnistetta tarvitaan"
+
+#: ckan/logic/auth/publisher/create.py:74
+msgid "User is not authorized to create groups"
+msgstr "Käyttäjällä ei ole oikeuksia luoda ryhmiä"
+
+#: ckan/logic/auth/publisher/create.py:97
+msgid "Authorization groups not implemented in this profile"
+msgstr "Käyttöoikeusryhmiä ei ole toteutettu tähän profiiliin"
+
+#: ckan/logic/auth/publisher/delete.py:26
+#, python-format
+msgid "User %s not authorized to delete packages in these group"
+msgstr "Käyttäjällä %s ei ole oikeuksia poistaa tietoaineistoja tästä ryhmästä"
+
+#: ckan/logic/auth/publisher/delete.py:58
+#: ckan/logic/auth/publisher/delete.py:63
+msgid "Only members of this group are authorized to delete this group"
+msgstr "Vain tämän ryhmän jäsenillä on oikeudet poistaa tämä ryhmä"
+
+#: ckan/logic/auth/publisher/get.py:82
+#, python-format
+msgid "User not authorized to read package %s"
+msgstr "Käyttäjällä ei ole oikeuksia nähdä tietoaineistoa %s"
+
+#: ckan/logic/auth/publisher/get.py:137
+#, python-format
+msgid "User %s not authorized to show group %s"
+msgstr "Käyttäjällä %s ei ole oikeuksia nähdä ryhmää %s"
+
+#: ckan/logic/auth/publisher/update.py:29
+#, python-format
+msgid "User %s not authorized to edit packages in these groups"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata näiden ryhmien tietoaineistoja"
+
+#: ckan/logic/auth/publisher/update.py:47
+#: ckan/logic/auth/publisher/update.py:50
+#, python-format
+msgid "User %s not authorized to edit resources in this package"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata tämän tietoaineiston aineistolinkkejä"
+
+#: ckan/logic/auth/publisher/update.py:62
+msgid "Package edit permissions is not available"
+msgstr "Tietoaineiston muokkausoikeuksia ei ole saatavilla"
+
+#: ckan/logic/auth/publisher/update.py:74
+msgid "Only members of this group are authorized to edit this group"
+msgstr "Vain tämän ryhmän jäsenillä on oikeudet muokata tätä ryhmää"
+
+#: ckan/logic/auth/publisher/update.py:83
+#, python-format
+msgid "Could not find user %s"
+msgstr "Ei löytynyt käyttäjää %s"
+
+#: ckan/logic/auth/publisher/update.py:87
+#, python-format
+msgid "User %s not authorized to edit this group"
+msgstr "Käyttäjällä %s ei ole oikeuksia muokata tätä ryhmää"
+
+#: ckan/logic/auth/publisher/update.py:108
+msgid "Group edit permissions is not implemented"
+msgstr "Ryhmän käyttöoikeuksien muokkausta ei ole toteutettu"
+
+#: ckan/logic/auth/publisher/update.py:111
+#: ckan/logic/auth/publisher/update.py:115
+msgid "Authorization group update not implemented"
+msgstr "Käyttöoikeusryhmän päivitystä ei ole toteutettu"
+
+#: ckan/model/license.py:61
+msgid "License Not Specified"
+msgstr "Lisenssiä ei määritelty"
+
+#: ckan/model/license.py:166
+msgid "Other (Open)"
+msgstr "Muu (Open)"
+
+#: ckan/model/license.py:180
+msgid "Other (Public Domain)"
+msgstr "Muu (Public Domain)"
+
+#: ckan/model/license.py:194
+msgid "Other (Attribution)"
+msgstr "Muu (Attribution)"
+
+#: ckan/model/license.py:234
+msgid "Other (Non-Commercial)"
+msgstr "Muu (Non-Commercial)"
+
+#: ckan/model/license.py:248
+msgid "Other (Not Open)"
+msgstr "Muu (Not Open)"
+
+#: ckan/model/package_relationship.py:48
+#, python-format
+msgid "depends on %s"
+msgstr "riippuu %s:stä"
+
+#: ckan/model/package_relationship.py:48
+#, python-format
+msgid "is a dependency of %s"
+msgstr "on %s riippuvuus"
+
+#: ckan/model/package_relationship.py:49
+#, python-format
+msgid "derives from %s"
+msgstr "on johdettavissa %s:stä"
+
+#: ckan/model/package_relationship.py:49
+#, python-format
+msgid "has derivation %s"
+msgstr "on haara %s"
+
+#: ckan/model/package_relationship.py:50
+#, python-format
+msgid "links to %s"
+msgstr "linkittää %s"
+
+#: ckan/model/package_relationship.py:50
+#, python-format
+msgid "is linked from %s"
+msgstr "on linkitetty %s:tä"
+
+#: ckan/model/package_relationship.py:51
+#, python-format
+msgid "is a child of %s"
+msgstr "on %s:n lapsi"
+
+#: ckan/model/package_relationship.py:51
+#, python-format
+msgid "is a parent of %s"
+msgstr "on %s:n äiti"
+
+#: ckan/model/package_relationship.py:55
+#, python-format
+msgid "has sibling %s"
+msgstr "on sisarus %s"
+
+#: ckan/templates/_util.html:11 ckan/templates/js_strings.html:61
+#: ckan/templates/authorization_group/layout.html:16
+#: ckan/templates/group/layout.html:24
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: ckan/templates/_util.html:12 ckan/templates/js_strings.html:62
+#: ckan/templates/package/resource_read.html:173
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:27
+msgid "Preview"
+msgstr "Esikatselu"
+
+#: ckan/templates/_util.html:18
+msgid "You can use"
+msgstr "Voit käyttää"
+
+#: ckan/templates/_util.html:18
+msgid "Markdown formatting"
+msgstr "Markdown formatointia"
+
+#: ckan/templates/_util.html:18
+msgid "here."
+msgstr "tässä."
+
+#: ckan/templates/_util.html:69 ckan/templates/_util.html:82
+#: ckan/templates/js_strings.html:47
+#: ckan/templates/group/new_group_form.html:41
+#: ckan/templates/package/new_package_form.html:86
+msgid "Description"
+msgstr "Kuvaus"
+
+#: ckan/templates/_util.html:95
+msgid "Number of members"
+msgstr "Jäsenten määrä"
+
+#: ckan/templates/_util.html:115
+msgid "View dataset resources"
+msgstr "Näytä tietoaineiston tiedostolinkit"
+
+#: ckan/templates/_util.html:115
+msgid "DOWNLOAD"
+msgstr "LATAA"
+
+#: ckan/templates/_util.html:118
+msgid "No downloadable resources."
+msgstr "Ei ladattavia resursseja."
+
+#: ckan/templates/_util.html:138
+msgid "No description for this item"
+msgstr "Tällä asialla ei ole kuvausta"
+
+#: ckan/templates/_util.html:139
+msgid "View this related item"
+msgstr "Näytä tähän liittyvä asia"
+
+#: ckan/templates/_util.html:161
+msgid "no ratings yet"
+msgstr "ei luokitusta vielä"
+
+#: ckan/templates/_util.html:162
+msgid ""
+"–\n"
+"    rate it now"
+msgstr "–\n    anna luokitus nyt"
+
+#: ckan/templates/_util.html:215 ckan/templates/_util.html:271
+msgid "User Group"
+msgstr "Käyttäjäryhmä"
+
+#: ckan/templates/error_document_template.html:5
+msgid "Error"
+msgstr "Virhe"
+
+#: ckan/templates/facets.html:162
+msgid "(facet_item['count'])"
+msgstr "(facet_item['count'])"
+
+#: ckan/templates/js_strings.html:16
+msgid "Checking..."
+msgstr "Tarkistetaan..."
+
+#: ckan/templates/js_strings.html:17
+msgid "Type at least two characters..."
+msgstr "Syötä vähintään kaksi merkkiä..."
+
+#: ckan/templates/js_strings.html:18
+msgid "This is the current URL."
+msgstr "Tämä on nykyinen URL."
+
+#: ckan/templates/js_strings.html:19
+msgid "This URL is available!"
+msgstr "URL on käytettävissä!"
+
+#: ckan/templates/js_strings.html:20
+msgid "This URL is already used, please use a different one."
+msgstr "Tämä URL on jo käytössä, ole hyvä ja valitse toinen."
+
+#: ckan/templates/js_strings.html:21
+msgid "Failed to save, possibly due to invalid data "
+msgstr "Tallentaminen epäonnistui, mahdollisesti virheellistä tietoa"
+
+#: ckan/templates/js_strings.html:22 ckan/templates/group/layout.html:16
+msgid "Add Dataset"
+msgstr "Lisää tietoaineisto"
+
+#: ckan/templates/js_strings.html:23
+msgid "Add Group"
+msgstr "Lisää ryhmä"
+
+#: ckan/templates/js_strings.html:24
+msgid ""
+"You have unsaved changes. Make sure to click 'Save Changes' below before "
+"leaving this page."
+msgstr "Et ole vielä tallentanut muutoksia. Varmista että painat 'Tallenna muutokset' ennenkuin poistut sivulta"
+
+#: ckan/templates/js_strings.html:25
+msgid "Loading..."
+msgstr "Ladataan..."
+
+#: ckan/templates/js_strings.html:26
+msgid "(no name)"
+msgstr "(ei nimeä)"
+
+#: ckan/templates/js_strings.html:27
+msgid "Delete the resource '%name%'?"
+msgstr "Poista tietoaineistolinkki '%name%'?"
+
+#: ckan/templates/js_strings.html:28
+msgid "Preview not available for data type: "
+msgstr "Tälle tietotyypille ei ole esikatselua:"
+
+#: ckan/templates/js_strings.html:29
+msgid "Failed to get credentials for storage upload. Upload cannot proceed"
+msgstr "Kirjautumistietojen saanti epäonnistui tallennusta varten. Tallenusta ei voida jatkaa"
+
+#: ckan/templates/js_strings.html:30
+msgid "Checking upload permissions ..."
+msgstr "Tarkistetaan tallennuksen käyttöoikeuksia ..."
+
+#: ckan/templates/js_strings.html:31
+msgid "Uploading file ..."
+msgstr "Tallennetaan tiedostoa ..."
+
+#: ckan/templates/js_strings.html:32
+msgid "Data File"
+msgstr "Data tiedosto"
+
+#: ckan/templates/js_strings.html:33 ckan/templates/layout_base.html:144
+#: ckan/templates/package/search.html:37
+msgid "API"
+msgstr "API"
+
+#: ckan/templates/js_strings.html:34
+msgid "Visualization"
+msgstr "Visualisointi"
+
+#: ckan/templates/js_strings.html:35
+msgid "Image"
+msgstr "Kuva"
+
+#: ckan/templates/js_strings.html:36
+msgid "Metadata"
+msgstr "Metatieto"
+
+#: ckan/templates/js_strings.html:37
+msgid "Documentation"
+msgstr "Dokumentaatio"
+
+#: ckan/templates/js_strings.html:38
+msgid "Code"
+msgstr "Koodi"
+
+#: ckan/templates/js_strings.html:39
+msgid "Example"
+msgstr "Esimerkki"
+
+#: ckan/templates/js_strings.html:44 ckan/templates/storage/index.html:6
+#: ckan/templates/storage/index.html:15 ckan/templates/storage/success.html:6
+msgid "Upload"
+msgstr "Lataa"
+
+#: ckan/templates/js_strings.html:45
+#: ckan/templates/group/new_group_form.html:128
+#: ckan/templates/package/new_package_form.html:307
+#: ckan/templates/user/edit_user_form.html:71
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: ckan/templates/js_strings.html:48
+#: ckan/templates/group/new_group_form.html:28
+#: ckan/templates/package/new_package_form.html:49
+msgid "Url"
+msgstr "Url"
+
+#: ckan/templates/js_strings.html:49
+#: ckan/templates/package/resource_read.html:129
+msgid "Format"
+msgstr "Muoto"
+
+#: ckan/templates/js_strings.html:50
+msgid "Resource Type"
+msgstr "Tiedostolinkin tyyppi"
+
+#: ckan/templates/js_strings.html:51
+msgid "DataStore enabled"
+msgstr "DataStore toiminnassa"
+
+#: ckan/templates/js_strings.html:52
+msgid "Size (Bytes)"
+msgstr "Koko (tavua)"
+
+#: ckan/templates/js_strings.html:53
+msgid "Mimetype"
+msgstr "Sisältötyyppi (Mime)"
+
+#: ckan/templates/js_strings.html:54
+msgid "Created"
+msgstr "Luotu"
+
+#: ckan/templates/js_strings.html:55
+msgid "Last Modified"
+msgstr "Viimeksi muokattu"
+
+#: ckan/templates/js_strings.html:56
+msgid "Mimetype (Inner)"
+msgstr "Sisältötyyppi (sisempi Mime)"
+
+#: ckan/templates/js_strings.html:57
+msgid "Hash"
+msgstr "Tarkiste"
+
+#: ckan/templates/js_strings.html:58
+msgid "ID"
+msgstr "ID"
+
+#: ckan/templates/js_strings.html:59
+msgid "Done"
+msgstr "Tehty"
+
+#: ckan/templates/js_strings.html:60
+msgid "This resource has unsaved changes."
+msgstr "Tässä resurssissa on tallentamattomia muutoksia"
+
+#: ckan/templates/js_strings.html:63
+msgid "e.g. csv, html, xls, rdf, ..."
+msgstr "esimerkiksi csv, html, xls, rdf, ..."
+
+#: ckan/templates/js_strings.html:65
+msgid "Extra Fields"
+msgstr "Lisäkentät"
+
+#: ckan/templates/js_strings.html:66
+msgid "Add Extra Field"
+msgstr "Lisää lisäkenttä"
+
+#: ckan/templates/js_strings.html:67
+msgid "Delete Resource"
+msgstr "Poista resurssi"
+
+#: ckan/templates/js_strings.html:68
+msgid "You can use %aMarkdown formatting%b here."
+msgstr "Voit käyttää %aMarkdown formatting%b tässä."
+
+#: ckan/templates/js_strings.html:69
+msgid ""
+"Should a %aDataStore table and Data API%b be enabled for this resource?"
+msgstr "Onko tarvetta %aDataStore taulu and Data API%b aktivoida tälle resurssille?"
+
+#: ckan/templates/js_strings.html:70
+#, python-format
+msgid ""
+"Dates are in %aISO Format%b — eg. %c2012-12-25%d or %c2010-05-31T14:30%d."
+msgstr "Päiväykset ovat %aISO Format%b — esimerkiksi. %c2012-12-25%d tai %c2010-05-31T14:30%d."
+
+#: ckan/templates/js_strings.html:71
+msgid "Data File (Uploaded)"
+msgstr "Datatiedosto (Tallennettu)"
+
+#: ckan/templates/layout_base.html:56 ckan/templates/user/logout.html:7
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: ckan/templates/layout_base.html:59 ckan/templates/user/layout.html:20
+#: ckan/templates/user/new_user_form.html:19
+msgid "Login"
+msgstr "Kirjaudu"
+
+#: ckan/templates/layout_base.html:60
+msgid "Register"
+msgstr "Rekisteröidy"
+
+#: ckan/templates/layout_base.html:72 ckan/templates/home/index.html:22
+msgid "Find datasets"
+msgstr "Etsi tietoaineistoja"
+
+#: ckan/templates/layout_base.html:76 ckan/templates/package/search.html:15
+msgid "Add a dataset"
+msgstr "Lisää tietoaineisto"
+
+#: ckan/templates/layout_base.html:77
+#: ckan/templates/package/search_form.html:16 ckan/templates/tag/index.html:13
+#: ckan/templates/user/list.html:13
+msgid "Search"
+msgstr "Etsi"
+
+#: ckan/templates/layout_base.html:79 ckan/templates/layout_base.html:137
+#: ckan/templates/layout_base.html:140 ckan/templates/home/about.html:6
+#: ckan/templates/home/about.html:9 ckan/templates/user/edit_user_form.html:39
+#: ckan/templates/user/read.html:28
+msgid "About"
+msgstr "Tietoa"
+
+#: ckan/templates/layout_base.html:94
+msgid "Page Logo"
+msgstr "Sivun logo"
+
+#: ckan/templates/layout_base.html:112
+msgid "Master content template placeholder … please replace me."
+msgstr "Pääsisältöpohjan esimerkkisisältö  ... korvaa tämä sisältö."
+
+#: ckan/templates/layout_base.html:142
+msgid "Twitter @ckanproject"
+msgstr "Twitter @ckanproject"
+
+#: ckan/templates/layout_base.html:145 ckan/templates/package/search.html:38
+msgid "API Docs"
+msgstr "API dokumentaatio"
+
+#: ckan/templates/layout_base.html:147
+msgid "Contact Us"
+msgstr "Ota yhteyttä"
+
+#: ckan/templates/layout_base.html:150
+msgid "Privacy Policy"
+msgstr "Tietosuojapolitiikka"
+
+#: ckan/templates/layout_base.html:156
+msgid "Sections"
+msgstr "Osiot"
+
+#: ckan/templates/layout_base.html:160
+#: ckan/templates/authorization_group/edit_form.html:13
+#: ckan/templates/user/list.html:6 ckan/templates/user/list.html:7
+msgid "Users"
+msgstr "Käyttäjät:"
+
+#: ckan/templates/layout_base.html:175 ckan/templates/group/history.html:9
+#: ckan/templates/package/history.html:11
+msgid "Revisions"
+msgstr "Revisiot"
+
+#: ckan/templates/layout_base.html:180
+#: ckan/templates/authorization_group/index.html:6
+#: ckan/templates/authorization_group/index.html:7
+#: ckan/templates/authorization_group/layout.html:27
+msgid "Authorization Groups"
+msgstr "Käyttöoikeusryhmät"
+
+#: ckan/templates/layout_base.html:185
+msgid "Site Admin"
+msgstr "Sivuston ylläpitäjä"
+
+#: ckan/templates/layout_base.html:193
+msgid "Languages"
+msgstr "Kielet"
+
+#: ckan/templates/layout_base.html:208
+msgid "Meta"
+msgstr "Meta"
+
+#: ckan/templates/layout_base.html:212
+msgid "Open Knowledge Foundation"
+msgstr "Open Knowledge Foundation"
+
+#: ckan/templates/layout_base.html:212
+msgid "Licensed under the"
+msgstr "Lisensoitu tällä lisenssillä"
+
+#: ckan/templates/layout_base.html:213
+#: ckan/templates/package/new_package_form.html:309
+msgid "Open Database License"
+msgstr "Open Database License"
+
+#: ckan/templates/layout_base.html:214
+msgid "This Content and Data is Open"
+msgstr "Tämä sisältö ja tieto on avointa"
+
+#: ckan/templates/layout_base.html:216
+#: ckan/templates/snippets/data-viewer-embed-branded-link.html:10
+msgid "Powered by"
+msgstr "Powered by"
+
+#: ckan/templates/layout_base.html:217
+msgid "CKAN"
+msgstr "CKAN"
+
+#: ckan/templates/layout_base.html:217
+msgid "v"
+msgstr "v"
+
+#: ckan/templates/activity_streams/added_tag.html:8
+msgid "{actor} added the tag {object} to the dataset {target}"
+msgstr "{actor} lisäsi {object} tietoaineistoon {target}"
+
+#: ckan/templates/activity_streams/changed_group.html:8
+msgid "{actor} updated the group {object}"
+msgstr "{actor} päivitti ryhmää {object}"
+
+#: ckan/templates/activity_streams/changed_package.html:8
+msgid "{actor} updated the dataset {object}"
+msgstr "{actor} päivitti tietoaineistoa {object}"
+
+#: ckan/templates/activity_streams/changed_package_extra.html:8
+msgid "{actor} changed the extra {object} of the dataset {target}"
+msgstr "{actor} muutti lisäkenttää {object} tästä tietoaineistosta {target}"
+
+#: ckan/templates/activity_streams/changed_resource.html:8
+msgid "{actor} updated the resource {object} in the dataset {target}"
+msgstr "{actor} päivitti resurssia {object} tietoaineistossa {target}"
+
+#: ckan/templates/activity_streams/changed_user.html:8
+msgid "{actor} updated their profile"
+msgstr "{actor} päivitti profiiliaan"
+
+#: ckan/templates/activity_streams/deleted_group.html:8
+msgid "{actor} deleted the group {object}"
+msgstr "{actor} poisti ryhmän {object}"
+
+#: ckan/templates/activity_streams/deleted_package.html:8
+msgid "{actor} deleted the dataset {object}"
+msgstr "{actor} poisti tietoaineiston {object}"
+
+#: ckan/templates/activity_streams/deleted_package_extra.html:8
+msgid "{actor} deleted the extra {object} from the dataset {target}"
+msgstr "{actor} poisti lisäkentän {object} tietoaineistosta {target}"
+
+#: ckan/templates/activity_streams/deleted_resource.html:8
+msgid "{actor} deleted the resource {object} from the dataset {target}"
+msgstr "{actor} poisti resurssin {object} tietoaineistosta {target}"
+
+#: ckan/templates/activity_streams/new_group.html:8
+msgid "{actor} created the group {object}"
+msgstr "{actor} loi ryhmän {object}"
+
+#: ckan/templates/activity_streams/new_package.html:8
+msgid "{actor} created the dataset {object}"
+msgstr "{actor} loi tietoaineiston{object}"
+
+#: ckan/templates/activity_streams/new_package_extra.html:8
+msgid "{actor} added the extra {object} to the dataset {target}"
+msgstr "{actor} lisäsi lisäkentän {object} tietoaineistoon {target}"
+
+#: ckan/templates/activity_streams/new_resource.html:8
+msgid "{actor} added the resource {object} to the dataset {target}"
+msgstr "{actor} lisäsi resurssin {object} tietoaineistoon {target}"
+
+#: ckan/templates/activity_streams/new_user.html:8
+msgid "{actor} signed up"
+msgstr "{actor} kirjautui sisään"
+
+#: ckan/templates/activity_streams/removed_tag.html:8
+msgid "{actor} removed the tag {object} from the dataset {target}"
+msgstr "{actor} poisti avainsanan {object} tietoaineistosta {target}"
+
+#: ckan/templates/admin/authz.html:6 ckan/templates/admin/authz.html:7
+msgid "Administration - Authorization"
+msgstr "Hallinointi - Käyttöoikeudet"
+
+#: ckan/templates/admin/authz.html:10
+#: ckan/templates/authorization_group/authz.html:9
+#: ckan/templates/group/authz.html:9 ckan/templates/package/authz.html:9
+msgid "Update Existing Roles"
+msgstr "Päivitä olemassolevia rooleja"
+
+#: ckan/templates/admin/authz.html:14 ckan/templates/admin/authz.html:33
+#: ckan/templates/group/authz.html:13 ckan/templates/group/authz.html:32
+#: ckan/templates/group/new_group_form.html:126
+#: ckan/templates/package/authz.html:13 ckan/templates/package/authz.html:32
+#: ckan/templates/package/new_package_form.html:305
+#: ckan/templates/user/edit_user_form.html:70
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
+#: ckan/templates/admin/authz.html:20
+#: ckan/templates/authorization_group/authz.html:18
+#: ckan/templates/group/authz.html:19 ckan/templates/package/authz.html:19
+msgid "Add Roles for Any User"
+msgstr "Lisää rooleja käyttäjille"
+
+#: ckan/templates/admin/authz.html:23 ckan/templates/admin/authz.html:41
+#: ckan/templates/group/authz.html:22 ckan/templates/group/authz.html:40
+#: ckan/templates/package/authz.html:22 ckan/templates/package/authz.html:40
+msgid "Add Role"
+msgstr "Lisää rooli"
+
+#: ckan/templates/admin/authz.html:29
+#: ckan/templates/authorization_group/authz.html:27
+msgid "Existing Roles for Authorization Groups"
+msgstr "Olemassaolevat roolit käyttöoikeusryhmille"
+
+#: ckan/templates/admin/authz.html:37
+#: ckan/templates/authorization_group/authz.html:36
+#: ckan/templates/group/authz.html:36 ckan/templates/package/authz.html:36
+msgid "Add Roles for Any Authorization Group"
+msgstr "Lisää rooleja käyttöoikeusryhmille"
+
+#: ckan/templates/admin/index.html:6 ckan/templates/admin/index.html:7
+msgid "Administration Dashboard"
+msgstr "Hallintapaneeli"
+
+#: ckan/templates/admin/index.html:10
+msgid "Current Sysadmins"
+msgstr "Nykyiset järjestelmäylläpitäjät"
+
+#: ckan/templates/admin/index.html:11
+msgid "You can change sysadmins on the"
+msgstr "Voit muuttaa järjestelmäylläpitäjiä täältä"
+
+#: ckan/templates/admin/index.html:13
+msgid "authorization page"
+msgstr "käyttöoikeus sivu"
+
+#: ckan/templates/admin/layout.html:13
+#: ckan/templates/authorization_group/layout.html:19
+#: ckan/templates/group/layout.html:27 ckan/templates/package/layout.html:50
+msgid "Authorization"
+msgstr "Käyttöoikeudet"
+
+#: ckan/templates/admin/layout.html:16
+msgid "Trash"
+msgstr "Roskakori"
+
+#: ckan/templates/admin/trash.html:6 ckan/templates/admin/trash.html:7
+msgid "Administration - Trash"
+msgstr "Hallinointi - Roskakori"
+
+#: ckan/templates/admin/trash.html:10
+msgid "Deleted Revisions"
+msgstr "Poistetut revisiot"
+
+#: ckan/templates/admin/trash.html:21 ckan/templates/admin/trash.html:39
+msgid "Purge them all (forever and irreversibly)"
+msgstr "Poista kaikki (lopullisesti ja siten että niitä ei voi palauttaa)"
+
+#: ckan/templates/admin/trash.html:27
+msgid "Deleted Datasets"
+msgstr "Poistetut tietoaineistot"
+
+#: ckan/templates/authorization_group/authz.html:5
+msgid "- Authorization - AuthorizationGroups"
+msgstr "- Käyttöoikeudet - Käyttöoikeusryhmät"
+
+#: ckan/templates/authorization_group/authz.html:6
+#: ckan/templates/group/authz.html:5 ckan/templates/group/authz.html:6
+#: ckan/templates/package/authz.html:5 ckan/templates/package/authz.html:6
+msgid "Authorization:"
+msgstr "Valtuutus:"
+
+#: ckan/templates/authorization_group/authz.html:13
+#: ckan/templates/authorization_group/authz.html:31
+#: ckan/templates/authorization_group/edit_form.html:30
+#: ckan/templates/group/edit_form.html:23
+#: ckan/templates/package/edit_form.html:28
+msgid "Save"
+msgstr "Tallenna"
+
+#: ckan/templates/authorization_group/authz.html:22
+#: ckan/templates/authorization_group/authz.html:40
+msgid "Add"
+msgstr "Lisää"
+
+#: ckan/templates/authorization_group/edit.html:5
+msgid "- Edit - Authorization Groups"
+msgstr "- Muokkaa - Käyttöoikeusryhmiä"
+
+#: ckan/templates/authorization_group/edit.html:6
+#: ckan/templates/group/edit.html:5 ckan/templates/group/edit.html:6
+#: ckan/templates/package/edit.html:7
+msgid "Edit:"
+msgstr "Muokkaa:"
+
+#: ckan/templates/authorization_group/edit_form.html:23
+msgid "There are no users currently in this group."
+msgstr "Tässä ryhmässä ei ole tällä hetkellä käyttäjiä."
+
+#: ckan/templates/authorization_group/index.html:10
+#, python-format
+msgid "There are [1:%(item_count)s] authorization groups."
+msgstr "Yhteensä [1:%(item_count)s] käyttöoikeusryhmää."
+
+#: ckan/templates/authorization_group/layout.html:11
+#: ckan/templates/revision/layout.html:9
+msgid "List"
+msgstr "Lista"
+
+#: ckan/templates/authorization_group/layout.html:14
+#: ckan/templates/group/layout.html:12 ckan/templates/package/layout.html:10
+#: ckan/templates/package/resource_read.html:98
+#: ckan/templates/package/resource_read.html:99
+#: ckan/templates/revision/layout.html:12
+msgid "View"
+msgstr "Näytä"
+
+#: ckan/templates/authorization_group/layout.html:28
+msgid ""
+"Instead of specifying the privileges of specific users on a dataset or group,\n"
+"          you can also specify a set of users that will share the same rights. To do that, an    \n"
+"          [1:authorization group] can be set-up and users can be added to it."
+msgstr "Sen sijaan että määrittelisit oikeudet tietyille käyttäjille tietoaineisolle tai ryhmälle,\nvoit myös määritellä joukon käyttäjiä joilla on samat oikeudet. Tehdäksesi niin, luo    \n[1:käyttöoikeusryhmä] ensin ja lisää käyttäjät siihen."
+
+#: ckan/templates/authorization_group/layout.html:32
+msgid "To create a new authorization group, please first [1:login]."
+msgstr "Luodaksesi uuden käyttöoikeusryhmän, kirjaudu ensin [1:kirjaudu]."
+
+#: ckan/templates/authorization_group/layout.html:36
+msgid "Create a new authorization group"
+msgstr "Luo uusi käyttöoikeusryhmä"
+
+#: ckan/templates/authorization_group/new.html:5
+msgid "New - Authorization Groups"
+msgstr "Uusi - Käyttöoikeusryhmät"
+
+#: ckan/templates/authorization_group/new.html:6
+msgid "New Authorization Group"
+msgstr "Uusi käyttöoikeusryhmä"
+
+#: ckan/templates/authorization_group/read.html:6
+msgid "- Authorization Groups"
+msgstr "- Käyttöoikeusryhmät"
+
+#: ckan/templates/authorization_group/read.html:10
+msgid "Members"
+msgstr "Jäsenet"
+
+#: ckan/templates/authorization_group/read.html:11
+#, python-format
+msgid "There are %(item_count)s users in this authorization group."
+msgstr "Tässä käyttöoikeusryhmässä on %(item_count)s käyttäjää."
+
+#: ckan/templates/group/authz.html:28 ckan/templates/package/authz.html:28
+msgid "Update Existing Roles for Authorization Groups"
+msgstr "Päivitä olemassolevien pääsyryhmien rooleja"
+
+#: ckan/templates/group/edit.html:7 ckan/templates/home/index.html:7
+#: ckan/templates/package/edit.html:8
+#: ckan/templates/package/editresources.html:8
+#: ckan/templates/package/history.html:8 ckan/templates/package/new.html:9
+#: ckan/templates/package/related_list.html:14
+#: ckan/templates/revision/diff.html:6 ckan/templates/revision/list.html:7
+msgid "no-sidebar"
+msgstr "no-sidebar"
+
+#: ckan/templates/group/edit_form.html:10
+#: ckan/templates/group/new_group_form.html:101
+#: ckan/templates/group/read.html:45 ckan/templates/revision/read.html:45
+#: ckan/templates/user/read.html:55 ckan/templates/user/read.html:71
+msgid "Datasets"
+msgstr "Tietoaineistot"
+
+#: ckan/templates/group/edit_form.html:17
+#: ckan/templates/group/new_group_form.html:114
+msgid "There are no datasets currently in this group."
+msgstr "Tässä ryhmässä ei ole vielä tietoaineistoja"
+
+#: ckan/templates/group/history.html:5 ckan/templates/group/history.html:6
+#: ckan/templates/package/history.html:7
+msgid "History:"
+msgstr "Historia:"
+
+#: ckan/templates/group/history.html:24 ckan/templates/package/history.html:17
+#: ckan/templates/package/new.html:18
+msgid "Error:"
+msgstr "Virhe:"
+
+#: ckan/templates/group/history.html:32 ckan/templates/package/history.html:25
+#: ckan/templates/revision/read.html:5
+#: ckan/templates/snippets/revision_list.html:11
+msgid "Revision"
+msgstr "Revisio"
+
+#: ckan/templates/group/history.html:32 ckan/templates/package/history.html:25
+#: ckan/templates/snippets/revision_list.html:11
+msgid "Timestamp"
+msgstr "Aikaleima"
+
+#: ckan/templates/group/history.html:32 ckan/templates/package/history.html:25
+#: ckan/templates/snippets/revision_list.html:11
+msgid "Log Message"
+msgstr "Logiviesti"
+
+#: ckan/templates/group/history.html:49 ckan/templates/package/history.html:43
+msgid "Compare »"
+msgstr "Vertaa »"
+
+#: ckan/templates/group/history.html:54
+msgid "Group History"
+msgstr "Ryhmän historia"
+
+#: ckan/templates/group/index.html:6 ckan/templates/group/index.html:7
+msgid "Groups of Datasets"
+msgstr "Tietoaineistoryhmä"
+
+#: ckan/templates/group/index.html:11
+msgid "What Are Groups?"
+msgstr "Mitä ovat ryhmät?"
+
+#: ckan/templates/group/index.html:12
+msgid ""
+"Whilst tags are great at collecting datasets together, there are occasions "
+"when you want to restrict users from editing a collection. A [1:group] can "
+"be set-up to specify which users have permission to add or remove datasets "
+"from it."
+msgstr "Vaikka avainsanat ovat kätevä tapa koota tietoaineistoja yhteen niin joskus on tarve rajoittaa käyttäjiä jotka voivat muokata tietoaineistojen kokoelmaa. Luomalla [1:group] voidaan määritellä millä käyttäjillä on oikeudet muokata tai lisätä tietoaineistoja kokoelmassa"
+
+#: ckan/templates/group/layout.html:13 ckan/templates/package/layout.html:37
+msgid "History"
+msgstr "Historia"
+
+#: ckan/templates/group/layout.html:18
+msgid "New Dataset..."
+msgstr "Uusi tietoaineisto..."
+
+#: ckan/templates/group/layout.html:19
+msgid "Existing Dataset..."
+msgstr "Olemassaoleva tietoaineisto..."
+
+#: ckan/templates/group/layout.html:32
+msgid "List Groups"
+msgstr "Listaa ryhmät"
+
+#: ckan/templates/group/layout.html:35
+msgid "Add a Group"
+msgstr "Lisää ryhmä"
+
+#: ckan/templates/group/layout.html:38
+msgid "Login to Add a Group"
+msgstr "Kirjaudu sisään lisätäksesi ryhmän"
+
+#: ckan/templates/group/new.html:5 ckan/templates/group/new.html:6
+msgid "Add A Group"
+msgstr "Lisää ryhmä"
+
+#: ckan/templates/group/new_group_form.html:13
+#: ckan/templates/package/form.html:7
+#: ckan/templates/package/new_package_form.html:13
+#: ckan/templates/user/edit_user_form.html:13
+#: ckan/templates/user/new_user_form.html:11
+msgid "Errors in form"
+msgstr "Virheitä lomakkeessa"
+
+#: ckan/templates/group/new_group_form.html:14
+#: ckan/templates/package/form.html:8
+#: ckan/templates/package/new_package_form.html:14
+#: ckan/templates/user/edit_user_form.html:14
+#: ckan/templates/user/new_user_form.html:12
+msgid "The form contains invalid entries:"
+msgstr "Lomake sisältää virheellisiä syötteitä"
+
+#: ckan/templates/group/new_group_form.html:35
+#: ckan/templates/package/new_package_form.html:56
+msgid "Warning: URL is very long. Consider changing it to something shorter."
+msgstr "Varoitus: URL on erittäin pitkä. Harkitse sen vaihtamista lyhyempään."
+
+#: ckan/templates/group/new_group_form.html:43
+#: ckan/templates/package/new_package_form.html:88
+msgid "Start with a summary sentence ..."
+msgstr "Aloita yhteenveto lauseella..."
+
+#: ckan/templates/group/new_group_form.html:47
+msgid "Image URL:"
+msgstr "Kuvan URL:"
+
+#: ckan/templates/group/new_group_form.html:50
+msgid "The URL for the image that is associated with this group."
+msgstr "URL kuvalle joka liitetty tälle ryhmälle"
+
+#: ckan/templates/group/new_group_form.html:57
+#: ckan/templates/package/new_package_form.html:275
+msgid "active"
+msgstr "aktiivinen"
+
+#: ckan/templates/group/new_group_form.html:58
+#: ckan/templates/package/new_package_form.html:276
+msgid "deleted"
+msgstr "poistettu"
+
+#: ckan/templates/group/new_group_form.html:75
+#: ckan/templates/package/edit.html:24
+#: ckan/templates/package/form_extra_fields.html:22
+#: ckan/templates/package/new_package_form.html:243
+#: ckan/templates/package/new_package_form.html:269
+#: ckan/templates/revision/read.html:20
+#: ckan/templates/snippets/revision_list.html:36
+msgid "Delete"
+msgstr "Poista"
+
+#: ckan/templates/group/new_group_form.html:83
+#: ckan/templates/package/new_package_form.html:251
+msgid "Add..."
+msgstr "Lisää..."
+
+#: ckan/templates/group/new_group_form.html:86
+#: ckan/templates/package/new_package_form.html:254
+msgid "Key ="
+msgstr "Avain ="
+
+#: ckan/templates/group/new_group_form.html:90
+#: ckan/templates/package/new_package_form.html:258
+msgid "Value ="
+msgstr "Arvo ="
+
+#: ckan/templates/group/new_group_form.html:116
+msgid "Add datasets"
+msgstr "Lisää tietoaineistoja"
+
+#: ckan/templates/group/read.html:20
+msgid "Administrators"
+msgstr "Pääkäyttäjät"
+
+#: ckan/templates/group/read.html:33
+msgid "State:"
+msgstr "Tila:"
+
+#: ckan/templates/group/read.html:49
+#, python-format
+msgid "[1:You searched for \"%(query)s\". ]%(number_of_results)s datasets found."
+msgstr "[1:Etsit \"%(query)s\". ]%(number_of_results)s tietoaineistoa löytyi."
+
+#: ckan/templates/home/about.html:14
+msgid ""
+"What was the [1:average price] of a house in the UK in 1935? When will "
+"India's projected population [2:overtake] that of China? Where can you see "
+"[3:publicly-funded art] in Seattle? Data to answer many, many questions like"
+" these is out there on the Internet somewhere - but it is not always easy to"
+" find."
+msgstr "Mikä oli [1:keskihinta] talolle Suomessa vuonna 1935? Milloin Intian väkiluku [2:ylittää] Kiinan väkiluvun? Missä voit nähdä [3:julkisesti rahoitettua taidetta] Helsingissä? Dataa vastaamaan erilaisiin kysymyksiin saattaa löytyä internetistä, mutta monesti sitä ei ole helppoa löytää."
+
+#: ckan/templates/home/about.html:16
+#, python-format
+msgid ""
+"%(site_title)s is a community-run catalogue of useful sets of data on the "
+"Internet. You can collect links here to data from around the web for "
+"yourself and others to use, or search for data that others have collected. "
+"Depending on the type of data (and its conditions of use), %(site_title)s "
+"may also be able to store a copy of the data or host it in a database, and "
+"provide some basic visualisation tools."
+msgstr "%(site_title)s on yhteisön ylläpitämä katalogi hyödyllisistä tietoaineistoista internetissä. Voit kerätä linkkejä tänne tietoaineistoista internetissä muiden käyttöön tai etsiä tietoaineistoja joita muut ovat keränneet. Riippuen tietoaineiston tyypistä (ja sen käyttöoikeuksista), %(site_title)s saattaa myös tallentaa kopion tietoaineistosta tai ylläpitää sitä tietokannassa ja tarjota joita perus visualisointityökaluja."
+
+#: ckan/templates/home/about.html:23
+msgid "How it works"
+msgstr "Miten se toimii"
+
+#: ckan/templates/home/about.html:25
+msgid ""
+"This site is running a powerful piece of open-source data cataloguing "
+"software called [1:CKAN], written and maintained by the [2:Open Knowledge "
+"Foundation]. Each 'dataset' record on CKAN contains a description of the "
+"data and other useful information, such as what formats it is available in, "
+"who owns it and whether it is freely available, and what subject areas the "
+"data is about. Other users can improve or add to this information (CKAN "
+"keeps a fully versioned history)."
+msgstr "Tätä sivustoa ajetaan tehokkaalla avoimen lähdekoodin datakatalogi ohjelmistolla jota kutsutaan nimellä [1:CKAN], ja joka on tehty ja ylläpidetty [2:Open Knowledge Foundation] toimesta. Jokainen tietoaineisto tietue CKAN:issa sisältää kuvauksen tietoaineistosta ja muuta hyödyllistä tietoa kuten missä muodoissa se on saatavilla, kuka sen omistaa ja onko se vapaasti saatavilla ja minkä aihealueen tietoaineisto se on. Muut käyttäjät voivat parantaa tai lisätä näitä tietoja (CKAN ylläpitää versiohistoriaa)"
+
+#: ckan/templates/home/about.html:27
+msgid ""
+"CKAN powers a number of data catalogues on the Internet. [1:The Data Hub] is"
+" an openly editable open data catalogue, in the style of Wikipedia. The UK "
+"Government uses CKAN to run [2:data.gov.uk], which currently lists 8,000 "
+"government datasets. Official public data from most European countries is "
+"listed in a CKAN catalogue at [3:publicdata.eu]. There is a comprehensive "
+"list of catalogues like these around the world at [4:datacatalogs.org], "
+"which is itself powered by CKAN."
+msgstr "CKAN:ia hyödynnetään monissa internetin datakatalogeissa. [1:The Data Hub] on vapaasti muokattava avoin datakatalogi, joka toimii Wikipedia tyyppisesti. Iso-Britannia käyttää CKAN:ia [2:data.gov.uk] palvelussa, jossa on tällä hetkellä 8000 julkishallinnon tietoaineistoa. Virallinen julkinen data suurimmasta osasta Euroopan valtioita on listattu [3:publicdata.eu] CKAN katalogissa. Kattava listaus datakatalogeista ympäri maailmaan löytyy osoitteesta [4:datacatalogs.org] ja se on myös CKAN pohjainen."
+
+#: ckan/templates/home/about.html:30
+msgid "Open data and the Open Knowledge Foundation"
+msgstr "Avoin data ja Open Knowledge Foundation"
+
+#: ckan/templates/home/about.html:32
+#, python-format
+msgid ""
+"Most of the data indexed at %(site_title)s is openly licensed, meaning "
+"anyone is free to use or re-use it however they like. Perhaps someone will "
+"take that nice dataset of a city's public art that you found, and add it to "
+"a tourist map - or even make a neat app for your phone that'll help you find"
+" artworks when you visit the city. Open data means more enterprise, "
+"collaborative science and transparent government. You can read more about "
+"open data in the [1:Open Data Manual]."
+msgstr "Suurin osa indeksoidusta datasta %(site_title)s sivustolla on avoimesti lisensoitu, tarkoittaen että kuka vaan voi vapaasti käyttää ja uudelleenkäyttää dataa miten haluaa. Ehkäpä joku ottaa käyttöön lisäämäsi tietoaineiston joka sisältää listauksen kaupungin julkisesta taiteesta, lisää sen turistikarttaan - tai ehkäpä jopa tekee siitä sovelluksen puhelimeen jolla taidekappaleita löytää kun tutustuu kaupunkiin. Avoin data liittyy myös yrityksiin, tieteeseen ja läpinäkyvään julkishallintoon. Voit lukea lisää avoimesta datasta täältä englannin kielellä [1:Open Data Manual]."
+
+#: ckan/templates/home/about.html:34
+msgid ""
+"The [1:Open Knowledge Foundation] is a non-profit organisation [2:promoting]"
+" open knowledge: writing and improving CKAN is one of the ways we do that. "
+"If you want to get involved with its design or code, join the discussion or "
+"development [3:mailing lists], or take a look at the [4:OKFN] site to find "
+"out about our other projects."
+msgstr "The [1:Open Knowledge Foundation] on voittoa tavoittelematon organisaatio joka [2:tukee] avointa tietoa: CKAN ohjelmiston kehitys ja parantaminen on yksi osa tätä. Jos haluat osallistua sen suunnitteluun tai kehitykseen, osallistu keskusteluun ja kehitykseen [3:sähköpostilistoillamme], tai tutustu [4:OKFN] sivustoon löytääksesi lisää tietoa muista projekteistamme."
+
+#: ckan/templates/home/index.html:9
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+#: ckan/templates/home/index.html:13
+msgid "Welcome to"
+msgstr "Tervetuloa:"
+
+#: ckan/templates/home/index.html:19
+msgid "Find data"
+msgstr "Etsi tietoaineistoja"
+
+#: ckan/templates/home/index.html:24
+msgid "contains"
+msgstr "sisältää"
+
+#: ckan/templates/home/index.html:24
+msgid "datasets"
+msgstr "tietoaineistoa"
+
+#: ckan/templates/home/index.html:24
+msgid ""
+"that you can \n"
+"            browse, learn about and download."
+msgstr "jotta voit \n            selata, oppia and ladata."
+
+#: ckan/templates/home/index.html:32
+msgid "Share data"
+msgstr "Jaa tietoaineisto"
+
+#: ckan/templates/home/index.html:32
+msgid ""
+"Add your own datasets to share them with others and\n"
+"        to find other people interested in your data."
+msgstr "Lisää omat tietoaineistosi ja jaa ne muiden kanssa\nlöytääksesi muita ihmisiä jotka ovat kiinnostuneet tietoaineistostasi."
+
+#: ckan/templates/home/index.html:38
+msgid "Create a dataset »"
+msgstr "Luo tietoaineisto »"
+
+#: ckan/templates/home/index.html:40
+msgid "Sign up »"
+msgstr "Kirjaudu »"
+
+#: ckan/templates/home/index.html:49
+msgid "Collaborate"
+msgstr "Työskentele yhdessä"
+
+#: ckan/templates/home/index.html:49
+msgid ""
+"Find out more about working with open data by exploring \n"
+"        these resources:"
+msgstr "Löydät lisätietoa avoimen datan kanssa työskentelystä\nnäistä lähteistä:"
+
+#: ckan/templates/home/index.html:54
+msgid "GetTheData.org"
+msgstr "GetTheData.org"
+
+#: ckan/templates/home/index.html:55
+msgid "DataPatterns.org"
+msgstr "DataPatterns.org"
+
+#: ckan/templates/home/index.html:56
+msgid "Open Data Manual"
+msgstr "Avoimen datan manuaali"
+
+#: ckan/templates/home/index.html:64
+msgid "Who else is here?"
+msgstr "Kuka muu on täällä?"
+
+#: ckan/templates/home/index.html:75
+msgid "has"
+msgstr "on"
+
+#: ckan/templates/home/index.html:75
+msgid "datasets."
+msgstr "tietoaineistoa."
+
+#: ckan/templates/package/comments.html:5
+#: ckan/templates/package/history.html:6
+msgid "- Datasets - History"
+msgstr "- Tietoaineistot - Historia"
+
+#: ckan/templates/package/edit.html:6
+msgid "- Edit - Datasets"
+msgstr "- Muokkaa - Tietoaineistot"
+
+#: ckan/templates/package/edit.html:21
+msgid "Basic Information"
+msgstr "Perustiedot"
+
+#: ckan/templates/package/edit.html:22
+msgid "Further Information"
+msgstr "Lisää tietoa"
+
+#: ckan/templates/package/edit_form.html:13
+msgid "Edit summary (briefly describe the changes you have made)"
+msgstr "Muokkaa yhteenvetoa (kuvaa lyhyesti muutokset joita olet tehnyt)"
+
+#: ckan/templates/package/edit_form.html:17
+#: ckan/templates/package/edit_form.html:20
+#: ckan/templates/package/new_package_form.html:294
+#: ckan/templates/package/new_package_form.html:297
+#: ckan/templates/revision/read.html:36
+msgid "Author:"
+msgstr "Ylläpitäjä:"
+
+#: ckan/templates/package/edit_form.html:21
+msgid "Since you have not signed in this will just be your IP address."
+msgstr "Koska et ole kirjautunut tässä näytetään vain IP osoitteesi"
+
+#: ckan/templates/package/edit_form.html:23
+msgid "Click here to sign in"
+msgstr "Klikkaa tästä kirjautuaksesi"
+
+#: ckan/templates/package/edit_form.html:23
+msgid "before saving (opens in new window)."
+msgstr "ennen tallennusta(aukeaa uuteen ikkunaan)"
+
+#: ckan/templates/package/edit_form.html:31
+msgid ""
+"[1:Important:] By submitting content, you agree to release your "
+"contributions under the [2:Open Database License]. Please [3:refrain] from "
+"editing this page if you are [4:not] happy to do this."
+msgstr "[1:Tärkeää:] Tallentamalla sisältöä, hyväksyt julkaisemaan ne [2:Open Database License] mukaisesti. Ole hyvä ja [3:pidättäydy] muokkaamasta tätä sivua jos [4:et] ole tyytyväinen ehtoihin."
+
+#: ckan/templates/package/editresources.html:6
+msgid "- Edit Resources - Datasets"
+msgstr "- Muokkaa aineistolinkkejä - Tietoaineistot"
+
+#: ckan/templates/package/editresources.html:7
+msgid "Edit Resources:"
+msgstr "Muokkaa aineistolinkkejä:"
+
+#: ckan/templates/package/form_extra_fields.html:12
+msgid "New key"
+msgstr "Uusi avain"
+
+#: ckan/templates/package/form_extra_fields.html:26
+msgid "with value"
+msgstr "arvolla"
+
+#: ckan/templates/package/history.html:37
+#, python-format
+msgid "Read dataset as of %s"
+msgstr "Lue tietoaineisto alkaen %s"
+
+#: ckan/templates/package/history.html:48 ckan/templates/package/read.html:104
+#: ckan/templates/package/related_list.html:50
+msgid "Dataset History"
+msgstr "Tietoaineiston historia"
+
+#: ckan/templates/package/layout.html:14
+msgid "Resources (0)"
+msgstr "Aineistolinkit (0)"
+
+#: ckan/templates/package/layout.html:23
+msgid "Add / Edit resources"
+msgstr "Lisää / Muokkaa aineistolinkkejä"
+
+#: ckan/templates/package/layout.html:39
+msgid "Related"
+msgstr "Liittyvä"
+
+#: ckan/templates/package/layout.html:44
+msgid "Settings"
+msgstr "Muokkaa"
+
+#: ckan/templates/package/new.html:6
+msgid "Add - Datasets"
+msgstr "Lisää - Tietoaineisto"
+
+#: ckan/templates/package/new.html:7
+msgid "Add a Dataset"
+msgstr "Lisää tietoaineisto"
+
+#: ckan/templates/package/new_package_form.html:20
+msgid "Resource"
+msgstr "Tietoaineistolinkki"
+
+#: ckan/templates/package/new_package_form.html:38
+msgid "A short descriptive title for the dataset"
+msgstr "Lyhyt kuvaava otsikko tietoaineistolle"
+
+#: ckan/templates/package/new_package_form.html:63
+msgid "Home Page"
+msgstr "Kotisivu"
+
+#: ckan/templates/package/new_package_form.html:80
+msgid ""
+"(Don't worry if you don't know which license the data has been released "
+"under)."
+msgstr "(Älä huolehdi, jos et tiedä millä lisenssillä aineisto on julkaistu)."
+
+#: ckan/templates/package/new_package_form.html:96
+msgid "Member of:"
+msgstr "Jäsen:"
+
+#: ckan/templates/package/new_package_form.html:109
+msgid "Add to:"
+msgstr "Lisää:"
+
+#: ckan/templates/package/new_package_form.html:126
+msgid ""
+"Comma-separated terms that may link this dataset to similar ones. For more "
+"information on conventions, see [1:this wiki page]."
+msgstr "Pilkuilla erotetut sanat jotka liittävät tietoaineiston samanlaisiin. Lisää tietoa käytännöistä, katso [1:tämä wiki sivu]."
+
+#: ckan/templates/package/new_package_form.html:134
+msgid "Add Resources"
+msgstr "Lisää resursseja"
+
+#: ckan/templates/package/new_package_form.html:136
+msgid ""
+"Upload or link data files, APIs and other materials related to your dataset."
+msgstr "Lataa tai linkitä datatiedostoja, API -linkkejä tai muita materiaaleja, jotka liittyvät tietoaineistoosi."
+
+#: ckan/templates/package/new_package_form.html:143
+msgid "New resource..."
+msgstr "Uusi aineistolinkki..."
+
+#: ckan/templates/package/new_package_form.html:148
+msgid "x"
+msgstr "x"
+
+#: ckan/templates/package/new_package_form.html:151
+msgid "Link to a file"
+msgstr "Tiedostolinkki"
+
+#: ckan/templates/package/new_package_form.html:152
+msgid "Link to an API"
+msgstr "API linkki"
+
+#: ckan/templates/package/new_package_form.html:153
+msgid "Upload a file"
+msgstr "Tallenna tiedosto"
+
+#: ckan/templates/package/new_package_form.html:158
+msgid "File URL"
+msgstr "Tiedoston URL"
+
+#: ckan/templates/package/new_package_form.html:165
+msgid "API URL"
+msgstr "API URL"
+
+#: ckan/templates/package/new_package_form.html:228
+msgid "e.g. 1.2.0"
+msgstr "esim. 1.2.0"
+
+#: ckan/templates/package/new_package_form.html:234
+msgid ""
+"Adding custom fields to the dataset such as \"location:uk\" can help users "
+"find it in the search engine. This data will also appear under"
+msgstr "Lisäämällä uusia omia kenttiä tietoaineistoihin, kuten 'sijainti:fi' voi auttaa käyttäjiä löytämään tietoaineiston haun kautta. Tämä kenttä näkyy myös kun "
+
+#: ckan/templates/package/new_package_form.html:234
+#: ckan/templates/package/read_core.html:49
+#: ckan/templates/package/resource_read.html:182
+msgid "Additional Information"
+msgstr "Lisätietoa"
+
+#: ckan/templates/package/new_package_form.html:234
+msgid "when viewing the dataset."
+msgstr "tietoaineistoa tarkastellaan."
+
+#: ckan/templates/package/new_package_form.html:271
+msgid "Do you really want to change the state of this dataset?"
+msgstr "Haluatko todella muuttaa tämän tietoaineiston tilaa?"
+
+#: ckan/templates/package/new_package_form.html:271
+msgid "Yes!"
+msgstr "Kyllä!"
+
+#: ckan/templates/package/new_package_form.html:272
+msgid "This dataset is"
+msgstr "Tämä tietoaineisto on"
+
+#: ckan/templates/package/new_package_form.html:285
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: ckan/templates/package/new_package_form.html:287
+msgid "Briefly describe the changes you have made..."
+msgstr "Kuvaa lyhyesti muutokset jotka teit..."
+
+#: ckan/templates/package/new_package_form.html:298
+msgid ""
+"Since you have not signed in this will just be your IP address.\n"
+"    [1:Click here to sign in] before saving (opens in new window)."
+msgstr "Koska et ole kirjautunut sisään niin IP osoitettasi käytetään\n[1:Klikkaa tästä kirjautuaksesi] ennen tallennusta (uusi ikkuna aukeaa)."
+
+#: ckan/templates/package/new_package_form.html:309
+msgid "Important:"
+msgstr "Tärkeää:"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid ""
+"By submitting content, you agree to release your contributions under the"
+msgstr "Tallentamalla sisältöä, hyväksyt että ne julkaistaa tämän mukaisesti"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid ". Please"
+msgstr ". Ole hyvä"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid "refrain"
+msgstr "ja pidättäydy"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid "from editing this page if you are"
+msgstr "muokkaamasta tätä sivua jos"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid "not"
+msgstr "et"
+
+#: ckan/templates/package/new_package_form.html:309
+msgid "happy to do this."
+msgstr "hyväksy tätä."
+
+#: ckan/templates/package/read.html:14
+msgid "- Datasets"
+msgstr "- Tietoaineistot"
+
+#: ckan/templates/package/read.html:24
+msgid "License:"
+msgstr "Lisenssi:"
+
+#: ckan/templates/package/read.html:32
+#: ckan/templates/package/resource_read.html:143
+#: ckan/templates/snippets/package_list.html:31
+msgid "This dataset satisfies the Open Definition."
+msgstr "Tämä tietoaineisto täyttää Open Definition määrittelyn"
+
+#: ckan/templates/package/read.html:33
+#: ckan/templates/package/resource_read.html:144
+#: ckan/templates/snippets/package_list.html:32
+msgid "[Open Data]"
+msgstr "[Avoin data]"
+
+#: ckan/templates/package/read.html:58
+msgid "Related Datasets"
+msgstr "Samankaltaiset tietoaineistot"
+
+#: ckan/templates/package/read.html:86
+msgid "This is an old revision of this dataset, as edited"
+msgstr "Tämä on vanha revisio tästä tietoaineistosta kuten muokattu"
+
+#: ckan/templates/package/read.html:86 ckan/templates/package/read.html:87
+msgid "at"
+msgstr "täällä"
+
+#: ckan/templates/package/read.html:86
+msgid ". It may differ significantly from the"
+msgstr ". Se saattaa erota merkittävästi"
+
+#: ckan/templates/package/read.html:86
+msgid "current revision"
+msgstr "nykyisestä revisiosta"
+
+#: ckan/templates/package/read.html:87
+msgid "This is the current revision of this dataset, as edited"
+msgstr "Tämä on nykyinen revisio tietoaineistosta kuten muokattu"
+
+#: ckan/templates/package/read.html:98
+#: ckan/templates/package/related_list.html:44
+msgid "RDF/XML"
+msgstr "RDF/XML"
+
+#: ckan/templates/package/read.html:99
+#: ckan/templates/package/related_list.html:45
+msgid "RDF/Turtle"
+msgstr "RDF/Turtle"
+
+#: ckan/templates/package/read_core.html:28
+msgid "(edit)"
+msgstr "(muokkaa)"
+
+#: ckan/templates/package/read_core.html:41
+msgid "(none)"
+msgstr "(ei mitään)"
+
+#: ckan/templates/package/read_core.html:51
+msgid "(settings)"
+msgstr "(muokkaa)"
+
+#: ckan/templates/package/read_core.html:57
+#: ckan/templates/package/resource_read.html:186
+#: ckan/templates/revision/diff.html:32
+msgid "Field"
+msgstr "Kenttä"
+
+#: ckan/templates/package/read_core.html:58
+#: ckan/templates/package/resource_read.html:187
+msgid "Value"
+msgstr "Arvo"
+
+#: ckan/templates/package/read_core.html:63
+msgid "Source"
+msgstr "Lähde"
+
+#: ckan/templates/package/read_core.html:83
+msgid "Country"
+msgstr "Maa"
+
+#: ckan/templates/package/read_core.html:93
+msgid "Harvest Source"
+msgstr "Harvestointi lähde"
+
+#: ckan/templates/package/read_core.html:94
+#, python-format
+msgid ""
+"[1:Dataset page] on \n"
+"            [2:%(harvest_catalogue_name)s]"
+msgstr "[1:Tietoaineiston sivu] sivustolla \n            [2:%(harvest_catalogue_name)s]"
+
+#: ckan/templates/package/related_list.html:17
+#: ckan/templates/package/related_list.html:21
+msgid "- Related"
+msgstr "- Liittyvät"
+
+#: ckan/templates/package/related_list.html:26
+msgid "Related items"
+msgstr "Liittyvät asiat"
+
+#: ckan/templates/package/related_list.html:26
+msgid "Add related item"
+msgstr "Lisää liittyvä asia"
+
+#: ckan/templates/package/related_list.html:28
+msgid "There are no related items here yet"
+msgstr "Tähän liittyen ei ole vielä asioita"
+
+#: ckan/templates/package/related_list.html:29
+msgid ", why not"
+msgstr ", mikset et"
+
+#: ckan/templates/package/related_list.html:29
+msgid "add one"
+msgstr "lisäisi yhtä"
+
+#: ckan/templates/package/resource_embedded_dataviewer.html:78
+#: ckan/templates/package/resource_read.html:85
+msgid "- Dataset - Resource"
+msgstr "Tietoaineisto - Tiedostolinkki"
+
+#: ckan/templates/package/resource_read.html:100
+msgid "API Endpoint"
+msgstr "API osoite"
+
+#: ckan/templates/package/resource_read.html:103
+msgid "Download"
+msgstr "Lataa"
+
+#: ckan/templates/package/resource_read.html:111
+#: ckan/templates/package/resource_read.html:114
+msgid "Data API"
+msgstr "Data API"
+
+#: ckan/templates/package/resource_read.html:114
+msgid "Data API is unavailable for this resource as DataStore is disabled"
+msgstr "Data API ei ole saatavilla tälle aineistolinkille, koska DataStore on kytketty pois påältä"
+
+#: ckan/templates/package/resource_read.html:127
+msgid "Last updated"
+msgstr "Viimeksi päivitetty"
+
+#: ckan/templates/package/resource_read.html:140
+msgid "License unknown"
+msgstr "Lisenssi tuntematon"
+
+#: ckan/templates/package/resource_read.html:164
+msgid "From the [1:Dataset]:"
+msgstr "Lähtöisin [1:tietoaineistosta]:"
+
+#: ckan/templates/package/resource_read.html:174
+msgid "Cannot embed as resource is private."
+msgstr "Ei voida upottaa koska resurssi on yksityinen."
+
+#: ckan/templates/package/resource_read.html:174
+#: ckan/templates/package/resource_read.html:175
+msgid "Embed"
+msgstr "Upota"
+
+#: ckan/templates/package/resources.html:2
+msgid "Someresources"
+msgstr "Jotain aineistolinkkejä"
+
+#: ckan/templates/package/search.html:9 ckan/templates/package/search.html:10
+msgid "Search -"
+msgstr "Haku -"
+
+#: ckan/templates/package/search.html:16
+msgid "Do you know of a dataset that should be added to"
+msgstr "Tiedätkö tietoaineistosta joka pitäisi lisätä sivustolle"
+
+#: ckan/templates/package/search.html:20
+msgid "Register it now"
+msgstr "Rekisteröi se nyt"
+
+#: ckan/templates/package/search.html:29
+msgid "Other access"
+msgstr "Vaihtoehtoinen käyttö"
+
+#: ckan/templates/package/search.html:35
+msgid "You can also access this registry using the"
+msgstr "Voit käyttää tietoaineistorekisteriä myös käyttäen"
+
+#: ckan/templates/package/search.html:37
+msgid "(see"
+msgstr "(katso"
+
+#: ckan/templates/package/search.html:38
+msgid "or download a"
+msgstr "tai lataa"
+
+#: ckan/templates/package/search.html:39
+msgid "full"
+msgstr "täysi"
+
+#: ckan/templates/package/search.html:39
+msgid "dump"
+msgstr "dumppitiedosto"
+
+#: ckan/templates/package/search.html:50
+msgid ""
+"[1:There was an error while searching.] \n"
+"            Please try again."
+msgstr "[1:Etsiessä tapahtui virhe.]\nOle hyvä ja yritä uudelleen."
+
+#: ckan/templates/package/search.html:54
+#, python-format
+msgid "[1:%(item_count)s] datasets found"
+msgstr "[1:%(item_count)s] tietoaineistoa löytyi"
+
+#: ckan/templates/package/search.html:57
+msgid "Would you like to [1:create a new dataset?]"
+msgstr "Haluatko [1:luoda uuden tietoaineiston?]"
+
+#: ckan/templates/package/search_form.html:9
+msgid "Search..."
+msgstr "Haku..."
+
+#: ckan/templates/revision/diff.html:5
+msgid "Differences - Revisions"
+msgstr "Erot - Revisiot"
+
+#: ckan/templates/revision/diff.html:9
+msgid "Revision Differences -"
+msgstr "Revisioiden erot"
+
+#: ckan/templates/revision/diff.html:21
+msgid "From:"
+msgstr "Mistä:"
+
+#: ckan/templates/revision/diff.html:25
+msgid "To:"
+msgstr "Mihin:"
+
+#: ckan/templates/revision/diff.html:32
+msgid "Difference"
+msgstr "Ero"
+
+#: ckan/templates/revision/diff.html:40
+msgid "No differences"
+msgstr "Ei eroja"
+
+#: ckan/templates/revision/list.html:5 ckan/templates/revision/list.html:6
+msgid "Revision History"
+msgstr "Revisiohistoria"
+
+#: ckan/templates/revision/list.html:10
+msgid ""
+"Track the most recent changes to the system, with most recent\n"
+"    changes first."
+msgstr "Seuraa viimeisimpiä muutoksia järjestelmään. Viimeisin\nmuutos ensin."
+
+#: ckan/templates/revision/read.html:6
+msgid "Revision:"
+msgstr "Revisio:"
+
+#: ckan/templates/revision/read.html:10
+msgid "Revision Actions"
+msgstr "Revisioiden tapahtumat"
+
+#: ckan/templates/revision/read.html:23
+#: ckan/templates/snippets/revision_list.html:39
+msgid "Undelete"
+msgstr "Peru poistaminen"
+
+#: ckan/templates/revision/read.html:39
+msgid "Timestamp:"
+msgstr "Aikaleima:"
+
+#: ckan/templates/revision/read.html:41
+msgid "Log Message:"
+msgstr "Logiviesti:"
+
+#: ckan/templates/revision/read.html:44
+msgid "Changes"
+msgstr "Muutokset"
+
+#: ckan/templates/revision/read.html:54
+msgid "Datasets' Tags"
+msgstr "Tietoaineistojen avainsanat"
+
+#: ckan/templates/revision/read.html:57
+msgid "Dataset -"
+msgstr "Tietoaineisto - "
+
+#: ckan/templates/revision/read.html:58
+msgid ""
+",\n"
+"      Tag -"
+msgstr ",\n      Avainsana -"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:13
+msgid "Embed Data Viewer"
+msgstr "Upota datan näyttäjä"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:19
+msgid "Embed this view"
+msgstr "Upota tämä näkymä"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:19
+msgid "by copying this into your webpage:"
+msgstr "kopioimall tämän web-sivullesi:"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:21
+msgid "Choose width and height in pixels:"
+msgstr "Valitse leveys ja korkeus pikseleinä:"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:22
+msgid "Width:"
+msgstr "Leveys:"
+
+#: ckan/templates/snippets/data-viewer-embed-dialog.html:24
+msgid "Height:"
+msgstr "Korkeus:"
+
+#: ckan/templates/snippets/package_list.html:39
+msgid "Not Openly Licensed"
+msgstr "Ei avoimesti lisensoitu"
+
+#: ckan/templates/snippets/revision_list.html:11
+msgid "Entity"
+msgstr "Entiteetti"
+
+#: ckan/templates/storage/index.html:17
+msgid ""
+"This upload form is valid for a limited time (usually 1h or so). If the\n"
+"    form expires please reload the page."
+msgstr "Tämä latauslomake toimii rajatun ajan (yleensä noin 1 tunnin). Jos\n    lomake expiroituu niin lataa lomake uudelleen."
+
+#: ckan/templates/storage/index.html:33
+msgid "File:"
+msgstr "Tiedosto:"
+
+#: ckan/templates/storage/success.html:12
+msgid "Upload - Successful"
+msgstr "Lataus - Onnistui"
+
+#: ckan/templates/storage/success.html:14
+msgid "Filed uploaded to:"
+msgstr "Tiedosto tallennettu paikkaan:"
+
+#: ckan/templates/storage/success.html:17
+msgid "Upload another »"
+msgstr "Lataa toinen »"
+
+#: ckan/templates/tag/index.html:20 ckan/templates/tag/index.html:23
+msgid "There are"
+msgstr "Yhteensä"
+
+#: ckan/templates/tag/index.html:21
+msgid "results for ‘"
+msgstr "Tulokset "
+
+#: ckan/templates/tag/index.html:24
+msgid "results for tags."
+msgstr "tulokset avainsanoille."
+
+#: ckan/templates/tag/index.html:34
+msgid "Clear search"
+msgstr "Tyhjennä haku"
+
+#: ckan/templates/tag/index.html:34
+msgid "and see all tags."
+msgstr "ja näytä kaikki avainsanat."
+
+#: ckan/templates/tag/read.html:6
+msgid "- Tags"
+msgstr "- Avainsanat"
+
+#: ckan/templates/tag/read.html:7
+msgid "Tag:"
+msgstr "Avainsana:"
+
+#: ckan/templates/tag/read.html:10
+#, python-format
+msgid "There are %(count)s datasets tagged with [1:%(tagname)s]:"
+msgstr "%(count)s tietoaineistoa avainsanalla [1:%(tagname)s]:"
+
+#: ckan/templates/user/edit.html:6
+msgid "- Edit - User"
+msgstr "- Muokkaa - Käyttäjä"
+
+#: ckan/templates/user/edit.html:7
+msgid "Edit User:"
+msgstr "Muokkaa käyttäjää:"
+
+#: ckan/templates/user/edit_user_form.html:21
+msgid "Full name"
+msgstr "Koko nimi"
+
+#: ckan/templates/user/edit_user_form.html:27
+msgid "E-mail"
+msgstr "Sähköposti"
+
+#: ckan/templates/user/edit_user_form.html:33
+msgid "OpenId"
+msgstr "OpenId"
+
+#: ckan/templates/user/edit_user_form.html:41
+msgid "A little about you..."
+msgstr "Hieman tietoa sinusta..."
+
+#: ckan/templates/user/edit_user_form.html:46
+msgid "Change your password"
+msgstr "Vaihda salasana"
+
+#: ckan/templates/user/edit_user_form.html:48
+#: ckan/templates/user/new_user_form.html:40
+msgid "Password"
+msgstr "Salasana"
+
+#: ckan/templates/user/edit_user_form.html:54
+#: ckan/templates/user/new_user_form.html:47
+msgid "Password (repeat)"
+msgstr "Salasana (toista)"
+
+#: ckan/templates/user/edit_user_form.html:61
+msgid "Change your username"
+msgstr "Muuta käyttäjätunnustasi"
+
+#: ckan/templates/user/edit_user_form.html:63
+msgid "Username"
+msgstr "Käyttäjätunnus"
+
+#: ckan/templates/user/layout.html:11
+msgid "My Profile"
+msgstr "Oma profiili"
+
+#: ckan/templates/user/layout.html:12
+msgid "Edit Profile"
+msgstr "Muokkaa profiilia"
+
+#: ckan/templates/user/layout.html:13
+msgid "Log out"
+msgstr "Kirjaudu ulos"
+
+#: ckan/templates/user/layout.html:17
+msgid "View Profile"
+msgstr "Näytä profiili"
+
+#: ckan/templates/user/layout.html:21
+msgid "Register Account"
+msgstr "Rekisteröi käyttäjätili"
+
+#: ckan/templates/user/list.html:15
+#, python-format
+msgid "[1:%(item_count)s] users found."
+msgstr "[1:%(item_count)s] käyttäjää löytyi"
+
+#: ckan/templates/user/list.html:24
+msgid "Sort by name"
+msgstr "Järjestä nimen mukaan"
+
+#: ckan/templates/user/list.html:27
+msgid "Sort by edits"
+msgstr "Järjestä muokkausten mukaan"
+
+#: ckan/templates/user/list.html:40
+msgid "Member for"
+msgstr "Jäsenenä:"
+
+#: ckan/templates/user/login.html:19
+msgid "Login - User"
+msgstr "Kirjaudu - Käyttäjä"
+
+#: ckan/templates/user/login.html:20
+msgid "Login to"
+msgstr "Kirjaudu"
+
+#: ckan/templates/user/login.html:28
+msgid "Login:"
+msgstr "Käyttäjätunnus:"
+
+#: ckan/templates/user/login.html:31 ckan/templates/user/perform_reset.html:15
+msgid "Password:"
+msgstr "Salasana:"
+
+#: ckan/templates/user/login.html:37
+msgid "Sign In"
+msgstr "Kirjaudu"
+
+#: ckan/templates/user/login.html:39
+msgid "Forgot your password?"
+msgstr "Unohditko salasanan?"
+
+#: ckan/templates/user/login.html:47
+msgid "Login using Open ID"
+msgstr "Kirjaudu käyttäen Open ID:tä"
+
+#: ckan/templates/user/login.html:48
+msgid ""
+"NB: To set-up your OpenID for this site, you first need to [1:Register] and "
+"then edit your Profile to provide your OpenID."
+msgstr "Huomio: Ottaaksesi OpenID:n käyttöön tällä sivustolla, sinun pitää ensin [1:Rekisteröityä] ja sitten muokata profiiliasi syöttääksesi OpenID tunnuksesi."
+
+#: ckan/templates/user/login.html:50
+msgid "Please click your account provider:"
+msgstr "Ole hyvä ja napsauta tilisi tarjoajaa"
+
+#: ckan/templates/user/login.html:54
+msgid "OpenID Identifier:"
+msgstr "OpenID tunniste:"
+
+#: ckan/templates/user/login.html:58
+msgid "Don't have an OpenID?"
+msgstr "Sinulla ei ole OpenID:tä?"
+
+#: ckan/templates/user/login.html:59
+msgid ""
+"OpenID is service that allows you to log-on to many different websites\n"
+"          using a single identity. Find out [1:more\n"
+"          about OpenID] and [2:how to get an\n"
+"          OpenID enabled account]. Probably the simplest way is sign up with a\n"
+"          free OpenID provider such as [3:https://www.myopenid.com/]."
+msgstr "OpenID palvelu mahdollistaa kirjautumaan moneen web-sivustoon\nyhdellä identiteetillä. Lisää  [1:tietoa\nOpen ID:stä] and [2:miten saada\nOpenID tili]. Ehkäpä helpoin tapa on kirjautua käyttäen\nilmaista OpenID tarjoajaa kuten [3:https://www.myopenid.com/]."
+
+#: ckan/templates/user/login.html:69
+msgid "Sign in with OpenID"
+msgstr "Kirjaudu käyttäen OpenID:tä"
+
+#: ckan/templates/user/logout.html:5
+msgid "Logout - User"
+msgstr "Kirjaudu ulos - Käyttäjä"
+
+#: ckan/templates/user/logout.html:8
+msgid "Logout from"
+msgstr "Kirjaudu ulos"
+
+#: ckan/templates/user/logout.html:11
+msgid "You have logged out successfully."
+msgstr "Kirjauduit ulos onnistuneesti."
+
+#: ckan/templates/user/logout_first.html:6
+msgid "Logged in - User"
+msgstr "Kirjautunut - Käyttäjä"
+
+#: ckan/templates/user/logout_first.html:7
+msgid "Logged into"
+msgstr "Kirjautunut"
+
+#: ckan/templates/user/logout_first.html:12
+msgid "is currently logged in"
+msgstr "on kirjautuneena sisään"
+
+#: ckan/templates/user/logout_first.html:15
+msgid "To register or log in as another user, you need to"
+msgstr "Rekisteröityäksesi tai kirjautuaksesi sisään toisena käyttäjänä sinun täytyy"
+
+#: ckan/templates/user/logout_first.html:17
+msgid "logout"
+msgstr "kirjautua ulos"
+
+#: ckan/templates/user/logout_first.html:17
+msgid "first."
+msgstr "ensin."
+
+#: ckan/templates/user/new.html:5
+msgid "Register - User"
+msgstr "Rekisteröidy - Käyttäjä"
+
+#: ckan/templates/user/new.html:6
+msgid "Register for a new Account"
+msgstr "Rekisteröi uusi käyttäjätili"
+
+#: ckan/templates/user/new_user_form.html:22
+msgid "3+ chars, using only 'a-z0-9' and '-_'"
+msgstr "3+ merkkiä, käyttäen 'a-z0-9' ja '-_'"
+
+#: ckan/templates/user/new_user_form.html:27
+msgid "Full name (optional)"
+msgstr "Koko nimi (ei pakollinen)"
+
+#: ckan/templates/user/new_user_form.html:34
+msgid "E-Mail"
+msgstr "Sähköposti"
+
+#: ckan/templates/user/new_user_form.html:65
+msgid "Register now"
+msgstr "Rekisteröidy nyt"
+
+#: ckan/templates/user/perform_reset.html:18
+msgid "Password (repeat):"
+msgstr "Salasana (toista):"
+
+#: ckan/templates/user/read.html:5
+msgid "- User"
+msgstr "- Käyttäjä"
+
+#: ckan/templates/user/read.html:25
+msgid "Member since"
+msgstr "Ollut jäsenenä"
+
+#: ckan/templates/user/read.html:32
+msgid "Email"
+msgstr "Sähköposti"
+
+#: ckan/templates/user/read.html:37
+msgid "No email"
+msgstr "Ei sähköpostia"
+
+#: ckan/templates/user/read.html:42
+msgid "API Key"
+msgstr "API avain"
+
+#: ckan/templates/user/read.html:46
+msgid "– Note: your API key is visible only to you!"
+msgstr "– Huomio: sinun API avaimesi on näkyvissä vain sinulle!"
+
+#: ckan/templates/user/read.html:59
+msgid "Edits"
+msgstr "Muokkaukset"
+
+#: ckan/templates/user/read.html:77
+msgid "Public Activity"
+msgstr "Julkinen aktiviteetti"
+
+#: ckan/templates/user/request_reset.html:6
+msgid "Reset password"
+msgstr "Resetoi salasana"
+
+#: ckan/templates/user/request_reset.html:7
+msgid "Request a password reset"
+msgstr "Pyydä salasanan resetointia"
+
+#: ckan/templates/user/request_reset.html:13
+msgid "User name:"
+msgstr "Käyttäjänimi:"
+
+
+# Finnish translations for ckan-hrifi.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the ckan-hrifi project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckan-hrifi 0.3\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-12-22 17:06+0200\n"
+"PO-Revision-Date: 2012-06-06 12:30+0300\n"
+"Last-Translator: Jaakko Louhio <jaakko.louhio@floapps.com>\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.4\n"
+
+#: ckanext/hrifi/plugin.py:50
+msgid "User is not authorized to create groups"
+msgstr "Ei oikeuksia luoda uutta ryhmää"
+
+#: ckanext/hrifi/plugin.py:64
+#: ckanext/hrifi/plugin.py:68
+msgid "User %s not authorized to create groups"
+msgstr "Ei oikeuksia luoda uutta ryhmää"
+
+#: ckanext/hrifi/schema.py:93
+msgid "title_se"
+msgstr "Otsikko (se)"
+
+#: ckanext/hrifi/schema.py:94
+msgid "title_en"
+msgstr "Otsikko (en)"
+
+#: ckanext/hrifi/schema.py:95
+msgid "external_reference"
+msgstr "Ulkoinen linkki"
+
+#: ckanext/hrifi/schema.py:96
+msgid "external_reference_se"
+msgstr "Ulkoinen linkki (se)"
+
+#: ckanext/hrifi/schema.py:97
+msgid "external_reference_en"
+msgstr "Ulkoinen linkki (en)"
+
+#: ckanext/hrifi/schema.py:98
+msgid "notes_se"
+msgstr "Kuvaus (se)"
+
+#: ckanext/hrifi/schema.py:99
+msgid "notes_en"
+msgstr "Kuvaus (en)"
+
+#: ckanext/hrifi/schema.py:100
+msgid "date_released"
+msgstr "Julkaisu pvm"
+
+#: ckanext/hrifi/schema.py:101
+msgid "date_updated"
+msgstr "Päivitys pvm"
+
+#: ckanext/hrifi/schema.py:102
+msgid "update_frequency"
+msgstr "Päivitysväli"
+
+#: ckanext/hrifi/schema.py:103
+msgid "geographic_granularity"
+msgstr "Maantieteellinen tarkkuus"
+
+#: ckanext/hrifi/schema.py:104
+msgid "geographic_coverage"
+msgstr "Maantieteellinen kattavuus"
+
+#: ckanext/hrifi/schema.py:105
+msgid "temporal_granularity"
+msgstr "Aikasarjan tarkkuus"
+
+#: ckanext/hrifi/schema.py:106
+msgid "temporal_coverage-from"
+msgstr "Aikasarja alkaa"
+
+#: ckanext/hrifi/schema.py:107
+msgid "temporal_coverage-to"
+msgstr "Aikasarja päättyy"
+
+#: ckanext/hrifi/schema.py:108
+msgid "categories"
+msgstr "Kategoriat"
+
+#: ckanext/hrifi/schema.py:109
+msgid "taxonomy_url"
+msgstr "Taksonomia URL"
+
+#: ckanext/hrifi/schema.py:110
+msgid "agency"
+msgstr "Virasto"
+
+#: ckanext/hrifi/schema.py:111
+msgid "search_info"
+msgstr "Hakutiedot"
+
+#: ckanext/hrifi/schema.py:112
+msgid "source"
+msgstr "Lähde"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:44
+msgid "Unauthorized to create a package"
+msgstr "Ei oikeuksia luoda uutta tietoaineistoa"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:57
+#: ckanext/hrifi/controllers/hri_package_controller.py:138
+#, python-format
+msgid "Unauthorized to read package %s"
+msgstr "Ei oikeuksia näyttää tietoaineistoa %s"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:59
+#: ckanext/hrifi/controllers/hri_package_controller.py:107
+#: ckanext/hrifi/controllers/hri_package_controller.py:140
+msgid "Dataset not found"
+msgstr "Tietoaineistoa ei löytynyt."
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:105
+msgid "Unauthorized to read or create package %s"
+msgstr "Ei oikeuksia näyttää tai luoda tietoaineistoa tietoaineistoa %s"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:142
+msgid "Integrity Error"
+msgstr "Integriteettivirhe"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:144
+msgid "Unable to add package to search index."
+msgstr "Ei voitu lisätä tietoaineistoa hakuindeksiin."
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:152
+msgid "Need to be system administrator to administer"
+msgstr "Täytyy olla järjestelmän ylläpitäjä tehdäkseen ylläpitotoimenpiteitä"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:168
+msgid "Published dataset."
+msgstr "Julkaistu tietoaineisto."
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:178
+msgid "Moved from drafts to unpublished."
+msgstr "Siirretty luonnoksista julkaisemattomiin."
+
+#: ckanext/hrifi/templates/hri_package_form.html:14
+msgid "Errors in form"
+msgstr "Virheitä lomakkeessa"
+
+#: ckanext/hrifi/templates/hri_package_form.html:15
+msgid "The form contains invalid entries:"
+msgstr "Lomake sisältää virheellisiä syötteitä"
+
+#: ckanext/hrifi/templates/hri_package_form.html:21
+msgid "Resource"
+msgstr "Tietoaineistolinkki"
+
+#: ckanext/hrifi/templates/hri_package_form.html:49
+#: ckanext/hrifi/templates/package/edit.html:21
+msgid "Basic Information"
+msgstr "Perustiedot"
+
+#: ckanext/hrifi/templates/hri_package_form.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:50
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:148
+msgid "Title"
+msgstr "Otsikko"
+
+#: ckanext/hrifi/templates/hri_package_form.html:53
+msgid "A short descriptive title for the dataset"
+msgstr "Lyhyt kuvaava otsikko tietoaineistolle"
+
+#: ckanext/hrifi/templates/hri_package_form.html:62
+msgid "Title (se)"
+msgstr "Otsikko (se)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:63
+msgid "Title (en)"
+msgstr "Otsikko (en)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:66
+msgid "Url"
+msgstr "Url"
+
+#: ckanext/hrifi/templates/hri_package_form.html:73
+msgid "Warning: URL is very long. Consider changing it to something shorter."
+msgstr "Varoitus: Tämä URL on todella pitkä. Harkitse sen vaihtamista lyhempään."
+
+#: ckanext/hrifi/templates/hri_package_form.html:74
+msgid "2+ characters, lowercase, using only 'a-z0-9' and '-_'"
+msgstr "enemmän kuin 2 merkkiä, pieni kirjaimia, käyttäen vain 'a-z0-9' ja '-_' "
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"merkkejä"
+
+#: ckanext/hrifi/templates/hri_package_form.html:80
+msgid "Home Page"
+msgstr "Kotisivu"
+
+#: ckanext/hrifi/templates/hri_package_form.html:83
+msgid "The URL for the web page describing the data (not the data itself)."
+msgstr "URL -osoite sivulle, joka kuvaa dataa, ei dataan itseensä."
+
+#: ckanext/hrifi/templates/hri_package_form.html:84
+msgid "e.g. http://www.example.com/growth-figures.html"
+msgstr "esim. http://www.example.com/"
+
+#: ckanext/hrifi/templates/hri_package_form.html:90
+msgid "License"
+msgstr "Lisenssi"
+
+#: ckanext/hrifi/templates/hri_package_form.html:97
+msgid ""
+"(Don't worry if you don't know which license the data has been released "
+"under)."
+msgstr " "
+
+#: ckanext/hrifi/templates/hri_package_form.html:103
+msgid "Description"
+msgstr "Kuvaus"
+
+#: ckanext/hrifi/templates/hri_package_form.html:105
+#: ckanext/hrifi/templates/hri_util.html:49
+msgid "Start with a summary sentence ..."
+msgstr "Aloita yhteenveto lauseella..."
+
+#: ckanext/hrifi/templates/hri_package_form.html:109
+msgid "Notes (se)"
+msgstr "Kuvaus (se)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:110
+msgid "Notes (en)"
+msgstr "Kuvaus (en)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:143
+#: ckanext/hrifi/templates/layout.html:15
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:149
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: ckanext/hrifi/templates/hri_package_form.html:146
+msgid "Member of:"
+msgstr "Kuuluu ryhmiin:"
+
+#: ckanext/hrifi/templates/hri_package_form.html:159
+msgid "Add to:"
+msgstr "Lisää ryhmään:"
+
+#: ckanext/hrifi/templates/hri_package_form.html:161
+#: ckanext/hrifi/templates/admin/drafts.html:12
+#: ckanext/hrifi/templates/admin/drafts.html:30
+msgid "(None)"
+msgstr "(Ei mitään)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:166
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:78
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:78
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:78
+msgid "Cannot add any groups."
+msgstr "Ei voi lisätä ryhmiä"
+
+#: ckanext/hrifi/templates/hri_package_form.html:172
+#: ckanext/hrifi/templates/layout.html:60
+msgid "Tags"
+msgstr "Avainsanat"
+
+#: ckanext/hrifi/templates/hri_package_form.html:176
+msgid ""
+"Comma-separated terms that may link this dataset to similar ones. For "
+"more information on conventions, see [1:this wiki page]."
+msgstr "Pilkuilla erotetut sanat jotka liittävät tietoaineiston samanlaisiin. \"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"Lisää tietoa käytännöistä, katso [1:tämä wiki sivu]."
+
+#: ckanext/hrifi/templates/hri_package_form.html:177
+msgid "e.g. pollution, rivers, water quality"
+msgstr "esimerkiksi saaste, joet, veden laatu"
+
+#: ckanext/hrifi/templates/hri_package_form.html:184
+msgid "Add Resources"
+msgstr "Lisää tietoaineistolinkki"
+
+#: ckanext/hrifi/templates/hri_package_form.html:186
+msgid ""
+"Upload or link data files, APIs and other materials related to your "
+"dataset."
+msgstr "Lataa tai linkitä data tiedostoja, API osoitteita tai muuta materiaalia, joka liittyy tietoaineistoon."
+
+#: ckanext/hrifi/templates/hri_package_form.html:193
+msgid "New resource..."
+msgstr "Uusi tietoaineistolinkki..."
+
+#: ckanext/hrifi/templates/hri_package_form.html:198
+msgid "x"
+msgstr "x"
+
+#: ckanext/hrifi/templates/hri_package_form.html:201
+msgid "Link to a file"
+msgstr "Tiedostolinkki"
+
+#: ckanext/hrifi/templates/hri_package_form.html:202
+msgid "Link to an API"
+msgstr "API linkki"
+
+#: ckanext/hrifi/templates/hri_package_form.html:203
+msgid "Upload a file"
+msgstr "Tallenna tiedosto"
+
+#: ckanext/hrifi/templates/hri_package_form.html:208
+msgid "File URL"
+msgstr "Tiedoston URL"
+
+#: ckanext/hrifi/templates/hri_package_form.html:215
+msgid "API URL"
+msgstr "API URL"
+
+#: ckanext/hrifi/templates/hri_package_form.html:243
+#: ckanext/hrifi/templates/package/edit.html:25
+msgid "Extras"
+msgstr "Lisätiedot"
+
+#: ckanext/hrifi/templates/hri_package_form.html:244
+msgid "Taxonomy URL"
+msgstr "Taksonomia URL"
+
+#: ckanext/hrifi/templates/hri_package_form.html:245
+msgid "Agency"
+msgstr "Virasto"
+
+#: ckanext/hrifi/templates/hri_package_form.html:246
+msgid "Source"
+msgstr "Lähde"
+
+#: ckanext/hrifi/templates/hri_package_form.html:248
+msgid "Author"
+msgstr "Ylläpitäjä"
+
+#: ckanext/hrifi/templates/hri_package_form.html:251
+msgid ""
+"The name of the main contact, for enquiries about this particular "
+"dataset, using the e-mail address in the following field."
+msgstr "Viraston nimi ja sähköpostiosoite, jossa vastataan kyselyihin tähän \"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"tietoaineistoon liittyen"
+
+#: ckanext/hrifi/templates/hri_package_form.html:256
+msgid "Author email"
+msgstr "Ylläpitäjän sähköpostiosoite"
+
+#: ckanext/hrifi/templates/hri_package_form.html:278
+msgid "Version"
+msgstr "Versio"
+
+#: ckanext/hrifi/templates/hri_package_form.html:281
+msgid "A number representing the version (if applicable)"
+msgstr "Aineistoa kuvaava versionumero, jos mahdollinen."
+
+#: ckanext/hrifi/templates/hri_package_form.html:282
+msgid "e.g. 1.2.0"
+msgstr "esimerkiksi 1.2.0"
+
+#: ckanext/hrifi/templates/hri_package_form.html:286
+msgid "Search Info"
+msgstr "Hakutiedot"
+
+#: ckanext/hrifi/templates/hri_package_form.html:292
+msgid "External reference"
+msgstr "Ulkoinen linkki"
+
+#: ckanext/hrifi/templates/hri_package_form.html:293
+msgid "External reference (se)"
+msgstr "Ulkoinen linkki (se)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:294
+msgid "External reference (en)"
+msgstr "Ulkoinen linkki (en)"
+
+#: ckanext/hrifi/templates/hri_package_form.html:295
+msgid "Date released"
+msgstr "Julkaisu pvm"
+
+#: ckanext/hrifi/templates/hri_package_form.html:296
+msgid "Date updated"
+msgstr "Päivitys pvm"
+
+#: ckanext/hrifi/templates/hri_package_form.html:297
+msgid "Update frequency"
+msgstr "Päivitysväli"
+
+#: ckanext/hrifi/templates/hri_package_form.html:298
+msgid "Geographic granularity"
+msgstr "Maantieteellinen tarkkuus"
+
+#: ckanext/hrifi/templates/hri_package_form.html:299
+msgid "Geographic coverage"
+msgstr "Maantieteellinen kattavuus"
+
+#: ckanext/hrifi/templates/hri_package_form.html:300
+msgid "Temporal granularity"
+msgstr "Aikasarjan tarkkuus"
+
+#: ckanext/hrifi/templates/hri_package_form.html:301
+msgid "Categories"
+msgstr "Kategoriat"
+
+#: ckanext/hrifi/templates/hri_package_form.html:302
+msgid "Temporal coverage from"
+msgstr "Aikasarja alkaa"
+
+#: ckanext/hrifi/templates/hri_package_form.html:303
+msgid "Temporal coverage to"
+msgstr "Aikasarja päättyy"
+
+#: ckanext/hrifi/templates/hri_package_form.html:318
+msgid "State"
+msgstr "Tila"
+
+#: ckanext/hrifi/templates/hri_package_form.html:320
+msgid "Delete"
+msgstr "Poista"
+
+#: ckanext/hrifi/templates/hri_package_form.html:322
+msgid "Do you really want to change the state of this dataset?"
+msgstr "Haluatko todella muuttaa tämän tietoaineiston tilaa?"
+
+#: ckanext/hrifi/templates/hri_package_form.html:322
+msgid "Yes!"
+msgstr "Kyllä!"
+
+#: ckanext/hrifi/templates/hri_package_form.html:323
+msgid "This dataset is"
+msgstr "Tämä tietoaineisto on"
+
+#: ckanext/hrifi/templates/hri_package_form.html:326
+msgid "active"
+msgstr "aktiivinen"
+
+#: ckanext/hrifi/templates/hri_package_form.html:327
+msgid "unpublished"
+msgstr "julkaisematon"
+
+#: ckanext/hrifi/templates/hri_package_form.html:328
+msgid "draft"
+msgstr "luonnos"
+
+#: ckanext/hrifi/templates/hri_package_form.html:329
+msgid "deleted"
+msgstr "poistettu"
+
+#: ckanext/hrifi/templates/hri_package_form.html:338
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: ckanext/hrifi/templates/hri_package_form.html:340
+msgid "Briefly describe the changes you have made..."
+msgstr "Kuvaa lyhyesti muutokset joita olet tehnyt..."
+
+#: ckanext/hrifi/templates/hri_package_form.html:347
+#: ckanext/hrifi/templates/hri_package_form.html:350
+msgid "Author:"
+msgstr "Ylläpitäjä:"
+
+#: ckanext/hrifi/templates/hri_package_form.html:351
+msgid ""
+"Since you have not signed in this will just be your IP address.\n"
+"    [1:Click here to sign in] before saving (opens in new window)."
+msgstr "Koska et ole kirjautunut sisään niin IP osoitettasi käytetään\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"[1:Klikkaa tästä kirjautuaksesi] ennen tallennusta (uusi ikkuna "
+"\"\n"
+"\"\n"
+"\"\"aukeaa)."
+
+#: ckanext/hrifi/templates/hri_package_form.html:358
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
+#: ckanext/hrifi/templates/hri_package_form.html:360
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: ckanext/hrifi/templates/hri_package_form.html:362
+msgid "Important:"
+msgstr "Tärkeää:"
+
+#: ckanext/hrifi/templates/layout.html:10
+#: ckanext/hrifi/templates/package/search.html:15
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:16
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:16
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:16
+msgid "Add a dataset"
+msgstr "Lisää tietoaineisto"
+
+#: ckanext/hrifi/templates/layout.html:12
+#: ckanext/hrifi/templates/organization_read.html:70
+#: ckanext/hrifi/templates/organization_read.html:74
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:67
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:56
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:67
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:56
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:67
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:56
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:10
+msgid "Search"
+msgstr "Etsi"
+
+#: ckanext/hrifi/templates/layout.html:13
+msgid "Multiedit datasets"
+msgstr "Matriisihaku - tietoaineistot"
+
+#: ckanext/hrifi/templates/layout.html:14
+msgid "Multiedit groups"
+msgstr "Matriisihaku - Ryhmät"
+
+#: ckanext/hrifi/templates/layout.html:32
+#: ckanext/hrifi/templates/layout.html:35
+#: ckanext/hrifi/templates/home/about.html:6
+msgid "About"
+msgstr "Tietoa"
+
+#: ckanext/hrifi/templates/layout.html:37
+msgid "Twitter @ckanproject"
+msgstr "Twitter @ckanproject"
+
+#: ckanext/hrifi/templates/layout.html:39
+#: ckanext/hrifi/templates/package/search.html:45
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:49
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:49
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:49
+msgid "API"
+msgstr "API"
+
+#: ckanext/hrifi/templates/layout.html:40
+#: ckanext/hrifi/templates/package/search.html:46
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:50
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:50
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:50
+msgid "API Docs"
+msgstr "API dokumentaatio"
+
+#: ckanext/hrifi/templates/layout.html:42
+msgid "Contact Us"
+msgstr "Ota yhteyttä"
+
+#: ckanext/hrifi/templates/layout.html:45
+msgid "Privacy Policy"
+msgstr "Tietosuojapolitiikka"
+
+#: ckanext/hrifi/templates/layout.html:51
+msgid "Sections"
+msgstr "Osiot"
+
+#: ckanext/hrifi/templates/layout.html:55
+msgid "Users"
+msgstr "Käyttäjät:"
+
+#: ckanext/hrifi/templates/layout.html:65
+msgid "Statistics"
+msgstr "Tilastot"
+
+#: ckanext/hrifi/templates/layout.html:70
+msgid "Revisions"
+msgstr "Revisiot"
+
+#: ckanext/hrifi/templates/layout.html:75
+msgid "Site Admin"
+msgstr "Sivuston ylläpitäjä"
+
+#: ckanext/hrifi/templates/layout.html:83
+msgid "Languages"
+msgstr "Kielet"
+
+#: ckanext/hrifi/templates/layout.html:98
+msgid "Meta"
+msgstr "Meta"
+
+#: ckanext/hrifi/templates/layout.html:102
+msgid "Open Knowledge Foundation"
+msgstr "Open Knowledge Foundation"
+
+#: ckanext/hrifi/templates/layout.html:102
+msgid "Licensed under the"
+msgstr "Lisensoitu tällä lisenssillä"
+
+#: ckanext/hrifi/templates/layout.html:104
+msgid "This Content and Data is Open"
+msgstr "Tämä sisältö ja tieto on avointa"
+
+#: ckanext/hrifi/templates/layout.html:106
+msgid "Powered by"
+msgstr "Powered by"
+
+#: ckanext/hrifi/templates/layout.html:107
+msgid "CKAN"
+msgstr "CKAN"
+
+#: ckanext/hrifi/templates/layout.html:107
+msgid "v"
+msgstr "v"
+
+#: ckanext/hrifi/templates/organization_layout.html:18
+#: ckanext/hrifi/templates/organization_read.html:84
+#: ckanext/hrifi/templates/package/layout.html:10
+msgid "View"
+msgstr "Esikatselu"
+
+#: ckanext/hrifi/templates/organization_layout.html:19
+#: ckanext/hrifi/templates/package/layout.html:43
+msgid "History"
+msgstr "Historia"
+
+#: ckanext/hrifi/templates/organization_layout.html:22
+msgid "Add Dataset"
+msgstr "Lisää tietoaineisto"
+
+#: ckanext/hrifi/templates/organization_layout.html:25
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:52
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:150
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: ckanext/hrifi/templates/organization_layout.html:28
+msgid "Join"
+msgstr "Liity"
+
+#: ckanext/hrifi/templates/organization_layout.html:34
+msgid "List Organizations"
+msgstr "Listaa organisaatiot"
+
+#: ckanext/hrifi/templates/organization_layout.html:37
+msgid "Add an Organization"
+msgstr "Lisää organisaatio"
+
+#: ckanext/hrifi/templates/organization_layout.html:40
+msgid "Login to Add an Organization"
+msgstr "Kirjaudu sisään lisätäksesi organisaatio"
+
+#: ckanext/hrifi/templates/organization_read.html:34
+msgid "Administrators"
+msgstr "Ylläpitäjät"
+
+#: ckanext/hrifi/templates/organization_read.html:42
+msgid "Members"
+msgstr "Jäsenet"
+
+#: ckanext/hrifi/templates/organization_read.html:55
+msgid "State:"
+msgstr "Tila:"
+
+#: ckanext/hrifi/templates/organization_read.html:67
+msgid "Datasets"
+msgstr "Tietoaineistot"
+
+#: ckanext/hrifi/templates/organization_read.html:78
+#, python-format
+msgid ""
+"[1:You searched for \"%(query)s\". ][2:]%(number_of_results)s datasets "
+"found."
+msgstr "[1:Hakusanalla \"%(query)s\". ][2:]%(number_of_results)s tietoaineistoa löytyi."
+
+#: ckanext/hrifi/templates/organization_read.html:100
+msgid "This dataset satisfies the Open Definition."
+msgstr "Tämä tietoaineisto toteuttaa Open Definition:in."
+
+#: ckanext/hrifi/templates/organization_read.html:101
+msgid "[Open Data]"
+msgstr "[Open Data]"
+
+#: ckanext/hrifi/templates/organization_read.html:105
+msgid "Not Openly Licensed"
+msgstr "Ei avoimesti lisenssoitu"
+
+#: ckanext/hrifi/templates/admin/drafts.html:6
+#: ckanext/hrifi/templates/admin/drafts.html:7
+msgid "Administration - Drafts and unpublished datasets"
+msgstr "Ylläpito - Luonnokset ja julkaisemattomat tietoaineistot"
+
+#: ckanext/hrifi/templates/admin/drafts.html:10
+msgid "Unpublished Datasets"
+msgstr "Julkaisemattomat tietoaineistot"
+
+#: ckanext/hrifi/templates/admin/drafts.html:22
+msgid "Publish all unpublished datasets"
+msgstr "Julkaise kaikki julkaisemattomat tietoaineistot"
+
+#: ckanext/hrifi/templates/admin/drafts.html:28
+msgid "Dataset Drafts"
+msgstr "Tietoaineistojen luonnokset"
+
+#: ckanext/hrifi/templates/admin/drafts.html:40
+msgid "Move all dataset drafts to unpublished datasets"
+msgstr "Siirrä kaikki luonnokset julkaisemattomiin tietoaineistoihin"
+
+#: ckanext/hrifi/templates/admin/layout.html:11
+msgid "Home"
+msgstr "Aloitussivu"
+
+#: ckanext/hrifi/templates/admin/layout.html:14
+#: ckanext/hrifi/templates/package/layout.html:58
+msgid "Authorization"
+msgstr "Käyttöoikeudet"
+
+#: ckanext/hrifi/templates/admin/layout.html:17
+msgid "Trash"
+msgstr "Roskakori"
+
+#: ckanext/hrifi/templates/admin/layout.html:20
+msgid "Drafts"
+msgstr "Luonnokset"
+
+#: ckanext/hrifi/templates/package/copy.html:6
+msgid "- Copy - Datasets"
+msgstr "- Kopioi - Tietoaineistot"
+
+#: ckanext/hrifi/templates/package/copy.html:7
+msgid "Copy:"
+msgstr "Kopioi:"
+
+#: ckanext/hrifi/templates/package/copy.html:19
+msgid "Error:"
+msgstr "Virhe:"
+
+#: ckanext/hrifi/templates/package/edit.html:6
+msgid "- Edit - Datasets"
+msgstr "- Muokkaa - Tietoaineistot"
+
+#: ckanext/hrifi/templates/package/edit.html:7
+msgid "Edit:"
+msgstr "Muokkaa:"
+
+#: ckanext/hrifi/templates/package/edit.html:26
+msgid "Change state"
+msgstr "Muuta tilaa"
+
+#: ckanext/hrifi/templates/package/layout.html:47
+msgid "Settings"
+msgstr "Muokkaa"
+
+#: ckanext/hrifi/templates/package/layout.html:53
+msgid "Copy"
+msgstr "Kopioi"
+
+#: ckanext/hrifi/templates/package/search.html:9
+#: ckanext/hrifi/templates/package/search.html:10
+msgid "Search -"
+msgstr "Haku -"
+
+#: ckanext/hrifi/templates/package/search.html:16
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:17
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:17
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:17
+msgid "Do you know of a dataset that should be added to"
+msgstr "Tiedätkö tietoaineistosta joka pitäisi lisätä sivustolle"
+
+#: ckanext/hrifi/templates/package/search.html:20
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:21
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:21
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:21
+msgid "Register it now"
+msgstr "Rekisteröi se nyt"
+
+#: ckanext/hrifi/templates/package/search.html:37
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:41
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:41
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:41
+msgid "Other access"
+msgstr "Vaihtoehtoinen käyttö"
+
+#: ckanext/hrifi/templates/package/search.html:43
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:47
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:47
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:47
+msgid "You can also access this registry using the"
+msgstr "Voit käyttää tietoaineistorekisteriä myös käyttäen"
+
+#: ckanext/hrifi/templates/package/search.html:45
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:49
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:49
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:49
+msgid "(see"
+msgstr "(katso"
+
+#: ckanext/hrifi/templates/package/search.html:46
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:50
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:50
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:50
+msgid "or download a"
+msgstr "tai lataa"
+
+#: ckanext/hrifi/templates/package/search.html:47
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:51
+msgid "full"
+msgstr "täysi"
+
+#: ckanext/hrifi/templates/package/search.html:47
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:51
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:51
+msgid "dump"
+msgstr "dumppitiedosto"
+
+#: ckanext/hrifi/templates/package/search.html:58
+msgid ""
+"[1:There was an error while searching.] \n"
+"            Please try again."
+msgstr "[1:Etsiessä tapahtui virhe.]\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"Ole hyvä ja yritä uudelleen."
+
+#: ckanext/hrifi/templates/package/search.html:62
+#, python-format
+msgid "[1:%(item_count)s] datasets found"
+msgstr "[1:%(item_count)s] tietoaineistoa löytyi"
+
+#: ckanext/hrifi/templates/package/search.html:65
+msgid "Would you like to [1:create a new dataset?]"
+msgstr "Haluatko [1:luoda uuden tietoaineiston?]"
+
+#: ckanext/hrifi/templates/user/login.html:19
+msgid "Login - User"
+msgstr "Kirjaudu - Käyttäjä"
+
+#: ckanext/hrifi/templates/user/login.html:20
+msgid "Login to"
+msgstr "Kirjaudu"
+
+#: ckanext/hrifi/templates/user/login.html:33
+msgid "Login:"
+msgstr "Käyttäjätunnus:"
+
+#: ckanext/hrifi/templates/user/login.html:36
+msgid "Password:"
+msgstr "Salasana:"
+
+#: ckanext/hrifi/templates/user/login.html:44
+msgid "Forgot your password?"
+msgstr "Unohditko salasanan?"
+
+#: ckanext/hrifi/templates/user/login.html:52
+msgid "Login using Open ID"
+msgstr "Kirjaudu käyttäen Open ID:tä"
+
+#: ckanext/hrifi/templates/user/login.html:53
+msgid ""
+"NB: To set-up your OpenID for this site, you first need to [1:Register] "
+"and then edit your Profile to provide your OpenID."
+msgstr "Huomio: Ottaaksesi OpenID:n käyttöön tällä sivustolla, sinun pitää ensin "
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"[1:Rekisteröityä] ja sitten muokata profiiliasi syöttääksesi "
+"OpenID\"\n"
+"\" \"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"tunnuksesi."
+
+#: ckanext/hrifi/templates/user/login.html:55
+msgid "Please click your account provider:"
+msgstr "Ole hyvä ja napsauta tilisi tarjoajaa"
+
+#: ckanext/hrifi/templates/user/login.html:59
+msgid "OpenID Identifier:"
+msgstr "OpenID tunniste:"
+
+#: ckanext/hrifi/templates/user/login.html:63
+msgid "Don't have an OpenID?"
+msgstr "Sinulla ei ole OpenID:tä?"
+
+#: ckanext/hrifi/templates/user/login.html:64
+msgid ""
+"OpenID is service that allows you to log-on to many different websites\n"
+"          using a single identity. Find out [1:more\n"
+"          about OpenID] and [2:how to get an\n"
+"          OpenID enabled account]. Probably the simplest way is sign up "
+"with a\n"
+"          free OpenID provider such as [3:https://www.myopenid.com/]."
+msgstr "OpenID palvelu mahdollistaa kirjautumaan moneen web-sivustoon\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"yhdellä identiteetillä. Lisää  [1:tietoa\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"Open ID:stä] and [2:miten saada\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"OpenID tili]. Ehkäpä helpoin tapa on kirjautua käyttäen\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"ilmaista OpenID tarjoajaa kuten [3:https://www.myopenid.com/]."
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:31
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:116
+msgid "Not authorized to see this page"
+msgstr "Ei oikeuksia nähdä tätä sivua"
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:343
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:361
+msgid "Access denied."
+msgstr "Pääsy evätty"
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:345
+msgid "Package not found."
+msgstr "Tietoaineistoa ei löytynyt."
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:347
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:365
+msgid "Validation error."
+msgstr "Epäkelpo syöte."
+
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:363
+msgid "Group not found."
+msgstr "Ryhmää ei löydy."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:11
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:11
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:10
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:11
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:10
+msgid "Multiedit search -"
+msgstr "Matriisihaku"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:75
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:75
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:75
+msgid "Choose a field to show / edit."
+msgstr "Valitse kenttä, jonka haluat näyttää / muokata."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:79
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:79
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:79
+msgid "Enter a new value for the field."
+msgstr "Syötä kentän uusi arvo."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:81
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:83
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:81
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:83
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:81
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:83
+msgid ""
+"Select the data packages you wish to update by ticking the checkboxes "
+"below."
+msgstr "Rastita päivitettävät aineistot alla olevasta taulukosta."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:91
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:91
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:91
+msgid "There was an error while searching."
+msgstr "[1:Etsiessä tapahtui virhe.]\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\n"
+"\"\n"
+"\"\"\n"
+"\"\n"
+"\"\"\"\"Ole hyvä ja yritä uudelleen."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:91
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:91
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:86
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:91
+msgid "Please try another search term."
+msgstr "Yritä uutta hakua."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:90
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:95
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:90
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:95
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:90
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:95
+#, python-format
+msgid "[1:%(query_count)s] packages found"
+msgstr "[1:%(query_count)s] tietoaineistoa löytyi"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:98
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:98
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:98
+msgid "Would you like to"
+msgstr "Haluaisitko "
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:98
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:98
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:93
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:98
+msgid "create a new package?"
+msgstr "luo uusi tietoaineisto?"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:105
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:105
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:105
+msgid "Too many results found, try narrowing down the search (at max"
+msgstr "Liian monta hakutulosta, koita rajata hakua (maksimissaan "
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:105
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:105
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:105
+msgid "results shown)."
+msgstr "tulosta näytetään)."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:101
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:106
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:101
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:106
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:101
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:106
+msgid "Ignore limit (search may take longer)."
+msgstr "Ohita hakurajoitus (haussa voi kestää pidempään)."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:110
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:115
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:110
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:115
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:110
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:115
+msgid "First"
+msgstr "Ensimmäinen"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:111
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:116
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:111
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:116
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:111
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:116
+msgid "Prev"
+msgstr "Edellinen"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:113
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:118
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:113
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:118
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:113
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:118
+msgid "Next"
+msgstr "Seuraava"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:114
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:119
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:114
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:119
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:114
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:119
+msgid "Last"
+msgstr "Viimeinen"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:115
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:120
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:115
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:120
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:115
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:120
+msgid "Show:"
+msgstr "Näytä:"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:155
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:154
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:155
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:154
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:161
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:159
+msgid "Check here if you want to add to field instead of replacing its value."
+msgstr "Lisää arvo korvaamisen sijaan."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:156
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:155
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:156
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:155
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:162
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:160
+msgid "Please select packages to update."
+msgstr "Ole hyvä ja valitse tietoaineistot, joita haluat päivittää."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix.html:157
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:156
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix.html:157
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:156
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:163
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:161
+msgid "Updating selected datasets, please wait."
+msgstr "Päivitetään valittuja tietoaineistoja, ole hyvä ja odota."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:65
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:65
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:65
+msgid "Choose groups to edit."
+msgstr "Valitse ryhmät, joita haluat muokata."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:81
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:81
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:81
+msgid "Add selected datasets to groups"
+msgstr "Lisää valitut tietoaineistot ryhmiin"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/matrix_groups.html:82
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/matrix_groups.html:82
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:82
+msgid "Remove selected datasets from groups"
+msgstr "Poista valitut tietoaineistot ryhmistä"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/util.html:166
+msgid "groups"
+msgstr "ryhmät"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:9
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:9
+msgid "Search..."
+msgstr "Haku..."
+
+

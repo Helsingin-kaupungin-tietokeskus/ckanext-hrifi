@@ -1,0 +1,138 @@
+body.drafts form#form-publish-datasets, 
+body.drafts form#form-drafts-to-unpublished {
+  margin-bottom: 30px;
+  text-align: right;
+}
+body.package.copy div#content {
+  /* Flip the sidebar to the left-hand side */
+  margin-right: 29px;
+  margin-left: 0px;
+  float: right;
+  padding-right: 0;
+  padding-left: 20px;
+  border: none;
+  border-left: 1px solid #eee;
+}
+body.package.copy div#sidebar {
+  /* Flip the sidebar to the left-hand side */
+  padding-left: 0px;
+  float: left;
+  margin-right: 0px;
+}
+.dataset-create-form fieldset {
+  /* Show only one field */
+  display: block;
+}
+.dataset-create-form .homepage-field,
+.dataset-create-form .tags-field {
+  display: block;
+}
+
+html, body {
+  background: none repeat scroll 0 0 #E2E2E2;
+}
+
+#hri-top-wrapper {
+  background: none repeat scroll 0 0 #F2F2F2;
+}
+
+[role="main"], .main, .hero {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: auto;
+    min-height: 0;
+    padding: 20px 120px 20px;
+    width: 960px;
+}
+
+.main.homepage {
+  border: none;
+  padding: 20px 120px 40px;
+}
+
+/* Commenting form */
+.clear { clear: both; }
+
+.required {
+    color: #EE0000;
+    padding-left: 5px;
+}
+
+#commentform-rate label:after { content: ""; }
+
+#subscribe-reloaded {  margin-top: -16px; }
+
+/* CKAN admin panel */
+.account-masthead {
+  background: url("img/navigation-fixed-bg2.png") no-repeat scroll 0 0 #084169;
+  border-top: 1px solid #18557C;
+  margin: auto;
+  padding: 0 120px;
+  width: 960px;
+}
+
+/* Clear footer container margins */
+.site-footer {
+  background: none repeat scroll 0 0 #E2E2E2;
+  padding: 0;
+  display: block;
+}
+
+.site-footer .container {
+  background: none repeat scroll 0 0 #F2F2F2;
+  padding: 0 120px;
+  width: 960px;
+}
+
+/* Change footer padding if display is narrow */
+
+@media (max-width:1260px) {
+  .site-footer .container {
+    padding: 0 10px;
+  }
+
+  [role="main"], .main, .hero {
+    padding: 20px 10px 20px;
+  }
+
+  .main.homepage {
+    padding: 20px 10px 40px;
+  } 
+
+  .account-masthead{
+    padding: 0 10px 0;
+  }
+}
+
+/* CKAN facet "Show more" and "Show only popular" style override. */
+.module .read-more {
+  color: #888888;
+  /*font-size: 12px;*/
+  /*line-height: 20px;*/
+  /*text-decoration: underline;*/
+  font-weight: bold;
+}
+.module .read-more:hover { color: #444444; }
+
+/* Multiedit */
+.packages input[type=checkbox] { margin-top: -16px; }
+
+/* Datepicker */
+
+.ui-datepicker-next span {
+  /* http://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0; 
+  height: 0; 
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid black;
+}
+.ui-datepicker-prev span {
+  /* http://css-tricks.com/snippets/css/css-triangle/ */
+  width: 0; 
+  height: 0; 
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 9px solid black;
+}
+
+.form-horizontal .control-group .controls { margin-left: 170px; }

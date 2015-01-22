@@ -3,7 +3,7 @@ import sys, os
 
 from ckanext.hrifi import __version__
 
-setup(name='ckanext-hrifi',
+setup(name='ckan-hrifi',
       version=__version__,
       description="CKAN Customizations for the Helsinki Region Infoshare",
       long_description="",
@@ -24,12 +24,7 @@ setup(name='ckanext-hrifi',
                 ('public/**', 'ignore', None)
                 ],
             '../ckanext-multiedit/ckanext/multiedit': [
-                ('templates/**.html', 'ckan', None),
-                ('**.py', 'python', None),
-                ('public/**', 'ignore', None)
-                ],
-            '../ckanext-comments/ckanext/comments': [
-                ('templates/**.html', 'ckan', None),
+                ('templates/**.html', 'jinja2', None),
                 ('**.py', 'python', None),
                 ('public/**', 'ignore', None)
                 ],
@@ -44,7 +39,6 @@ setup(name='ckanext-hrifi',
       [ckan.plugins]
       hrifi=ckanext.hrifi.plugin:Hrifi
       hri_organization=ckanext.hrifi.hri_organization_form:HriOrganizationForm
-      hri_wordpress_auth = ckanext.hrifi.plugin:WordPressAuthPlugin
       
       """
       )

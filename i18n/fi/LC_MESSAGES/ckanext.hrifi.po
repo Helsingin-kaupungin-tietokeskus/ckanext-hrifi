@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckan-hrifi 0.3\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-14 09:45+0200\n"
+"POT-Creation-Date: 2014-07-13 17:55+0300\n"
 "PO-Revision-Date: 2012-06-06 12:30+0300\n"
 "Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>\n"
 "Language-Team: \n"
@@ -17,44 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: ckanext/hrifi/hri_auth.py:70
+#: ckanext/hrifi/hri_auth.py:75
 msgid "Harvesters are not authorized to see non active datasets"
 msgstr "Harvestereilla ei ole oikeutta nähdä ei-aktiivisia tietoaineistoja"
 
-#: ckanext/hrifi/hri_auth.py:76
+#: ckanext/hrifi/hri_auth.py:81
 msgid "Harvesters are not authorized to edit groups"
-msgstr "Harvestereilla ei ole oikeutta muokata ryhmiä"
+msgstr "Harvestereilla ei ole oikeutta muokata aineistokokonaisuuksia"
 
-#: ckanext/hrifi/hri_auth.py:82
+#: ckanext/hrifi/hri_auth.py:89
 msgid "Harvesters are not authorized to delete groups"
-msgstr "Harvestereilla ei ole oikeutta poistaa ryhmiä"
+msgstr "Harvestereilla ei ole oikeutta poistaa aineistokokonaisuuksia"
 
-#: ckanext/hrifi/hri_auth.py:88
+#: ckanext/hrifi/hri_auth.py:97
 msgid "Harvesters are not authorized to create groups"
-msgstr "Harvestereilla ei ole oikeutta luoda ryhmiä"
+msgstr "Harvestereilla ei ole oikeutta luoda aineistokokonaisuuksia"
 
-#: ckanext/hrifi/hri_auth.py:95 ckanext/hrifi/hri_auth.py:101
+#: ckanext/hrifi/hri_auth.py:116 ckanext/hrifi/hri_auth.py:156
 msgid "Harvesters are not authorized to create packages"
 msgstr "Harvestereilla ei ole oikeutta luoda tietoaineistoja"
 
-#: ckanext/hrifi/hri_auth.py:107 ckanext/hrifi/hri_auth.py:113
+#: ckanext/hrifi/hri_auth.py:139
+#, python-format
+msgid "User %s not authorized to create packages"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:143
+#, python-format
+msgid "User %s not authorized to edit these groups"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:149
+#, python-format
+msgid "User %s not authorized to add dataset to this organization"
+msgstr ""
+
+#: ckanext/hrifi/hri_auth.py:164 ckanext/hrifi/hri_auth.py:172
 msgid "Harvesters are not authorized to update packages"
 msgstr "Harvestereilla ei ole oikeutta päivittää tietoaineistoja"
 
-#: ckanext/hrifi/hri_auth.py:119
+#: ckanext/hrifi/hri_auth.py:179
 msgid "Harvesters are not authorized to delete packages"
 msgstr "Harvestereilla ei ole oiketta poistaa tietoaineistoja"
 
-#: ckanext/hrifi/hri_auth.py:125
+#: ckanext/hrifi/hri_auth.py:187
 msgid ""
 "You cannot register for this\n"
 "        site."
-msgstr "Et voi rekisteröityä tälle\n"
-"        sivulle."
+msgstr ""
+"Et voi rekisteröityä tälle\n"
+"\"\n"
+"\"        sivulle."
 
-#: ckanext/hrifi/hri_auth.py:135
-msgid "You must be logged in see the site"
-msgstr "Sinun täytyy olla kirjautunut sisään nähdäksesi tämän sivun"
+#: ckanext/hrifi/hri_auth.py:198
+msgid "Only sysadmins are allowed to view users."
+msgstr ""
+
+#: ckanext/hrifi/plugin.py:86
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:24
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:29
+#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:6
+msgid "Author"
+msgstr "Ylläpitäjä"
+
+#: ckanext/hrifi/plugin.py:87 ckanext/hrifi/schema.py:108
+msgid "geographic_coverage"
+msgstr "Maantieteellinen kattavuus"
 
 #: ckanext/hrifi/schema.py:93
 msgid "title_se"
@@ -65,194 +93,314 @@ msgid "title_en"
 msgstr "Otsikko (en)"
 
 #: ckanext/hrifi/schema.py:95
-msgid "external_reference"
-msgstr "Ulkoinen linkki"
-
-#: ckanext/hrifi/schema.py:96
-msgid "external_reference_se"
-msgstr "Ulkoinen linkki (se)"
-
-#: ckanext/hrifi/schema.py:97
-msgid "external_reference_en"
-msgstr "Ulkoinen linkki (en)"
-
-#: ckanext/hrifi/schema.py:98
 msgid "notes_se"
 msgstr "Kuvaus (se)"
 
-#: ckanext/hrifi/schema.py:99
+#: ckanext/hrifi/schema.py:96
 msgid "notes_en"
 msgstr "Kuvaus (en)"
 
-#: ckanext/hrifi/schema.py:100
-msgid "date_released"
-msgstr "Julkaisupäivämäärä"
-
-#: ckanext/hrifi/schema.py:101
-msgid "date_updated"
-msgstr "Päivityspäivämäärä"
-
-#: ckanext/hrifi/schema.py:102
-msgid "update_frequency"
-msgstr "Päivitysväli"
-
-#: ckanext/hrifi/schema.py:103
-msgid "geographic_granularity"
-msgstr "Maantieteellinen tarkkuus"
-
-#: ckanext/hrifi/schema.py:104
-msgid "geographic_coverage"
-msgstr "Maantieteellinen kattavuus"
-
-#: ckanext/hrifi/schema.py:105
-msgid "temporal_granularity"
-msgstr "Aikasarjan tarkkuus"
-
-#: ckanext/hrifi/schema.py:106
-msgid "temporal_coverage-from"
-msgstr "Aikasarja alkaa"
-
-#: ckanext/hrifi/schema.py:107
-msgid "temporal_coverage-to"
-msgstr "Aikasarja päättyy"
-
-#: ckanext/hrifi/schema.py:108
-msgid "categories"
-msgstr "Kategoriat"
-
-#: ckanext/hrifi/schema.py:109
-msgid "taxonomy_url"
-msgstr "Taksonomia URL"
-
-#: ckanext/hrifi/schema.py:110
+#: ckanext/hrifi/schema.py:97
 msgid "agency"
 msgstr "Virasto"
 
-#: ckanext/hrifi/schema.py:111
-msgid "search_info"
-msgstr "Hakutiedot"
-
-#: ckanext/hrifi/schema.py:112
+#: ckanext/hrifi/schema.py:98
 msgid "source"
 msgstr "Lähde"
 
-#: ckanext/hrifi/controllers/hri_package_controller.py:36
+#: ckanext/hrifi/schema.py:99
+msgid "search_info"
+msgstr "Hakutiedot"
+
+#: ckanext/hrifi/schema.py:100
+msgid "taxonomy_url"
+msgstr "Taksonomia URL"
+
+#: ckanext/hrifi/schema.py:101
+msgid "external_reference"
+msgstr "Ulkoinen linkki"
+
+#: ckanext/hrifi/schema.py:102
+msgid "external_reference_se"
+msgstr "Ulkoinen linkki (se)"
+
+#: ckanext/hrifi/schema.py:103
+msgid "external_reference_en"
+msgstr "Ulkoinen linkki (en)"
+
+#: ckanext/hrifi/schema.py:104
+msgid "date_released"
+msgstr "Julkaisupäivämäärä"
+
+#: ckanext/hrifi/schema.py:105
+msgid "date_updated"
+msgstr "Päivityspäivämäärä"
+
+#: ckanext/hrifi/schema.py:106
+msgid "update_frequency"
+msgstr "Päivitysväli"
+
+#: ckanext/hrifi/schema.py:107
+msgid "geographic_granularity"
+msgstr "Maantieteellinen tarkkuus"
+
+#: ckanext/hrifi/schema.py:109
+msgid "temporal_granularity"
+msgstr "Aikasarjan tarkkuus"
+
+#: ckanext/hrifi/schema.py:110
+#: ckanext/hrifi/templates/snippets/facet_list.html:51
+#: ckanext/hrifi/templates/snippets/search_form.html:18
+msgid "categories"
+msgstr "Kategoriat"
+
+#: ckanext/hrifi/schema.py:111
+msgid "temporal_coverage-from"
+msgstr "Aikasarja alkaa"
+
+#: ckanext/hrifi/schema.py:112
+msgid "temporal_coverage-to"
+msgstr "Aikasarja päättyy"
+
+#: ckanext/hrifi/controllers/hri_package_controller.py:43
 #, python-format
 msgid "Unauthorized to read or create package %s"
 msgstr "Ei oikeuksia näyttää tai luoda tietoaineistoa %s"
 
-#: ckanext/hrifi/controllers/hri_package_controller.py:38
-#: ckanext/hrifi/controllers/hri_package_controller.py:66
+#: ckanext/hrifi/controllers/hri_package_controller.py:45
+#: ckanext/hrifi/controllers/hri_package_controller.py:73
 msgid "Dataset not found"
 msgstr "Tietoaineistoa ei löytynyt."
 
-#: ckanext/hrifi/controllers/hri_package_controller.py:64
+#: ckanext/hrifi/controllers/hri_package_controller.py:71
 #, python-format
 msgid "Unauthorized to read package %s"
 msgstr "Ei oikeuksia näyttää tietoaineistoa %s"
 
-#: ckanext/hrifi/controllers/hri_package_controller.py:68
+#: ckanext/hrifi/controllers/hri_package_controller.py:75
 msgid "Integrity Error"
 msgstr "Integriteettivirhe"
 
-#: ckanext/hrifi/controllers/hri_package_controller.py:70
+#: ckanext/hrifi/controllers/hri_package_controller.py:77
 msgid "Unable to add package to search index."
 msgstr "Ei voitu lisätä tietoaineistoa hakuindeksiin."
 
-#: ckanext/hrifi/templates/header.html:12
-msgid "Sysadmin settings"
-msgstr "Järjestelmän ylläpitäjän asetukset"
+#: ckanext/hrifi/templates/footer.html:18
+msgid "Some rights reserved."
+msgstr "Joitakin oikeuksia pidätetään."
 
-#: ckanext/hrifi/templates/header.html:18
-msgid "View profile"
-msgstr "Näytä profiili"
+#: ckanext/hrifi/templates/footer.html:50
+msgid "Follow HRI"
+msgstr "Seuraa HRI:tä"
 
-#: ckanext/hrifi/templates/header.html:24
-#, python-format
-msgid "Dashboard (%(num)d new item)"
-msgid_plural "Dashboard (%(num)d new items)"
-msgstr[0] ""
-msgstr[1] ""
+#: ckanext/hrifi/templates/footer.html:54
+msgid "RSS feeds"
+msgstr "RSS-syötteet"
 
-#: ckanext/hrifi/templates/header.html:32
-msgid "Edit settings"
-msgstr "Muokkaa asetuksia"
-
-#: ckanext/hrifi/templates/header.html:39
-msgid "Log out"
-msgstr "Kirjaudu ulos"
-
-#: ckanext/hrifi/templates/header.html:51
-msgid "Log in"
-msgstr "Kirjaudu sisään"
-
-#: ckanext/hrifi/templates/header.html:90
-msgid "Datasets"
-msgstr "Tietoaineistot"
-
-#: ckanext/hrifi/templates/header.html:91
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:239
+#: ckanext/hrifi/templates/header.html:71
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:235
 msgid "Organizations"
 msgstr "Organisaatiot"
 
-#: ckanext/hrifi/templates/header.html:92
+#: ckanext/hrifi/templates/header.html:72
 #: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:28
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:240
-#msgid "Groups"
-#msgstr "Ryhmät"
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:236
+msgid "Groups"
+msgstr ""
 
-#: ckanext/hrifi/templates/header.html:93
-msgid "About"
-msgstr "Tietoa"
-
-#: ckanext/hrifi/templates/header.html:96
+#: ckanext/hrifi/templates/header.html:77
 msgid "Multiedit"
 msgstr "Massamuokkaus"
 
-#: ckanext/hrifi/templates/header.html:104
-msgid "Search Datasets"
-msgstr "Etsi tietoaineistoja"
+#: ckanext/hrifi/templates/header.html:80
+msgid "Sysadmin settings"
+msgstr "Järjestelmän ylläpitäjän asetukset"
 
-#: ckanext/hrifi/templates/header.html:105
-#: ckanext/hrifi/templates/header.html:106
-#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:7
-#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:10
-msgid "Search"
-msgstr "Etsi"
+#: ckanext/hrifi/templates/header.html:87
+msgid "View profile"
+msgstr "Näytä profiili"
+
+#: ckanext/hrifi/templates/group/read.html:5
+msgid "Add Dataset"
+msgstr ""
+
+#: ckanext/hrifi/templates/group/snippets/info.html:12
+#: ckanext/hrifi/templates/snippets/organization.html:32
+msgid "read more"
+msgstr ""
+
+#: ckanext/hrifi/templates/group/snippets/info.html:15
+msgid "There is no description for this group"
+msgstr ""
+
+#: ckanext/hrifi/templates/group/snippets/info.html:20
+#: ckanext/hrifi/templates/snippets/organization.html:44
+msgid "Datasets"
+msgstr "Tietoaineistot"
 
 #: ckanext/hrifi/templates/package/copy.html:9
-#: ckanext/hrifi/templates/package/snippets/package_form.html:44
+#: ckanext/hrifi/templates/package/snippets/package_form.html:49
 msgid "Copy"
 msgstr "Kopioi"
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:2
-msgid "Additional Info"
-msgstr "Lisätietoa"
+#: ckanext/hrifi/templates/package/read.html:17
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:116
+msgid "Private"
+msgstr "Yksityinen"
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:6
-msgid "Field"
-msgstr "Kenttä"
+#: ckanext/hrifi/templates/package/read.html:26
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:32
+msgid "Draft"
+msgstr "Luonnos"
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:7
-msgid "Value"
-msgstr "Arvo"
+#: ckanext/hrifi/templates/package/read.html:60
+msgid "Source reference to the dataset"
+msgstr ""
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:14
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:90
+#: ckanext/hrifi/templates/package/read.html:61
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:17
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:105
 msgid "Source"
 msgstr "Lähde"
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:21
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:26
-#: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:6
-msgid "Author"
-msgstr "Ylläpitäjä"
+#: ckanext/hrifi/templates/package/read.html:64
+#, python-format
+msgid ""
+"The administrator of this data is %(author)s and the original creator is "
+"%(source)s. The data has been downloaded from the <a "
+"href=\"http://%(url)s\">Helsinki Region Infoshare</a> service "
+"%(timestamp)s using the license <a "
+"href=\"%(license_url)s\">%(license_title)s</a>."
+msgstr ""
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:45
+#: ckanext/hrifi/templates/package/read.html:68
+#, python-format
+msgid ""
+"The administrator of this data is %(author)s. The data has been "
+"downloaded from the <a href=\"http://%(url)s\">Helsinki Region "
+"Infoshare</a> service %(timestamp)s using the license <a "
+"href=\"%(license_url)s\">%(license_title)s</a>."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read.html:72
+#, python-format
+msgid ""
+"The administrator of this data is %(author)s and the original creator is "
+"%(source)s. The data has been downloaded from the <a "
+"href=\"http://%(url)s\">Helsinki Region Infoshare</a> service "
+"%(timestamp)s. %(license_title)s."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read.html:76
+#, python-format
+msgid ""
+"The administrator of this data is %(author)s. The data has been "
+"downloaded from the <a href=\"http://%(url)s\">Helsinki Region "
+"Infoshare</a> service %(timestamp)s. %(license_title)s."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read.html:86
+#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:51
+#: ckanext/hrifi/templates/snippets/search_form.html:18
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:237
+msgid "Tags"
+msgstr "Avainsanat"
+
+#: ckanext/hrifi/templates/package/read_base.html:4
+msgid "Dataset"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:47
+msgid "Day"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:47
+msgid "Page Views"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:47
+msgid "Downloads"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:104
+msgid "Commenting is unavailable for this dataset."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:105
+msgid "Reply"
+msgstr "Vastaa"
+
+#: ckanext/hrifi/templates/package/read_base.html:106
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:22
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:117
+msgid "Report inappropriate content"
+msgstr "Ilmoita epäasiallinen sisältö"
+
+#: ckanext/hrifi/templates/package/read_base.html:114
+msgid "Page Views and Downloads"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:117
+msgid "This page has - views during the last 30 days."
+msgstr ""
+
+#: ckanext/hrifi/templates/package/read_base.html:118
+msgid "(Updated daily.)"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/related_list.html:6
+msgid "Related Media for {dataset}"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/related_list.html:11
+msgid "No related items"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/related_list.html:17
+msgid "Add Related Item"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:21
+msgid "Newest Data"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:22
+msgid "Relevance"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:23
+msgid "Name Ascending"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:24
+msgid "Name Descending"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:25
+msgid "Last Modified"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/search.html:26
+msgid "Popular"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:5
+msgid "Additional Info"
+msgstr "Lisätietoa"
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:9
+msgid "Field"
+msgstr "Kenttä"
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:10
+msgid "Value"
+msgstr "Arvo"
+
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:48
 msgid "Version"
 msgstr "Versio"
 
-#: ckanext/hrifi/templates/package/snippets/additional_info.html:52
+#: ckanext/hrifi/templates/package/snippets/additional_info.html:55
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:28
 msgid "State"
 msgstr "Tila"
@@ -273,10 +421,6 @@ msgstr "URL"
 msgid "eg. my-dataset"
 msgstr "esim. aineistoa-hyvin-kuvaava-otsikko"
 
-#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:32
-msgid "Draft"
-msgstr "Luonnos"
-
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:35
 msgid "Completed Draft"
 msgstr "Valmis luonnos"
@@ -295,16 +439,11 @@ msgid "eg. Some useful notes about the data"
 msgstr "Mahdollisimman tarkka sanallinen kuvaus tietoaineistosta"
 
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:51
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:241
-msgid "Tags"
-msgstr "Avainsanat"
-
-#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:51
 msgid "eg. economy, mental health, government"
 msgstr "esim. väestö, asuminen, julkinen-talous"
 
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:57
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:243
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:239
 msgid "License"
 msgstr "Lisenssi"
 
@@ -312,10 +451,13 @@ msgstr "Lisenssi"
 msgid ""
 " License definitions and additional information can be found at <a "
 "href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
-msgstr "Lisätietoa lisensseistä löytyy esim. täältä: <a "
-"href=\http://www.hri.fi/fi/ajankohtaista/bloggaukset/kayta-nimea/\"Käytä, nimeä</a> "
+msgstr ""
+"Lisätietoa lisensseistä löytyy esim. täältä: <a \"\n"
+"\"href=\\http://www.hri.fi/fi/ajankohtaista/bloggaukset/kayta-"
+"nimea/\"Käytä, nimeä</a> "
 
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:96
+#: ckanext/hrifi/templates/snippets/organization.html:20
 msgid "Organization"
 msgstr "Organisaatio"
 
@@ -328,42 +470,41 @@ msgid "Visibility"
 msgstr "Näkyvyys"
 
 #: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:116
-msgid "Private"
-msgstr "Yksityinen"
-
-#: ckanext/hrifi/templates/package/snippets/package_basic_fields.html:116
 msgid "Public"
 msgstr "Julkinen"
 
 #: ckanext/hrifi/templates/package/snippets/package_copy_form.html:11
-#: ckanext/hrifi/templates/package/snippets/package_form.html:28
+#: ckanext/hrifi/templates/package/snippets/package_form.html:33
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:35
 msgid ""
 "Important: By submitting content, you agree to release your contributions"
 " under the Open Database License."
-msgstr "Tärkeää: Lisäämällä sisältöä sitoudut julkaisemaan lisäyksesi Open Database -lisenssillä."
+msgstr ""
+"Tärkeää: Lisäämällä sisältöä sitoudut julkaisemaan lisäyksesi Open "
+"Database -lisenssillä."
 
 #: ckanext/hrifi/templates/package/snippets/package_copy_form.html:20
 msgid "Save"
 msgstr "Tallenna"
 
-#: ckanext/hrifi/templates/package/snippets/package_form.html:37
+#: ckanext/hrifi/templates/package/snippets/package_form.html:42
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:44
 msgid "Are you sure you want to delete this dataset?"
 msgstr "Haluatko varmasti poistaa tämän tietoaineiston?"
 
-#: ckanext/hrifi/templates/package/snippets/package_form.html:38
+#: ckanext/hrifi/templates/package/snippets/package_form.html:43
 #: ckanext/hrifi/templates/package/snippets/resource_form.html:72
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:45
 msgid "Delete"
 msgstr "Poista"
 
-#: ckanext/hrifi/templates/package/snippets/package_form.html:42
+#: ckanext/hrifi/templates/package/snippets/package_form.html:47
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:49
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:126
 msgid "Cancel"
 msgstr "Peruuta"
 
-#: ckanext/hrifi/templates/package/snippets/package_form.html:45
+#: ckanext/hrifi/templates/package/snippets/package_form.html:50
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/snippets/package_form.html:51
 msgid "Next: Add Data"
 msgstr "Seuraavaksi: Lisää tietoaineisto"
@@ -382,7 +523,11 @@ msgstr "esim. sepe@hsy.fi"
 
 #: ckanext/hrifi/templates/package/snippets/package_metadata_fields.html:41
 msgid "Add Group"
-msgstr "Lisää ryhmä"
+msgstr "Lisää aineistokokonaisuus"
+
+#: ckanext/hrifi/templates/package/snippets/related_applications.html:5
+msgid "Applications from this data"
+msgstr ""
 
 #: ckanext/hrifi/templates/package/snippets/resource_form.html:32
 msgid "Link to a file"
@@ -401,6 +546,7 @@ msgid "eg. http://example.com/gold-prices-jan-2011.json"
 msgstr "esim. http://www.hsy.fi/avoindata"
 
 #: ckanext/hrifi/templates/package/snippets/resource_form.html:45
+#: ../ckanext-comments/ckanext/comments/plugin.py:96
 msgid "Name"
 msgstr "Nimi"
 
@@ -452,6 +598,21 @@ msgstr "Seuraavaksi: Lisää metadata"
 msgid "Add"
 msgstr "Lisää"
 
+#: ckanext/hrifi/templates/package/snippets/resource_item.html:16
+msgid "No description for this resource"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resources_list.html:13
+msgid "Data and Resources"
+msgstr ""
+
+#: ckanext/hrifi/templates/package/snippets/resources_list.html:26
+#, python-format
+msgid ""
+" <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not"
+" add some?</a> "
+msgstr ""
+
 #: ckanext/hrifi/templates/snippets/custom_form_fields.html:23
 msgid "Alue"
 msgstr "Alue"
@@ -477,262 +638,322 @@ msgid "Energia- ja vesihuolto"
 msgstr "Energia- ja vesihuolto"
 
 #: ckanext/hrifi/templates/snippets/custom_form_fields.html:29
+msgid "Hallinto"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:30
 msgid "Julkiset palvelut"
 msgstr "Julkiset palvelut"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:30
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:31
+msgid "Kaavat ja kiinteistöt"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:32
 msgid "Kartat"
 msgstr "Kartat"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:31
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:33
+msgid "Kartat ja paikkatieto"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:34
 msgid "Kaupunkihistoria"
 msgstr "Kaupunkihistoria"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:32
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:35
 msgid "Kiinteistöt"
 msgstr "Kiinteistöt"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:33
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:36
 msgid "Koulutus"
 msgstr "Koulutus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:34
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:37
 msgid "Kulttuuri"
 msgstr "Kulttuuri"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:35
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:38
 msgid "Kunnallistalous"
 msgstr "Kunnallistalous"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:36
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:39
+msgid "Laki ja oikeusturva"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:40
 msgid "Liikenne"
 msgstr "Liikenne"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:37
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:41
+msgid "Liikunta ja ulkoilu"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:42
 msgid "Maankäyttö"
 msgstr "Maankäyttö"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:38
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:43
+msgid "Matkailu"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:44
 msgid "Muut palvelut"
 msgstr "Muut palvelut"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:39
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:45
+msgid "Neuvonta"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:46
 msgid "Oikeuslaitos ja turvallisuus"
 msgstr "Oikeuslaitos ja turvallisuus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:40
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:47
+msgid "Opetus ja koulutus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:48
 msgid "Rakennukset"
 msgstr "Rakennukset"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:41
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:49
 msgid "Rakentaminen"
 msgstr "Rakentaminen"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:42
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:50
+msgid "Sosiaalipalvelut"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:51
 msgid "Sosiaalitoimi"
 msgstr "Sosiaalitoimi"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:43
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
 msgid "Talous"
 msgstr "Talous"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:44
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:53
+msgid "Talous ja verotus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
 msgid "Terveys"
 msgstr "Terveys"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:45
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:55
+msgid "Tietotekniikka"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
 msgid "Tulot ja kulutus"
 msgstr "Tulot ja kulutus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:46
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:57
+msgid "Turvallisuus"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:58
 msgid "Työmarkkinat"
 msgstr "Työmarkkinat"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:47
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:59
+msgid "Työ ja elinkeinot"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:60
 msgid "Vapaa-aika"
 msgstr "Vapaa-aika"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:48
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:61
+msgid "Väestö"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:62
 msgid "Väestö ja väestönmuutokset"
 msgstr "Väestö ja väestönmuutokset"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:49
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:63
 msgid "Ympäristö"
 msgstr "Ympäristö"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:50
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:64
+msgid "Ympäristö ja luonto"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:65
 msgid "Yritykset"
 msgstr "Yritykset"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Helsingin seutu (kaikki)"
 msgstr "Helsingin seutu (kaikki)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Helsinki"
 msgstr "Helsinki"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Espoo"
 msgstr "Espoo"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Vantaa"
 msgstr "Vantaa"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Kauniainen"
 msgstr "Kauniainen"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Hyvinkää"
 msgstr "Hyvinkää"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Järvenpää"
 msgstr "Järvenpää"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Kerava"
 msgstr "Kerava"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Kirkkonummi"
 msgstr "Kirkkonummi"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Nurmijärvi"
 msgstr "Nurmijärvi"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Mäntsälä"
 msgstr "Mäntsälä"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Sipoo"
 msgstr "Sipoo"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Pornainen"
 msgstr "Pornainen"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Tuusula"
 msgstr "Tuusula"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:52
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:67
 msgid "Vihti"
 msgstr "Vihti"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Valtio"
 msgstr "Valtio"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Seutu"
 msgstr "Seutu"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Kunta"
 msgstr "Kunta"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Tilastoalue"
 msgstr "Tilastoalue"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Ruutu"
 msgstr "Ruutu"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:54
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:69
 msgid "Piste"
 msgstr "Piste"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:71
 msgid "vuosi"
 msgstr "vuosi"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:71
 msgid "vuosineljännes"
 msgstr "vuosineljännes"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:56
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:71
 msgid "kuukausi"
 msgstr "kuukausi"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:84
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:99
 msgid "Title (se)"
 msgstr "Otsikko (se)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:85
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:100
 msgid "Title (en)"
 msgstr "Otsikko (en)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:86
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:101
 msgid "Notes (se)"
 msgstr "Kuvaus (se)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:87
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:102
 msgid "Notes (en)"
 msgstr "Kuvaus (en)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:88
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:103
 msgid "Taxonomy URL"
 msgstr "Taksonomia URL"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:89
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:104
 msgid "Agency"
 msgstr "Virasto"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:91
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:106
 msgid "Search Info"
 msgstr "Hakutiedot"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:92
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:107
 msgid "External reference"
 msgstr "Ulkoinen linkki"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:93
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:108
 msgid "External reference (se)"
 msgstr "Ulkoinen linkki (se)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:94
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:109
 msgid "External reference (en)"
 msgstr "Ulkoinen linkki (en)"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:95
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:110
 msgid "Date released"
 msgstr "Julkaisupäivämäärä"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:96
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:111
 msgid "Date updated"
 msgstr "Päivityspäivämäärä"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:97
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:112
 msgid "Update frequency"
 msgstr "Päivitysväli"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:99
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:114
 msgid "Geographic granularity"
 msgstr "Maantieteellinen tarkkuus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:100
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:115
 msgid "Geographic coverage"
 msgstr "Maantieteellinen kattavuus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:101
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:116
 msgid "Temporal granularity"
 msgstr "Aikasarjan tarkkuus"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:102
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:117
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:104
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:119
 msgid "Temporal coverage from"
 msgstr "Aikasarja alkaa"
 
-#: ckanext/hrifi/templates/snippets/custom_form_fields.html:105
+#: ckanext/hrifi/templates/snippets/custom_form_fields.html:120
 msgid "Temporal coverage to"
 msgstr "Aikasarja päättyy"
 
@@ -740,17 +961,29 @@ msgstr "Aikasarja päättyy"
 msgid "Clear All"
 msgstr "Poista kaikki"
 
+#: ckanext/hrifi/templates/snippets/facet_list.html:73
+msgid "Show more"
+msgstr ""
+
 #: ckanext/hrifi/templates/snippets/facet_list.html:75
-msgid "Show More {facet_type}"
-msgstr "Näytä lisää {facet_type}"
+msgid "Show only popular"
+msgstr ""
 
-#: ckanext/hrifi/templates/snippets/facet_list.html:77
-msgid "Show Only Popular {facet_type}"
-msgstr "Näytä vain suositut {facet_type}"
-
-#: ckanext/hrifi/templates/snippets/facet_list.html:81
+#: ckanext/hrifi/templates/snippets/facet_list.html:79
 msgid "There are no {facet_type} that match this search"
 msgstr "Hakua vastaavia {facet_type} ei löydy"
+
+#: ckanext/hrifi/templates/snippets/organization.html:35
+msgid "There is no description for this organization"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/organization.html:40
+msgid "Members"
+msgstr ""
+
+#: ckanext/hrifi/templates/snippets/search_form.html:26
+msgid "Remove"
+msgstr ""
 
 #: ckanext/hrifi/templates/user/login.html:3
 #: ckanext/hrifi/templates/user/login.html:6
@@ -782,32 +1015,97 @@ msgstr "Ei ongelmaa, tilaa tästä itsellesi uusi salasana."
 msgid "Forgot your password?"
 msgstr "Unohditko salasanasi?"
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:38
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:115
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:37
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:113
 msgid "Not authorized to see this page"
 msgstr "Ei oikeuksia nähdä tätä sivua"
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:242
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:238
 msgid "Formats"
 msgstr "Formaatit"
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:308
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:326
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:295
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:312
 msgid "Access denied."
 msgstr "Pääsy evätty"
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:310
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:297
 msgid "Package not found."
 msgstr "Tietoaineistoa ei löytynyt."
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:312
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:330
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:299
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:316
 msgid "Validation error."
 msgstr "Epäkelpo syöte."
 
-#: ../ckanext-multiedit/ckanext/multiedit/controller.py:328
+#: ../ckanext-multiedit/ckanext/multiedit/controller.py:314
 msgid "Group not found."
-msgstr "Ryhmää ei löydy."
+msgstr "Aineistokokonaisuutta ei löydy."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:34
+msgid "Choose a field to show / edit."
+msgstr "Valitse kenttä, jonka haluat katsella / muokata."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:40
+msgid "Enter a new value for the field."
+msgstr "Syötä kenttään uusi arvo."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:46
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:81
+msgid ""
+"Select the data packages you wish to update by ticking the checkboxes "
+"below."
+msgstr "Rastita päivitettävät aineistot alla olevasta taulukosta."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:55
+msgid "There was an error while searching."
+msgstr "Etsiessä tapahtui virhe."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:55
+msgid "Please try again."
+msgstr "Ole hyvä, yritä uudelleen."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:61
+msgid "datasets found"
+msgstr "tietoaineistoa löytyi"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:67
+msgid "Would you like to"
+msgstr "Haluaisitko"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:67
+msgid "create a new dataset?"
+msgstr "luoda uuden tietoaineiston?"
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:75
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
+msgid "Too many results found, try narrowing down the search (at max"
+msgstr "Liian monta hakutulosta, yritä rajata hakua (maksimissaan "
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:75
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
+msgid "results shown)."
+msgstr "tulosta näytetään)."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:78
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:104
+msgid "Ignore limit (search may take longer)."
+msgstr "Ohita hakurajoitus (haussa voi kestää pidempään)."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:99
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:157
+msgid "Check here if you want to add to field instead of replacing its value."
+msgstr "Lisää arvo korvaamisen sijaan."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:100
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:158
+msgid "Please select packages to update."
+msgstr "Valitse tietoaineistot, joita haluat päivittää."
+
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix.html:101
+#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:159
+msgid "Updating selected datasets, please wait."
+msgstr "Päivitetään valittuja tietoaineistoja, ole hyvä ja odota."
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:10
 msgid "Multiedit search -"
@@ -815,25 +1113,19 @@ msgstr "Matriisihaku"
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:63
 msgid "Choose groups to edit."
-msgstr "Valitse ryhmät, joita haluat muokata."
+msgstr "Valitse aineistokokonaisuudet, joita haluat muokata."
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:76
 msgid "Cannot add any groups."
-msgstr "Ei voi lisätä ryhmiä"
+msgstr "Ei voi lisätä aineistokokonaisuuksia"
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:79
 msgid "Add selected datasets to groups"
-msgstr "Lisää valitut tietoaineistot ryhmiin"
+msgstr "Lisää valitut tietoaineistot aineistokokonaisuuksiin"
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:80
 msgid "Remove selected datasets from groups"
-msgstr "Poista valitut tietoaineistot ryhmistä"
-
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:81
-msgid ""
-"Select the data packages you wish to update by ticking the checkboxes "
-"below."
-msgstr "Rastita päivitettävät aineistot alla olevasta taulukosta."
+msgstr "Poista valitut tietoaineistot aineistokokonaisuuksista"
 
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:89
 msgid ""
@@ -883,18 +1175,6 @@ msgstr "löytyi [1:%(item_count)s] tietoaineistoa"
 msgid "Would you like to [1:create a new dataset?]"
 msgstr "Haluatko [1:luoda uuden tietoaineiston?]"
 
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
-msgid "Too many results found, try narrowing down the search (at max"
-msgstr "Liian monta hakutulosta, yritä rajata hakua (maksimissaan "
-
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:103
-msgid "results shown)."
-msgstr "tulosta näytetään)."
-
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:104
-msgid "Ignore limit (search may take longer)."
-msgstr "Ohita hakurajoitus (haussa voi kestää pidempään)."
-
 #: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:113
 msgid "First"
 msgstr "Ensimmäinen"
@@ -915,802 +1195,83 @@ msgstr "Viimeinen"
 msgid "Show:"
 msgstr "Näytä:"
 
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:157
-msgid "Check here if you want to add to field instead of replacing its value."
-msgstr "Lisää arvo korvaamisen sijaan."
-
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:158
-msgid "Please select packages to update."
-msgstr "Valitse tietoaineistot, joita haluat päivittää."
-
-#: ../ckanext-multiedit/ckanext/multiedit/templates/ckanext/multiedit/matrix_groups.html:159
-msgid "Updating selected datasets, please wait."
-msgstr "Päivitetään valittuja tietoaineistoja, ole hyvä ja odota."
-
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:6
 #: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:9
 msgid "Search..."
 msgstr "Haku..."
 
-# facet lisäykset. Päällekäiset käännökset voivat aiheuttaa komplikaatioita, mutta ovat case-
-# sensitivejä, eli "Author" != "author".
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form.html:7
+#: ../ckanext-multiedit/ckanext/multiedit/templates/package/matrix_search_form_groups.html:10
+msgid "Search"
+msgstr "Etsi"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:49
+msgid "E-mail notification for comments: order or discontinue."
+msgstr "Sähköposti-ilmoitukset kommenteista: tilaa tai peru tilaus."
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:52
+msgid "Close"
+msgstr "Sulje"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:54
+#: ../ckanext-comments/ckanext/comments/plugin.py:97
+msgid "Email"
+msgstr "Sähköposti"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:61
+msgid "Order notifications for this discussion"
+msgstr "Tilaa ilmoitukset uusista viesteistä tähän keskusteluun"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:62
+msgid "Discontinue notifications for this discussion"
+msgstr "Peru ilmoitukset tämän keskustelun viesteistä"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:63
+msgid "Discontinue notifications for all HRI discussions"
+msgstr "Peru ilmoitukset kaikista HRI-keskusteluista"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:65
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:29
+msgid "Submit"
+msgstr "Lähetä"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:89
+msgid "Make a Comment"
+msgstr "Kommentoi"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:89
+msgid "Cancel reply"
+msgstr "Peru vastaus"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:95
+msgid "Your e-mail won't be made public. Mandatory fields are marked with a *."
+msgstr "Sähköpostiasi ei julkaista. Pakolliset kentät on merkitty *:llä."
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:99
+msgid "Comment"
+msgstr "Kommentti"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:99
+msgid "Order new comments to your e-mail."
+msgstr "Tilaa uudet kommentit sähköpostiisi."
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:99
+msgid "Submit Comment"
+msgstr "Lähetä kommentti"
+
+#: ../ckanext-comments/ckanext/comments/plugin.py:100
+msgid "Commenting requires JavaScript."
+msgstr "Kommentointi vaatii JavaScript:in."
+
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:15
+msgid "Commenting and Reviews"
+msgstr "Kommentit ja arvostelut"
+
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:23
+msgid "Tell us, why this content should be removed."
+msgstr "Kerro, miksi tämä sisältö tulisi mielestäsi poistaa."
+
+#: ../ckanext-comments/ckanext/comments/templates/snippets/comments.html:27
+msgid "Your e-mail address"
+msgstr "Sähköpostiosoitteesi"
 
-msgid "res_format"
-msgstr "Muodot"
-
-msgid "author"
-msgstr "Ylläpitäjä"
-
-msgid "groups"
-msgstr "Ryhmät"
-
-# Multiedit fraasitusta.
-
-msgid "Choose a field to show / edit."
-msgstr "Valitse kenttä, jonka haluat katsella / muokata."
-
-msgid "Enter a new value for the field."
-msgstr "Syötä kenttään uusi arvo."
-
-msgid "There was an error while searching."
-msgstr "Etsiessä tapahtui virhe."
-
-msgid "Please try again."
-msgstr "Ole hyvä, yritä uudelleen."
-
-msgid "Would you like to"
-msgstr "Haluaisitko"
-
-msgid "create a new dataset?"
-msgstr "luoda uuden tietoaineiston?"
-
-msgid "datasets found"
-msgstr "tietoaineistoa löytyi"
-
-#~ msgid "User is not authorized to create groups"
-#~ msgstr "Ei oikeuksia luoda uutta ryhmää"
-
-#~ msgid "User %s not authorized to create groups"
-#~ msgstr "Ei oikeuksia luoda uutta ryhmää"
-
-#~ msgid "Unauthorized to create a package"
-#~ msgstr "Ei oikeuksia luoda uutta tietoaineistoa"
-
-#~ msgid "Need to be system administrator to administer"
-#~ msgstr "Täytyy olla järjestelmän ylläpitäjä tehdäkseen ylläpitotoimenpiteitä"
-
-#~ msgid "Published dataset."
-#~ msgstr "Julkaistu tietoaineisto."
-
-#~ msgid "Moved from drafts to unpublished."
-#~ msgstr "Siirretty luonnoksista julkaisemattomiin."
-
-#~ msgid "Errors in form"
-#~ msgstr "Virheitä lomakkeessa"
-
-#~ msgid "The form contains invalid entries:"
-#~ msgstr "Lomake sisältää virheellisiä syötteitä"
-
-#~ msgid "Basic Information"
-#~ msgstr "Perustiedot"
-
-#~ msgid "A short descriptive title for the dataset"
-#~ msgstr "Lyhyt kuvaava otsikko tietoaineistolle"
-
-#~ msgid "Url"
-#~ msgstr "URL"
-
-#~ msgid "Warning: URL is very long. Consider changing it to something shorter."
-#~ msgstr ""
-#~ "Varoitus: Tämä URL on todella pitkä. "
-#~ "Harkitse sen vaihtamista lyhempään."
-
-#~ msgid "2+ characters, lowercase, using only 'a-z0-9' and '-_'"
-#~ msgstr ""
-#~ "enemmän kuin 2 merkkiä, pieniä kirjaimia,"
-#~ " käyttäen vain 'a-z0-9' ja '-_' \""
-#~ "\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"merkkejä"
-
-#~ msgid "Home Page"
-#~ msgstr "Kotisivu"
-
-#~ msgid "The URL for the web page describing the data (not the data itself)."
-#~ msgstr "URL-osoite tietoaineistoa kuvaavalle sivulle, ei aineistoon itseensä."
-
-#~ msgid "e.g. http://www.example.com/growth-figures.html"
-#~ msgstr "esim. http://www.example.com/"
-
-#~ msgid ""
-#~ "(Don't worry if you don't know "
-#~ "which license the data has been "
-#~ "released under)."
-#~ msgstr " "
-
-#~ msgid "Start with a summary sentence ..."
-#~ msgstr "Aloita yhteenveto lauseella..."
-
-#~ msgid "Member of:"
-#~ msgstr "Kuuluu ryhmiin:"
-
-#~ msgid "Add to:"
-#~ msgstr "Lisää ryhmään:"
-
-#~ msgid "(None)"
-#~ msgstr "(Ei mitään)"
-
-#~ msgid ""
-#~ "Comma-separated terms that may link "
-#~ "this dataset to similar ones. For "
-#~ "more information on conventions, see "
-#~ "[1:this wiki page]."
-#~ msgstr ""
-#~ "Pilkuilla erotetut sanat, jotka liittävät "
-#~ "tietoaineiston samanlaisiin. \"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"Lisää tietoa käytännöistä, katso [1:tämä wiki sivu]."
-
-#~ msgid "e.g. pollution, rivers, water quality"
-#~ msgstr "esimerkiksi saaste, joet, vedenlaatu"
-
-#~ msgid "Add Resources"
-#~ msgstr "Lisää tietoaineistolinkki"
-
-#~ msgid ""
-#~ "Upload or link data files, APIs "
-#~ "and other materials related to your "
-#~ "dataset."
-#~ msgstr ""
-#~ "Lataa tai linkitä datatiedostoja, API-"
-#~ " osoitteita tai muuta materiaalia, joka "
-#~ "liittyy tietoaineistoon."
-
-#~ msgid "New resource..."
-#~ msgstr "Uusi tietoaineistolinkki..."
-
-#~ msgid "x"
-#~ msgstr "x"
-
-#~ msgid "Upload a file"
-#~ msgstr "Tallenna tiedosto"
-
-#~ msgid "File URL"
-#~ msgstr "Tiedoston URL"
-
-#~ msgid "API URL"
-#~ msgstr "API URL"
-
-#~ msgid "Extras"
-#~ msgstr "Lisätiedot"
-
-#~ msgid ""
-#~ "The name of the main contact, for"
-#~ " enquiries about this particular dataset,"
-#~ " using the e-mail address in the "
-#~ "following field."
-#~ msgstr ""
-#~ "Viraston nimi ja sähköpostiosoite, jossa "
-#~ "vastataan tähän \"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"tietoaineistoon liittyviin kyselyihin"
-
-#~ msgid "Author email"
-#~ msgstr "Ylläpitäjän sähköpostiosoite"
-
-#~ msgid "A number representing the version (if applicable)"
-#~ msgstr "Aineistoa kuvaava versionumero, jos saatavilla."
-
-#~ msgid "e.g. 1.2.0"
-#~ msgstr "esimerkiksi 1.2.0"
-
-#~ msgid "Do you really want to change the state of this dataset?"
-#~ msgstr "Haluatko todella muuttaa tämän tietoaineiston tilaa?"
-
-#~ msgid "Yes!"
-#~ msgstr "Kyllä!"
-
-#~ msgid "This dataset is"
-#~ msgstr "Tämä tietoaineisto on"
-
-#~ msgid "active"
-#~ msgstr "aktiivinen"
-
-#~ msgid "unpublished"
-#~ msgstr "julkaisematon"
-
-#~ msgid "draft"
-#~ msgstr "luonnos"
-
-#~ msgid "deleted"
-#~ msgstr "poistettu"
-
-#~ msgid "Summary"
-#~ msgstr "Yhteenveto"
-
-#~ msgid "Briefly describe the changes you have made..."
-#~ msgstr "Kuvaa lyhyesti muutokset, jotka olet tehnyt..."
-
-#~ msgid "Author:"
-#~ msgstr "Ylläpitäjä:"
-
-#~ msgid ""
-#~ "Since you have not signed in this will just be your IP address.\n"
-#~ "    [1:Click here to sign in] before saving (opens in new window)."
-#~ msgstr ""
-#~ "Koska et ole kirjautunut sisään, niin IP-osoitettasi käytetään\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"[1:Klikkaa tästä kirjautuaksesi] ennen "
-#~ "tallennusta (uusi ikkuna \"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"aukeaa)."
-
-#~ msgid "Save Changes"
-#~ msgstr "Tallenna muutokset"
-
-#~ msgid "Important:"
-#~ msgstr "Tärkeää:"
-
-#~ msgid "Add a dataset"
-#~ msgstr "Lisää tietoaineisto"
-
-#~ msgid "Multiedit datasets"
-#~ msgstr "Massamuokkaus"
-
-#~ msgid "Multiedit groups"
-#~ msgstr "Massamuokkaus - Ryhmät"
-
-#~ msgid "Twitter @ckanproject"
-#~ msgstr "Twitter @ckanproject"
-
-#~ msgid "API"
-#~ msgstr "API"
-
-#~ msgid "API Docs"
-#~ msgstr "API-dokumentaatio"
-
-#~ msgid "Contact Us"
-#~ msgstr "Ota yhteyttä"
-
-#~ msgid "Privacy Policy"
-#~ msgstr "Tietosuojapolitiikka"
-
-#~ msgid "Sections"
-#~ msgstr "Osiot"
-
-#~ msgid "Users"
-#~ msgstr "Käyttäjät:"
-
-#~ msgid "Statistics"
-#~ msgstr "Tilastot"
-
-#~ msgid "Revisions"
-#~ msgstr "Revisiot"
-
-#~ msgid "Site Admin"
-#~ msgstr "Sivuston ylläpitäjä"
-
-#~ msgid "Languages"
-#~ msgstr "Kielet"
-
-#~ msgid "Meta"
-#~ msgstr "Meta"
-
-#~ msgid "Open Knowledge Foundation"
-#~ msgstr "Open Knowledge Foundation"
-
-#~ msgid "Licensed under the"
-#~ msgstr "Käytetty lisenssi:"
-
-#~ msgid "This Content and Data is Open"
-#~ msgstr "Tämä sisältö ja tietoaineistot ovat avoimia"
-
-#~ msgid "Powered by"
-#~ msgstr "Powered by"
-
-#~ msgid "CKAN"
-#~ msgstr "CKAN"
-
-#~ msgid "v"
-#~ msgstr "v"
-
-#~ msgid "View"
-#~ msgstr "Esikatselu"
-
-#~ msgid "History"
-#~ msgstr "Historia"
-
-#~ msgid "Add Dataset"
-#~ msgstr "Lisää tietoaineisto"
-
-#~ msgid "Edit"
-#~ msgstr "Muokkaa"
-
-#~ msgid "Join"
-#~ msgstr "Liity"
-
-#~ msgid "List Organizations"
-#~ msgstr "Listaa organisaatiot"
-
-#~ msgid "Add an Organization"
-#~ msgstr "Lisää organisaatio"
-
-#~ msgid "Login to Add an Organization"
-#~ msgstr "Kirjaudu sisään lisätäksesi organisaatio"
-
-#~ msgid "Administrators"
-#~ msgstr "Ylläpitäjät"
-
-#~ msgid "Members"
-#~ msgstr "Jäsenet"
-
-#~ msgid "State:"
-#~ msgstr "Tila:"
-
-#~ msgid ""
-#~ "[1:You searched for \"%(query)s\". "
-#~ "][2:]%(number_of_results)s datasets found."
-#~ msgstr ""
-#~ "[1:Hakusanalla \"%(query)s\". ] löytyi "
-#~ "[2:]%(number_of_results) tietoaineistoa."
-
-#~ msgid "This dataset satisfies the Open Definition."
-#~ msgstr "Tämä tietoaineisto toteuttaa Open Definition:in."
-
-#~ msgid "[Open Data]"
-#~ msgstr "[Open Data]"
-
-#~ msgid "Not Openly Licensed"
-#~ msgstr "Ei avoimesti lisensoitu"
-
-#~ msgid "Administration - Drafts and unpublished datasets"
-#~ msgstr "Ylläpito - Luonnokset ja julkaisemattomat tietoaineistot"
-
-#~ msgid "Unpublished Datasets"
-#~ msgstr "Julkaisemattomat tietoaineistot"
-
-#~ msgid "Publish all unpublished datasets"
-#~ msgstr "Julkaise kaikki julkaisemattomat tietoaineistot"
-
-#~ msgid "Dataset Drafts"
-#~ msgstr "Tietoaineistojen luonnokset"
-
-#~ msgid "Move all dataset drafts to unpublished datasets"
-#~ msgstr "Siirrä kaikki luonnokset julkaisemattomiin tietoaineistoihin"
-
-#~ msgid "Home"
-#~ msgstr "Aloitussivu"
-
-#~ msgid "Authorization"
-#~ msgstr "Käyttöoikeudet"
-
-#~ msgid "Trash"
-#~ msgstr "Roskakori"
-
-#~ msgid "Drafts"
-#~ msgstr "Luonnokset"
-
-#~ msgid "- Copy - Datasets"
-#~ msgstr "- Kopioi - Tietoaineistot"
-
-#~ msgid "Copy:"
-#~ msgstr "Kopioi:"
-
-#~ msgid "Error:"
-#~ msgstr "Virhe:"
-
-#~ msgid "- Edit - Datasets"
-#~ msgstr "- Muokkaa - Tietoaineistot"
-
-#~ msgid "Edit:"
-#~ msgstr "Muokkaa:"
-
-#~ msgid "Change state"
-#~ msgstr "Muuta tilaa"
-
-#~ msgid "Settings"
-#~ msgstr "Muokkaa"
-
-#~ msgid "Search -"
-#~ msgstr "Haku -"
-
-#~ msgid "Do you know of a dataset that should be added to"
-#~ msgstr "Tiedätkö tietoaineistosta, joka pitäisi lisätä sivustolle"
-
-#~ msgid "Register it now"
-#~ msgstr "Rekisteröi se nyt"
-
-#~ msgid "Other access"
-#~ msgstr "Vaihtoehtoinen käyttö"
-
-#~ msgid "You can also access this registry using the"
-#~ msgstr "Voit käyttää tietoaineistorekisteriä myös käyttäen"
-
-#~ msgid "(see"
-#~ msgstr "(katso"
-
-#~ msgid "or download a"
-#~ msgstr "tai lataa"
-
-#~ msgid "full"
-#~ msgstr "täysi"
-
-#~ msgid "dump"
-#~ msgstr "dumppitiedosto"
-
-#~ msgid "Login - User"
-#~ msgstr "Kirjaudu - Käyttäjä"
-
-#~ msgid "Login to"
-#~ msgstr "Kirjaudu"
-
-#~ msgid "Login:"
-#~ msgstr "Käyttäjätunnus:"
-
-#~ msgid "Password:"
-#~ msgstr "Salasana:"
-
-#~ msgid "Login using Open ID"
-#~ msgstr "Kirjaudu käyttäen Open ID:tä"
-
-#~ msgid ""
-#~ "NB: To set-up your OpenID for "
-#~ "this site, you first need to "
-#~ "[1:Register] and then edit your Profile"
-#~ " to provide your OpenID."
-#~ msgstr ""
-#~ "Huomio: Ottaaksesi OpenID:n käyttöön tällä "
-#~ "sivustolla, sinun pitää ensin \"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"[1:Rekisteröityä] ja sitten muokata "
-#~ "profiiliasi syöttääksesi \"\n"
-#~ "\"OpenID\"\n"
-#~ "\"\n"
-#~ "\"\" \"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"tunnuksesi."
-
-#~ msgid "Please click your account provider:"
-#~ msgstr "Ole hyvä ja klikkaa tilisi tarjoajaa"
-
-#~ msgid "OpenID Identifier:"
-#~ msgstr "OpenID tunniste:"
-
-#~ msgid "Don't have an OpenID?"
-#~ msgstr "Sinulla ei ole OpenID:tä?"
-
-#~ msgid ""
-#~ "OpenID is service that allows you "
-#~ "to log-on to many different "
-#~ "websites\n"
-#~ "          using a single identity. Find out [1:more\n"
-#~ "          about OpenID] and [2:how to get an\n"
-#~ "          OpenID enabled account]. Probably"
-#~ " the simplest way is sign up "
-#~ "with a\n"
-#~ "          free OpenID provider such as [3:https://www.myopenid.com/]."
-#~ msgstr ""
-#~ "OpenID palvelu mahdollistaa kirjautumisen moneen verkkosivustoon\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"yhdellä identiteetillä. Lisää  [1:tietoa\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"Open ID:stä] ja [2:miten saada\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"OpenID-tili]. Ehkäpä helpoin tapa on kirjautua käyttäen\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"ilmaista OpenID-tarjoajaa kuten "
-#~ "[3:https://www.myopenid.com/]."
-
-#~ msgid "Choose a field to show / edit."
-#~ msgstr "Valitse kenttä, jonka haluat katsella / muokata."
-
-#~ msgid "Enter a new value for the field."
-#~ msgstr "Syötä kenttään uusi arvo."
-
-#~ msgid "There was an error while searching."
-#~ msgstr ""
-#~ "[1:Etsiessä tapahtui virhe.]\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\n"
-#~ "\"\n"
-#~ "\"\"\n"
-#~ "\"\n"
-#~ "\"\"\"\"\"Ole hyvä ja yritä uudelleen."
-
-#~ msgid "Please try another search term."
-#~ msgstr "Kokeile toista hakutermiä."
-
-#~ msgid "[1:%(query_count)s] packages found"
-#~ msgstr "[1:%(query_count)s] tietoaineistoa löytyi"
-
-#~ msgid "Would you like to"
-#~ msgstr "Haluaisitko "
-
-#~ msgid "create a new package?"
-#~ msgstr "luo uusi tietoaineisto?"
-
-#~ msgid "groups"
-#~ msgstr "ryhmät"

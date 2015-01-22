@@ -1,6 +1,11 @@
 {% import 'macros/form.html' as form %}
 {% set action = c.form_action or '' %}
 
+{%- if not hri_lang -%}
+  {%- set base_url = h.url('/', qualified=true) -%}
+  {%- set hri_lang = base_url.split('/')[3] -%}
+{%- endif -%}
+
 {# This provides a full page that renders a form for adding a dataset. It can
 then itself be extended to add/remove blocks of functionality. #}
 <form class="dataset-form form-horizontal" method="post" action="{{ action }}" data-module="basic-form">
@@ -46,7 +51,7 @@ then itself be extended to add/remove blocks of functionality. #}
       {% block cancel_button %}
         <a class="btn" href="">{% block cancel_button_text %}{{ _('Cancel') }}{% endblock %}</a>
       {% endblock %}
-      {% if data.id %}<button class="btn btn-primary" type="submit" name="copy" onClick="$('form').attr('action', '/package/copy/{{ data.id }}');">{{ _('Copy') }}</button>{% endif %}
+      {% if data.id %}<button class="btn btn-primary" type="submit" name="copy" onClick="$('form').attr('action', '{% if hri_lang %}/{{ hri_lang }}{% endif %}/dataset/copy/{{ data.id }}');">{{ _('Copy') }}</button>{% endif %}
       <button class="btn btn-primary" type="submit" name="save">{% block save_button_text %}{{ _('Next: Add Data') }}{% endblock %}</button>
     </div>
   {% endblock %}

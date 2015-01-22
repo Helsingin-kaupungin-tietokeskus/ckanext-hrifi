@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% block styles %}
+	{{ super() }}
+	{%- resource 'hri-scripts/hri.js' -%}
+	{%- resource 'hri-css/hri-style.css' -%}	
+	<link href="http://{{ h.wordpress_url() }}/fi/wp-content/themes/hri2/hri-common.css" type="text/css" media="all" rel="stylesheet"> 
+{% endblock %}
