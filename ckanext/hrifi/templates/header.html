@@ -14,6 +14,10 @@
 
     <header id="hri-header" class="hri-wrapper">
 
+      {% if 'staging' in h.url('/', qualified=true) %}
+        <div style="position:absolute;top:55px;margin-left:240px;font-size:40px;font-weight:bold;color:#74c16d;text-transform:uppercase;">Staging</div>
+      {% endif %}
+
       {% if g.site_logo %}
         <a href="{{ h.url('home') }}" rel="home" ><img id="hri-logo" src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" /></a>
       {% else %}

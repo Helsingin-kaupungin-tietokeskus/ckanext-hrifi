@@ -48,7 +48,7 @@ within_tertiary
     <section class="{{ wrapper_class or 'module module-narrow module-shallow' }}">
       <h2 class="module-heading">
         <i class="icon-medium icon-filter"></i>
-        {% set title = title|replace('categories', _('categories')) or h.get_facet_title(name) %}
+        {% set title = title|replace('categories', _('Categories'))|replace('geographic_coverage', _('Geographic coverage'))|replace('author', _('Author')) or h.get_facet_title(name) %}
         {{ title }}
         <a href="{{ h.remove_url_param(name, extras=extras, alternative_url=alternative_url) }}" class="action">{{ _('Clear All') }}</a>
       </h2>

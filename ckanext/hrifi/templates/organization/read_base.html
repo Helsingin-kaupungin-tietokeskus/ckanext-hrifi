@@ -1,6 +1,6 @@
-{% ckan_extends "organization/read_base.html" %}
+{% ckan_extends %}
 
 {% block content_primary_nav %}
-  {{ h.build_nav_icon('organization_read', _('Datasets'), id=c.group_dict.name) }}
+  {{ h.hri_build_nav_icon('organization_read', _('Datasets'), id=c.group_dict.name, highlight_actions='read') }}
   {{ h.build_nav_icon('organization_about', _('About'), id=c.group_dict.name) }}
 {% endblock %}

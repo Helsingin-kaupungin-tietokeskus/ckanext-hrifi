@@ -7,12 +7,12 @@ from logging import getLogger
 log = getLogger(__name__)
 
 import os
-from pylons import c
+from pylons import c, request
 
 from pylons.i18n import _
 import ckan.plugins as p
 
-from ckanext.hrifi.authentication.wordpress_auth import WordPressAuthMiddleware
+from ckanext.hrifi.authentication.wordpress_auth import WordPressAuthMiddleware, WordPressClient
 from hri_auth import hri_site_read, no_registering, hri_user_auth
 from hri_auth import hri_group_update, hri_group_create, hri_group_delete, hri_group_delete, hri_package_update, hri_package_create, hri_dataset_delete, hri_package_create_rest, hri_package_update_rest, hri_package_show_auth
 from hri_auth import hri_package_show_rest
@@ -39,11 +39,17 @@ class Hrifi(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
 
         map.connect('/dataset/copy/{id}', controller='ckanext.hrifi.controllers.hri_package_controller:package', action='copy')
         map.connect('/dataset', controller='ckanext.hrifi.controllers.hri_package_controller:package', action='search')
+        # Overwrites for group and organization read actions. 'new' action is also required, the order of these is important as well!
+        map.connect('group_create', '/group/new', controller='ckanext.hrifi.controllers.hri_group_controller:group', action='new')
+        map.connect('group_read', '/group/{id}', controller='ckanext.hrifi.controllers.hri_group_controller:group', action='read')
+        map.connect('organization_create', '/organization/new', controller='ckanext.hrifi.controllers.hri_organization_controller:organization', action='new')
+        map.connect('organization_read', '/organization/{id}', controller='ckanext.hrifi.controllers.hri_organization_controller:organization', action='read')
+        
         map.redirect('/user/login', '/admin')
         map.redirect('/', wordpress_url)
         
         return map
-    
+
     def get_auth_functions(self):
         return {
             # Disable user registration and browsing by denying access.
@@ -220,6 +226,86 @@ class Hrifi(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
         else:
             return facets
 
+    @staticmethod
+    def hri_build_nav_icon(menu_item, title, **kw):
+        '''
+        helpers.py:build_nav_icon / helpers.py:_make_menu_item - fixed version for HRI 
+
+        Was required because the routine could not handle the changed controllers from
+        
+        organization -> ckanext.hrifi.controllers.hri_organization_controller:organization
+        group -> ckanext.hrifi.controllers.hri_group_controller:group
+
+        and the mismatch caused "Dataset" tab not to highlight. Sigh.
+        '''
+        import copy
+        from ckan.lib.helpers import _link_to
+
+        _menu_items = config['routes.named_routes']
+        if menu_item not in _menu_items:
+            raise Exception('menu item `%s` cannot be found' % menu_item)
+        item = copy.copy(_menu_items[menu_item])
+        item.update(kw)
+        
+        # HACK Forget about the controller - just see if the action is the same.
+        highlight_actions = kw.get('highlight_actions', kw.get('action', '')).split(' ')
+        active = c.action in highlight_actions
+
+        needed = item.pop('needed')
+        for need in needed:
+            if need not in kw:
+                raise Exception('menu item `%s` need parameter `%s`'
+                                % (menu_item, need))
+        link = _link_to(title, menu_item, suppress_active_class=True, **item)
+        if active:
+            return p.toolkit.literal('<li class="active">') + link + p.toolkit.literal('</li>')
+        return p.toolkit.literal('<li>') + link + p.toolkit.literal('</li>')
+
+    @staticmethod
+    def snoobi_is_enabled():
+        """
+        This helper queries the settings (ckan.ini) for snoobi_enabled setting.
+        
+        usage: {% if h.snoobi_is_enabled() %}...{% endif %}
+        """
+        enabled = config.get('snoobi_enabled', False)
+        if enabled == 'true' or enabled == 'True' or enabled == True:
+            return True
+        else:
+            return False
+
+    @staticmethod
+    def snoobi_url():
+        """
+        This helper queries the settings (ckan.ini) for snoobi_enabled setting.
+        
+        usage: 
+            <!-- BEGIN Snoobi v1.4 -->
+            <script type="text/javascript" src="{{ h.snoobi_url() }}"></script>
+            <!-- END Snoobi v1.4 -->
+        """
+        return config.get('snoobi_url', '')
+
+    @staticmethod
+    def get_user_id_wp():
+        """
+        This helper function queries WordPress for the user's ID there. Provided here for commenting feature.
+        """
+
+        # Ask wp for the wordpress_user_id for this session
+        # @TODO Get this from c or a cookie etc? This is slow.
+        wordpress_user_id = False
+        try:
+            if c.user:
+                wordpress_client = WordPressClient(request.environ)
+                wordpress_user_id = wordpress_client.get_user_id()
+            else:
+                wordpress_user_id = False;
+        except Exception:
+            wordpress_user_id = False;
+
+        return wordpress_user_id
+
     def get_helpers(self):
         # This method is defined in the ITemplateHelpers interface and
         # is used to return a dict of named helper functions.
@@ -231,7 +317,11 @@ class Hrifi(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
             'get_ga_code': Hrifi.get_ga_code,
             'solve_localized_value': Hrifi.solve_localized_value,
             'format_notes': Hrifi.format_notes,
-            'hri_get_facet_items_dict': Hrifi.hri_get_facet_items_dict
+            'hri_get_facet_items_dict': Hrifi.hri_get_facet_items_dict,
+            'hri_build_nav_icon': Hrifi.hri_build_nav_icon,
+            'snoobi_is_enabled': Hrifi.snoobi_is_enabled,
+            'snoobi_url': Hrifi.snoobi_url,
+            'get_user_id_wp': Hrifi.get_user_id_wp
         }
 
 

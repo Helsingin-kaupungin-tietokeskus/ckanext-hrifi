@@ -1,8 +1,17 @@
 {% ckan_extends %}
 
-{% block styles %}
+{%- block links -%}
+	{{ super() }}
+	{%- if h.snoobi_is_enabled() %}
+	<!-- BEGIN Snoobi v1.4 -->
+	<script type="text/javascript" src="{{ h.snoobi_url() }}"></script>
+	<!-- END Snoobi v1.4 -->
+	{% endif -%}
+{% endblock -%}
+
+{% block styles -%}
 	{{ super() }}
 	{%- resource 'hri-scripts/hri.js' -%}
-	{%- resource 'hri-css/hri-style.css' -%}	
+	{%- resource 'hri-css/hri-style.css' -%}
 	<link href="http://{{ h.wordpress_url() }}/fi/wp-content/themes/hri2/hri-common.css" type="text/css" media="all" rel="stylesheet"> 
-{% endblock %}
+{% endblock -%}

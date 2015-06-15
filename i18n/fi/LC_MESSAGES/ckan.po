@@ -2489,7 +2489,7 @@ msgstr "Lisää aineistokokonaisuus"
 
 #: ckan/templates/group/index.html:20
 msgid "Search groups..."
-msgstr ""
+msgstr "Etsi aineistokokonaisuuksia..."
 
 #: ckan/templates/group/index.html:27
 msgid "There are currently no groups for this site"
@@ -2960,7 +2960,7 @@ msgstr "Lisää organisaatio"
 
 #: ckan/templates/organization/index.html:20
 msgid "Search organizations..."
-msgstr ""
+msgstr "Etsi organisaatioita..."
 
 #: ckan/templates/organization/index.html:27
 msgid "There are currently no organizations for this site"
@@ -3807,6 +3807,13 @@ msgstr "Lajittelu"
 #: ckan/templates/snippets/search_form.html:71
 msgid " <p class=\"extra\">Please try another search.</p> "
 msgstr " <p class=\"extra\">Kokeile toisenlaista hakua.</p> "
+
+#: ckan/templates/snippets/search_form.html:71
+msgid " <p class=\"extra\">Didn't find the data you were looking for? See if it's already <a href=\"http://%(url)s/fi/hri-projekti/tyon-alla/\">under work</a> or <a href=\"http://%(url)s/fi/uusi-datatoive/\">submit a data request</a>. It's also worthwhile to learn about <a href=\"http://%(url)s/fi/hri-projekti/verkkopalvelu/ohjeita-hrin-tehokayttajalle/\">power user's search instructions</a>.</p> "
+msgstr " <p class=\"extra\">Etsimääsi dataa ei löytynyt? Katso, onko se jo <a href=\"http://%(url)s/fi/hri-projekti/tyon-alla/\">työn alla</a> tai <a href=\"http://%(url)s/fi/uusi-datatoive/\">toivo sitä avattavaksi</a>. Kannattaa myös tutustua <a href=\"http://%(url)s/fi/hri-projekti/verkkopalvelu/ohjeita-hrin-tehokayttajalle/\">tehokäyttäjän hakuohjeisiin</a>.</p> "
+
+msgid " <p class=\"extra\">Didn't find the data you were looking for? See if it's already <a href=\"http://%(url)s/fi/hri-projekti/tyon-alla/\">under work</a> or <a href=\"http://%(url)s/fi/uusi-datatoive/\">submit a data request</a>. These pages are only provided in Finnish.</p> "
+msgstr " <p class=\"extra\">Etsimääsi dataa ei löytynyt? Katso, onko se jo <a href=\"http://%(url)s/fi/hri-projekti/tyon-alla/\">työn alla</a> tai <a href=\"http://%(url)s/fi/uusi-datatoive/\">toivo sitä avattavaksi</a>. Nämä sivut tarjotaan vain suomeksi.</p> "
 
 #: ckan/templates/snippets/search_form.html:77
 msgid ""
@@ -7150,6 +7157,9 @@ msgstr "Tämä teos on lisensoitu"
 
 msgid "Creative Commons Attribution 4.0 International license"
 msgstr "Creative Commons Nimeä 4.0 Kansainvälinen -lisenssillä"
+
+msgid "Creative Commons 0 1.0 Public Domain license"
+msgstr "Creative Commons 0 1.0 Yleismaailmallinen -lisenssillä"
 
 # Footer
 

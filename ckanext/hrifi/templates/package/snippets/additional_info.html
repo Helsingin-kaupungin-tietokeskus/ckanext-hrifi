@@ -92,6 +92,26 @@
     </tbody>
   </table>
 
-  {% snippet 'snippets/comments.html', package_name = pkg_dict.name %}
+  {# snippet 'snippets/comments.html', package_name = pkg_dict.name #}
+  {% snippet 'snippets/comments.html', package_name = pkg_dict.name, wp_url = h.wordpress_url(), comment_subscribing = True, subscription_action_url = 'http://' + h.wordpress_url() + '/fi/tilaa-kommentit/', wordpress_user_id = h.get_user_id_wp() %}
+
+  <script type="text/javascript">
+    function setCommentReportingCommentIdAndAction(element) {
+
+      if(HRI_LANG && HRI_LANG === 'en') {
+
+        target = 'http://' + wordpress_url + '/en/report-comment/';
+        hri_blog = 2;
+      }
+      else {
+
+        target = 'http://' + wordpress_url + '/fi/ilmoita-kommentti/';
+        hri_blog = 1;
+      }
+
+      $('#comment_ID').val( $(element).attr('id').substr(7) + '-' + hri_blog);
+      $('#report-form').attr('action', target);
+    }
+  </script>
 
 </section>

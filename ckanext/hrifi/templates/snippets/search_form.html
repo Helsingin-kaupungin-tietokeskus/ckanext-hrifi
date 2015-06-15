@@ -1,12 +1,52 @@
-{% ckan_extends %}
+{% import 'macros/form.html' as form %}
 
-  {% block search_input %}{{ super() }}{% endblock %}
+{% set placeholder = placeholder if placeholder else _('Search...') %}
+{% set sorting = sorting if sorting else [(_('Name Ascending'), 'name asc'), (_('Name Descending'), 'name desc')] %}
+{% set search_class = search_class if search_class else 'search-giant' %}
 
-  {% block search_search_fields %}{{ super() }}{% endblock %}
+{%- set wp_url = h.wordpress_url() -%}
+{%- set base_url = h.url('/', qualified=true) -%}
+{%- set hri_lang = base_url.split('/')[3] -%}
 
-  {% block search_sortby %}{{ super() }}{% endblock %}
+<form class="search-form" method="get" data-module="select-switch">
 
-  {% block search_title %}{{ super() }}{% endblock %}
+  {% block search_input %}
+    <div class="search-input control-group {{ search_class }}">
+      <input type="text" class="search" name="q" value="{{ query }}" autocomplete="off" placeholder="{{ placeholder }}">
+      <button type="submit" value="search">
+        <i class="icon-search"></i>
+        <span>{{ _('Submit') }}</span>
+      </button>
+    </div>
+  {% endblock %}
+
+  {% block search_search_fields %}
+    {% if fields -%}
+      <span>{{ form.hidden_from_list(fields=fields) }}</span>
+    {%- endif %}
+  {% endblock %}
+
+  {% block search_sortby %}
+    {% if sorting %}
+      <div class="form-select control-group control-order-by">
+        <label for="field-order-by">{{ _('Order by') }}</label>
+        <select id="field-order-by" name="sort">
+          {% for label, value in sorting %}
+            {% if label and value %}
+              <option value="{{ value }}"{% if sorting_selected == value %} selected="selected"{% endif %}>{{ label }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        <button class="btn js-hide" type="submit">{{ _('Go') }}</button>
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block search_title %}
+    {% if not no_title %}
+      <h2>{% snippet 'snippets/search_result_text.html', query=query, count=count, type=type %}</h2>
+    {% endif %}
+  {% endblock %}
 
   {% block search_facets %}
     {% if facets %}
@@ -30,3 +70,23 @@
       </p>
     {% endif %}
   {% endblock %}
+
+</form>
+
+{% if show_empty and count == 0 %}
+  {% if hri_lang == 'fi' %}
+    {% trans url='www.hri.fi' %}
+      <p class="extra">Didn't find the data you were looking for? See if it's already <a href="http://{{ url }}/fi/hri-projekti/tyon-alla/">under work</a> or <a href="http://{{ url }}/fi/uusi-datatoive/">submit a data request</a>. It's also worthwhile to learn about <a href="http://{{ url }}/fi/hri-projekti/verkkopalvelu/ohjeita-hrin-tehokayttajalle/">power user's search instructions</a>.</p>
+    {% endtrans %}
+  {% else %}
+    {% trans url='www.hri.fi' %}
+      <p class="extra">Didn't find the data you were looking for? See if it's already <a href="http://{{ url }}/fi/hri-projekti/tyon-alla/">under work</a> or <a href="http://{{ url }}/fi/uusi-datatoive/">submit a data request</a>.</p> These pages are only provided in Finnish.
+    {% endtrans %}
+  {% endif %}
+{% endif %}
+
+{% if error %}
+  {% trans %}
+    <p><strong>There was an error while searching.</strong> Please try again.</p>
+  {% endtrans %}
+{% endif %}
