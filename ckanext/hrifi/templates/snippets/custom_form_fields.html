@@ -18,7 +18,6 @@ Example:
 
 {% if extras|length == 0 %}{% set extras = {'dummy': 'dummy'} %}{% endif %}
 
-{#- @TODO Refactor this - it's stupid. -#}
 {% set category_options = [
         _('Asuminen'),
         _('Hallinto'),
@@ -44,7 +43,7 @@ Example:
 
 {%- set state_options = [_('Helsingin seutu (kaikki)'), _('Helsinki'), _('Espoo'), _('Vantaa'), _('Kauniainen'), _('Hyvinkää'), _('Järvenpää'), _('Kerava'), _('Kirkkonummi'), _('Nurmijärvi'), _('Mäntsälä'), _('Sipoo'), _('Pornainen'), _('Tuusula'), _('Vihti')] -%}
 
-{%- set geographic_granularity_options = [_('Valtio'), _('Seutu'), _('Kunta'), _('Tilastoalue'), _('Ruutu'), _('Piste')] -%}
+{%- set geographic_granularity_options = [_('Valtio'), _('Seutu'), _('Kunta'), _('Tilastoalue'), _('Ruutu'), _('Piste'), _('Polygoni'), _('Muu')] -%}
 
 {%- set temporal_granularity_options = [_('vuosi'), _('vuosineljännes'), _('kuukausi')] -%}
 
@@ -78,7 +77,8 @@ window.onload = function() { $(".btn-primary").click(handler); }
 	{{ hri_form.text(extras, 'title_en', _('Title (en)'), errors, 1) }}
 	{{ hri_form.textarea(extras, 'notes_se', _('Notes (se)'), errors, 2) }}
 	{{ hri_form.textarea(extras, 'notes_en', _('Notes (en)'), errors, 3) }}
-	{{ hri_form.text(extras, 'taxonomy_url', _('Taxonomy URL'), errors, 4) }}
+	{# HRI-165: We wish to remove this, but that would most likely push extra fields out of sync. So we hide it instead. -#}
+	<span style="display: none;">{{ hri_form.text(extras, 'taxonomy_url', _('Taxonomy URL'), errors, 4) }}</span>
 	{{ hri_form.text(extras, 'agency', _('Agency'), errors, 5) }}
 	{{ hri_form.text(extras, 'source', _('Source'), errors, 6) }}
 	{{ hri_form.textarea(extras, 'search_info', _('Search Info'), errors, 7) }}

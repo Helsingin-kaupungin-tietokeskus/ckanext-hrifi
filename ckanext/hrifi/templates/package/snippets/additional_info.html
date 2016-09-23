@@ -79,8 +79,15 @@
       {% endif %}
 
       {% for extra in h.sorted_extras(pkg_dict.extras) %}
-        {% set key, value = extra %}        
-        {% if 'harvest' not in key %}{# Hide harvester related fields. #}
+        {% set key, value = extra %}
+        {% if 'external_reference' in key %}
+          {# HRI-165: These are always hyperlinks. #}
+          <tr rel="dc:relation" resource="_:extra{{ i }}">
+            <th scope="row" class="dataset-label" property="rdfs:label">{% if hri_lang == 'en' and key in english_titles %}{{ english_titles[key] }}{% else %}{{ _(key) }}{% endif %}</th>
+            <td class="dataset-details" property="rdf:value"><a href="{{ value }}">{{ value }}</a></td>
+          </tr>
+        {% elif 'harvest' not in key and 'taxonomy_url' not in key %}
+          {# Hide harvester related fields. HRI-165: Also hide the taxonomy url field. #}
           {% set value = value|replace('{', '')|replace('[', '')|replace('"', '')|replace(']', '')|replace('}', '')|replace(',', ', ') %}
           <tr rel="dc:relation" resource="_:extra{{ i }}">
             <th scope="row" class="dataset-label" property="rdfs:label">{% if hri_lang == 'en' and key in english_titles %}{{ english_titles[key] }}{% else %}{{ _(key) }}{% endif %}</th>

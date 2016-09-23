@@ -14,8 +14,27 @@
 	<div class="footer-col footer-col-1st">
 		<div id="copyright">
 			<img id="logo-footer" src="http://{{ wp_url }}/fi/wp-content/themes/hri2/img/logo-footer.png" alt="Helsinki Region Infoshare"/>
+			{# HRI-165: Add language specific suffix to all city URLs. -#}
+			{% if hri_lang != 'fi' -%}
+				{% set url_suffix = '/' + hri_lang -%}
+				{% if hri_lang == 'en' -%}
+					{% set espoo_url = 'http://www.espoo.fi/en-US' -%}
+				{% elif hri_lang == 'sv' -%}
+					{% set espoo_url = 'http://www.espoo.fi/sv-FI' -%}
+				{% else -%}
+					{% set espoo_url = 'http://www.espoo.fi' -%}
+				{% endif -%}
+			{% else -%}
+				{% set url_suffix = '' -%}
+				{% set espoo_url = 'http://www.espoo.fi' -%}
+			{% endif -%}
 			<div>
-				<em>© Helsinki Region Infoshare</em>{{ _('Some rights reserved.') }}
+				<a href="http://www.hel.fi{{ url_suffix }}"><img src="/wp-content/uploads/2016/01/Helsingin_Vaakuna_RGB_png_62254.png" height="48" style="height: 48px" /></a>
+				<a href="{{ espoo_url }}"><img src="/wp-content/uploads/2016/01/Espoo_vaakuna.png" height="48" style="height: 48px" /></a>
+				<a href="http://www.vantaa.fi{{ url_suffix }}"><img src="/wp-content/uploads/2016/01/Vantaa_vaakuna.png" height="48" style="height: 48px" /></a>
+				<a href="http://www.kauniainen.fi{{ url_suffix }}"><img src="/wp-content/uploads/2016/01/Kauniainen_vaakuna.png" height="48" style="height: 48px" /></a>
+			</div>
+			<div>
 			</div>
 		</div>
 		<div id="site-search">
@@ -31,7 +50,7 @@
 				<li class=""><a href="http://{{ wp_url }}/fi/kayttoehdot/">Käyttöehdot</a></li>
 				<li class=""><a href="http://www.hel.fi/static/helsinki/rekisteriselosteet/tieke/Tieke-asiakashallintarekisteri.pdf">Rekisteriseloste</a></li>
 				<li class=""><a href="http://{{ wp_url }}/fi/hri-projekti/verkkopalvelu/">Palvelukuvaus</a></li>
-				<li class=""><a href="http://dev.hel.fi/calendar/month">Tapahtumakalenteri</a></li>
+				<li class=""><a href="http://databusiness.fi/tapahtumat/">Tapahtumakalenteri</a></li>
 			</ul>		
 		</nav>
 		{%- elif hri_lang == 'en' -%}
@@ -40,7 +59,7 @@
 				<li class=""><a href="http://{{ wp_url }}/en/about/" >About HRI</a></li>
 				<li class=""><a href="http://{{ wp_url }}/en/about/contact-information/">Contact information</a></li>
 				<li class=""><a href="http://{{ wp_url }}/en/terms-and-conditions/">Terms and conditions</a></li>
-				<li class=""><a href="http://dev.hel.fi/calendar/month">Event calendar</a></li>
+				<li class=""><a href="http://databusiness.fi/tapahtumat/">Events calendar</a></li>
 			</ul>		
 		</nav>
 		{% endif %}
@@ -50,18 +69,22 @@
 		<nav>
 			<ul>
 				<li><em>{{ _('Follow HRI') }}</em></li>
+				<li><a href="http://www.facebook.com/helsinkiregioninfoshare" class="a-facebook">Facebook</a></li>
+				<li><a href="https://github.com/Helsingin-kaupungin-tietokeskus" class="a-github">Github</a></li>
+				<li><a href="http://{{ wp_url }}/fi/feed" class="a-rss">{{ _('RSS feeds') }}</a></li>
+				<li><a href="http://www.slideshare.net/helsinkiregioninfoshare" class="a-slideshare">Slideshare</a></li>
+				<li><a href="https://twitter.com/HRInfoshare" class="a-twitter">Twitter</a></li>
 				{%- if hri_lang == 'fi' -%}
 				<li><a href="http://{{ wp_url }}/fi/uutiskirje" class="a-email">Uutiskirje</a></li>
 				{%- endif -%}
-				<li><a href="http://{{ wp_url }}/fi/feed" class="a-rss">{{ _('RSS feeds') }}</a></li>
-				<li><a href="http://www.facebook.com/helsinkiregioninfoshare" class="a-facebook">Facebook</a></li>
-				<li><a href="https://twitter.com/HRInfoshare" class="a-twitter">Twitter</a></li>
-				<li><a href="http://www.slideshare.net/helsinkiregioninfoshare" class="a-slideshare">Slideshare</a></li>
 				<li><a href="https://www.youtube.com/user/HRInfoshare" class="a-youtube">Youtube</a></li>
-				<li><a href="https://github.com/Helsingin-kaupungin-tietokeskus" class="a-github">Github</a></li>
 			</ul>
 		</nav>
+
+		<span style="color: #333; float: right; margin-top: -25px;"><em>© Helsinki Region Infoshare</em>{{ _('Some rights reserved.') }}</span>
 	</div>
 
 	{% snippet 'snippets/google_analytics.html', code=h.get_ga_code() %}
+
+	<div class="clear"></div>	
 {% endblock %}
